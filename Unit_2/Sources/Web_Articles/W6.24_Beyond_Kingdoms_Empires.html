@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond kingdoms and empires. Web Article W6.24 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Web Article W6.24 | Beyond kingdoms and empires</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/W6.24_Beyond_Kingdoms_Empires.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 6 · W6.24</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W6.24">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W6.24</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Beyond kingdoms and empires</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">David Wengrow</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">David Wengrow, Professor of comparative archaeology at University College London; co-author, with David Graeber, of The Dawn of Everything (2021)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Aeon</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">July 5, 2024</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">6.2</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">6.2.2 Supports; 6.2.3 Supports; 6.2.1 Counters</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,414 words</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Contemporary historians tell us that, by the start of the Common Era, approximately three-quarters of the world’s population were living in just four empires (we’ve all heard of the Romans and the Han; fewer of us, perhaps, of the Parthians and Kushans). Just think about this for a minute. If true, then it means that the great majority of people who ever existed were born, lived and died under imperial rule. Such claims are hardly original, but for those who share Arnold Toynbee’s conviction that history should amount to more than ‘just one damned thing after another’, they have taken on a new importance.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">For some scholars today, the claims prove that empires are obvious and natural structures for human beings to inhabit, or even attractive political projects that, once discovered, we have reproduced again and again over the longue durée of history. The suggestion is that if the subjects of empire in times past could have escaped, they’d have been unwise to do so, and anyway the majority would have preferred life in imperial cages to whatever lay beyond, in the forest or marshes, in the mountains and foothills, or out on the open steppe. Such ideas have deep roots, which may be one reason why they often go unchallenged.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In the late 18th century, Edward Gibbon – taking inspiration from ancient writers such as Tacitus – described the Roman Empire (before its ‘decline and fall’) as covering ‘the fairest part of the earth, and the most civilised portion of mankind,’ surrounded by barbarians whose freedom was little more than a side-effect of their primitive ways of life. Gibbon’s barbarian is an inveterate idler: free, yes, but only to live in scattered homesteads, wearing skins for clothes, or following his ‘monstrous herds of cattle’. ‘Their poverty,’ wrote Gibbon of the ancient Germans, ‘secured their freedom.’</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is from such sources that we get, not just our notion of empire as handmaiden to civilisation, but also our contemporary image of life before and beyond empire as being small-scale, chaotic and largely unproductive. In short, everything that is still implied by the word ‘tribal’. Tribes are to empires (and their scholarly champions) much as children were to adults of Gibbon’s generation – occasionally charming or amusing creatures, but mostly a disruptive force, whose destiny is to be disciplined, put to useful work, and governed, at least until they are ready to govern themselves in a similar fashion. Either that, or to be confined, punished and, if necessary, eliminated from the pages of history.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Ideas of this sort are, in fact, as old as empire itself. In their diplomatic correspondence, which can be followed back to a time more than 3,000 years ago, the rulers of Egypt and Syria grumble incessantly about the subversive activities of groups called ʿApiru. Scholars of the ancient Near East once took ʿApiru to be an early reference to the Hebrews, but it’s now thought to be an umbrella term, used almost indiscriminately for any group of political defectors, dissenters, insurgents or refugees who threatened the interests of Egypt’s vassals in neighbouring Canaan (much as some modern politicians have been known to use the word ‘terrorist’ for rhetorical effect today).</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In Babylonia, such groups – when not given tribal or ethnic labels – might be variously described as ‘scattered people’, ‘head-bangers’ or simply ‘enemies’. In the early centuries BCE, emissaries of the Han Empire wrote in similar ways about the rebellious marsh-dwellers of the tropical coastlands to their south. Historians now see these ancient inhabitants of Guangdong and Fujian through Han eyes, as the ‘Bai-yue’ (‘Hundred Yue’), who were said to shave their heads, cover their bodies in tattoos, and sacrifice live humans to their savage gods. After centuries of resistance and guerrilla warfare, we learn, the Yue capitulated. On the order of Emperor Wu, most were deported and put to hard labour, their lands given over to colonial settlers from the north, including many retired soldiers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Empires have always created vivid and disturbingly violent images of tribal life on their frontiers, placing in a different, paternalistic light the violence at the heart of their own political projects. In such ways, we convince ourselves that these things are somehow deeply related, that violence and domination are the necessary substratum of ‘civilisation’, or that Europe after the fall of Rome achieved something unique – unnatural even, on a global scale – by breaking decisively from ancient cycles of empire and forging a singular path to liberty and prosperity. Once entrenched in our imaginations, such ways of thinking are fiendishly difficult to reverse. Even experienced scholars of empirically grounded disciplines may find themselves advancing such arguments based on the flimsiest of sources.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">According to Walter Scheidel, a professor of classics and history at Stanford University in California, the population figures cited at the start of this essay ‘convey a sense of the competitive advantage of a particular type of state: far-flung imperial structures held together by powerful extractive elites.’ In ‘quantitative terms,’ he tells us in The Great Leveller (2017), this ‘proved extremely successful.’ Looking deeper back in time, to the very ‘origin of the state’, Scheidel further conjectures that ‘3,500 years ago, when state-level polities covered perhaps not more than 1 per cent of the earth’s terrestrial surface (excluding Antarctica), they already laid claim to up to half of our species.’</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Now, it is surely true that in any period of human history, there will always be those who feel most comfortable in ranks and orders. As Étienne de La Boétie had already pointed out in the 16th century, the source of ‘voluntary servitude’ is arguably the most important political question of them all. But where do the statistics come from, to support such grand claims? Are they reliable? Venture down into the footnotes, and you discover that everyone is citing the same source: an Atlas of World Population History, published in 1978; in fairness, Scheidel does provide one additional citation, to Joel Cohen’s How Many People Can the Earth Support? (1995), but this turns out to comprise a chart showing estimates of past human population sizes in which all figures for the premodern era derive from, again, the Atlas of World Population History or from subsequent publications based on it.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In light of all this, anyone today who consults the Atlas of World Population History for the first time is in for a surprise. It is an unassuming tome, and a very old one at that. It comprises simple-to-read population graphs for different world regions, accompanied by pithy essays, which sometimes verge on the laconic. There is also an Appendix on ‘Reliability’ that begins: ‘The hypotheses of the historical demographer are not, in the current state of the art, testable and consequently the idea of their being reliable in the statistician’s sense is out of the question.’</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I’ll come back to this important point in a moment.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">First, it is worth reflecting on what it means to talk of the ‘competitive advantage’ of states governed by extractive elites. At the least, this introduces questions about the long-term strength and viability of certain types of society, and the endemic weaknesses of others. Only the ‘winners’, one assumes, get to forge viable paths to the future. These, however, are matters of opinion, not statistics. They brush over irritating questions like ‘How many benefited from living in imperial structures?’ or ‘What is a viable path into the future?’ What ‘advantages’, we might ask, accrued to a girl captured by Cilician pirates, and sold in the slave markets of Roman-era Delos, over one living freely in the Nuba Hills of southern Kordofan? Slaves were said to change hands at a rate of 10,000 per day in Delos, and the total number of slaves in the early Roman Empire could have been between 6 and 10 million. In what sense can their numbers be added to the side of the ‘winners’?</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Let’s come back to the figures in the Atlas of World Population History. It estimates 46 million Roman subjects and 50 million Han subjects. Let’s assume, for a moment, this is OK. Supposedly – if we combine it with statistics for other empires of the same era – this amounts to ‘between two-thirds and three-quarters of all people alive at the time’ (to quote Scheidel). But what does the Atlas tell us about all those other parts of the ancient world that lay beyond the grasp of powerful, extractive elites? Were they really so empty?</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms">https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms</a> (accessed October 24, 2026)</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Wengrow, David. “Beyond Kingdoms and Empires.” <em>Aeon</em>, July 5, 2024. <a href="https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms">https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">David Wengrow, “Beyond Kingdoms and Empires,” <em>Aeon</em>, July 5, 2024, <a href="https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms">https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wengrow, “Beyond Kingdoms and Empires.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

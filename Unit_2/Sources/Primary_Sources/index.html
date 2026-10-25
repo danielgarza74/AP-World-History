@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Primary source archive for Unit 2: Second Wave Civilizations, Chapters 3–6, 600 B.C.E.–1200 C.E..">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Unit 2 Primary Source Archive | Second Wave Civilizations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --forest-light: #904628;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 16px 38px rgba(73, 35, 21, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(124, 148, 115, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(183, 199, 174,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(252, 251, 248,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(252, 251, 248,.96);
+      box-shadow: 0 8px 22px rgba(73, 35, 21,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(124, 148, 115,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(252, 251, 248,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(124, 148, 115,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(183, 199, 174,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(183, 199, 174,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(73, 35, 21,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #EDF1EB;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">P</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Ways of the World · Chapters 3–6</p>
+      <h1>Primary Source Archive</h1>
+      <p class="hero-subtitle">Inscriptions, edicts, laws, scriptures, letters, objects, and sites from the second-wave civilizations of Eurasia, Africa, the Americas, and Oceania.</p>
+      <div class="hero-meta">
+        <span>Unit 2 · Second Wave Civilizations</span>
+        <span>Chapters 3–6</span>
+        <span>600 B.C.E.–1200 C.E.</span>
+        <span>99 documents</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Primary Sources</span>
+      <div class="chapter-links"><a href="#chapter-3"><span>3</span><span class="link-title">State and Empire in Eurasia/North Africa</span></a><a href="#chapter-4"><span>4</span><span class="link-title">Culture and Religion in Eurasia/North Africa</span></a><a href="#chapter-5"><span>5</span><span class="link-title">Society and Inequality in Eurasia/North Africa</span></a><a href="#chapter-6"><span>6</span><span class="link-title">Africa, the Americas, and Pacific Oceania</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading these documents</p>
+        <h2>Begin with the source itself.</h2>
+        <p>Spelling, capitalization, and punctuation follow the reproduced edition. The long “s” of eighteenth-century printing has been modernized. The bracketed marker [. . .] identifies text omitted by the reader; unbracketed ellipses belong to the source or its editor. Editorial notes identify later printings, reconstructions, and memoirs written after the events.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these documents</p>
+        <h2>Cite the edition you quote.</h2>
+        <p>Use the full footnote citation the first time and the shortened form afterward. Replace the model locator with the article, section, letter, entry date, or original page supporting your claim.</p>
+        <p>Reader page numbers are navigation aids, not original source pages. Include only sources you actually use in your bibliography.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search primary sources</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by document, author, date, or source code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">99 documents</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No primary sources match that search. Try a shorter title, author surname, date, or source code.</p>
+
+      <section class="chapter-section" id="chapter-3" data-chapter-section aria-labelledby="chapter-3-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">3</div>
+          <div>
+            <p>Chapter 3 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-3-title">State and Empire in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">28 documents</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.01_Behistun_Inscription_Darius_I.html" data-source-card data-search="p3.1 the behistun inscription of darius i ca. 520–518 b.c.e. (carved early in the reign of darius i, r. 522–486 b.c.e.) · empires and civilizations in collision: the persian empire (textbook pp. 102–104).">
+              <span class="source-code">P3.1</span>
+              <span class="source-copy">
+                <strong>The Behistun Inscription of Darius I</strong>
+                <span>ca. 520–518 B.C.E. (carved early in the reign of Darius I, r. 522–486 B.C.E.) · Empires and Civilizations in Collision: The Persian Empire (textbook pp. 102–104).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.02_Cyrus_Cylinder.html" data-source-card data-search="p3.2 the cyrus cylinder 539–538 b.c.e. (after the persian capture of babylon) · empires and civilizations in collision: the persian empire (textbook pp. 102–104).">
+              <span class="source-code">P3.2</span>
+              <span class="source-copy">
+                <strong>The Cyrus Cylinder</strong>
+                <span>539–538 B.C.E. (after the Persian capture of Babylon) · Empires and Civilizations in Collision: The Persian Empire (textbook pp. 102–104).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.03_Gift_Bearing_Delegations_Apadana_Stairway.html" data-source-card data-search="p3.3 gift-bearing delegations on the apadana stairway, persepolis ca. 500–480 b.c.e. (reigns of darius i and xerxes i) · empires and civilizations in collision: the persian empire; the textbook’s photograph of persepolis (textbook pp. 103–104).">
+              <span class="source-code">P3.3</span>
+              <span class="source-copy">
+                <strong>Gift-Bearing Delegations on the Apadana Stairway, Persepolis</strong>
+                <span>ca. 500–480 B.C.E. (reigns of Darius I and Xerxes I) · Empires and Civilizations in Collision: The Persian Empire; the textbook’s photograph of Persepolis (textbook pp. 103–104).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.04_Herodotus_Persian_Tribute_Royal_Messengers.html" data-source-card data-search="p3.4 herodotus on persian tribute and royal messengers written ca. 430–425 b.c.e. (describing the reigns of darius i and xerxes) · empires and civilizations in collision: the persian empire; collision: the greco-persian wars (textbook pp. 102–104, 107–108).">
+              <span class="source-code">P3.4</span>
+              <span class="source-copy">
+                <strong>Herodotus on Persian Tribute and Royal Messengers</strong>
+                <span>written ca. 430–425 B.C.E. (describing the reigns of Darius I and Xerxes) · Empires and Civilizations in Collision: The Persian Empire; Collision: The Greco-Persian Wars (textbook pp. 102–104, 107–108).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.05_Pericles_Funeral_Oration_As_Recorded.html" data-source-card data-search="p3.5 pericles’ funeral oration, as recorded by thucydides speech delivered 431–430 b.c.e.; history written ca. 431–400 b.c.e. · empires and civilizations in collision: the greeks; collision: the greco-persian wars (textbook pp. 105–108).">
+              <span class="source-code">P3.5</span>
+              <span class="source-copy">
+                <strong>Pericles’ Funeral Oration, as Recorded by Thucydides</strong>
+                <span>speech delivered 431–430 B.C.E.; history written ca. 431–400 B.C.E. · Empires and Civilizations in Collision: The Greeks; Collision: The Greco-Persian Wars (textbook pp. 105–108).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.06_Statue_Augustus_Prima_Porta.html" data-source-card data-search="p3.6 statue of augustus from prima porta marble statue probably early 1st century c.e. (perhaps after 14 c.e.), likely copying a bronze of ca. 20 b.c.e. · comparing empires: roman and chinese; rome: from city-state to empire (textbook pp. 112– 116).">
+              <span class="source-code">P3.6</span>
+              <span class="source-copy">
+                <strong>Statue of Augustus from Prima Porta</strong>
+                <span>marble statue probably early 1st century C.E. (perhaps after 14 C.E.), likely copying a bronze of ca. 20 B.C.E. · Comparing Empires: Roman and Chinese; Rome: From City-State to Empire (textbook pp. 112– 116).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.07_Emperor_Claudius_Admitting_Gallic_Nobles.html" data-source-card data-search="p3.7 emperor claudius on admitting gallic nobles to the senate speech 48 c.e.; tacitus wrote ca. 115–120 c.e. · rome: from city-state to empire; consolidating the roman and chinese empires (textbook pp. 112–116, 118–121).">
+              <span class="source-code">P3.7</span>
+              <span class="source-copy">
+                <strong>Emperor Claudius on Admitting Gallic Nobles to the Senate</strong>
+                <span>speech 48 C.E.; Tacitus wrote ca. 115–120 C.E. · Rome: From City-State to Empire; Consolidating the Roman and Chinese Empires (textbook pp. 112–116, 118–121).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.08_Tacitus_Romanizing_Britain_British_Leader.html" data-source-card data-search="p3.8 tacitus on romanizing britain, and a british leader’s reply written ca. 98 c.e. (events ca. 78–84 c.e.) · rome: from city-state to empire; consolidating the roman and chinese empires (textbook pp. 112–116, 118–121).">
+              <span class="source-code">P3.8</span>
+              <span class="source-copy">
+                <strong>Tacitus on Romanizing Britain, and a British Leader’s Reply</strong>
+                <span>written ca. 98 C.E. (events ca. 78–84 C.E.) · Rome: From City-State to Empire; Consolidating the Roman and Chinese Empires (textbook pp. 112–116, 118–121).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.09_Writings_Master_Han_Fei_Law.html" data-source-card data-search="p3.9 the writings of master han fei: law and the “two handles” mid-3rd century b.c.e. (han fei died 233 b.c.e.) · china: from warring states to empire (textbook pp. 117–118).">
+              <span class="source-code">P3.9</span>
+              <span class="source-copy">
+                <strong>The Writings of Master Han Fei: Law and the “Two Handles”</strong>
+                <span>mid-3rd century B.C.E. (Han Fei died 233 B.C.E.) · China: From Warring States to Empire (textbook pp. 117–118).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.10_Sima_Qian_S_Records_Qin.html" data-source-card data-search="p3.10 sima qian’s records on the qin: memorials, an inscription, and a revolt events 221–209 b.c.e.; recorded by sima qian ca. 109–91 b.c.e. · china: from warring states to empire; the collapse of empires (textbook pp. 117–118, 122–124).">
+              <span class="source-code">P3.10</span>
+              <span class="source-copy">
+                <strong>Sima Qian’s Records on the Qin: Memorials, an Inscription, and a Revolt</strong>
+                <span>events 221–209 B.C.E.; recorded by Sima Qian ca. 109–91 B.C.E. · China: From Warring States to Empire; The Collapse of Empires (textbook pp. 117–118, 122–124).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.11_Qin_Standard_Weight_Inscribed_First.html" data-source-card data-search="p3.11 a qin standard weight inscribed with the first emperor’s edict edict issued 221 b.c.e.; weights made 221–206 b.c.e. · china: from warring states to empire; consolidating the roman and chinese empires (textbook pp. 117–121).">
+              <span class="source-code">P3.11</span>
+              <span class="source-copy">
+                <strong>A Qin Standard Weight Inscribed with the First Emperor’s Edict</strong>
+                <span>edict issued 221 B.C.E.; weights made 221–206 B.C.E. · China: From Warring States to Empire; Consolidating the Roman and Chinese Empires (textbook pp. 117–121).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.12_Funerary_Complex_Qin_Shihuangdi.html" data-source-card data-search="p3.12 the funerary complex of qin shihuangdi construction ca. 246–208 b.c.e.; sima qian’s description ca. 100–90 b.c.e. · china: from warring states to empire (textbook pp. 117–118).">
+              <span class="source-code">P3.12</span>
+              <span class="source-copy">
+                <strong>The Funerary Complex of Qin Shihuangdi</strong>
+                <span>construction ca. 246–208 B.C.E.; Sima Qian’s description ca. 100–90 B.C.E. · China: From Warring States to Empire (textbook pp. 117–118).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.13_Cyprian_Carthage_Demetrianus.html" data-source-card data-search="p3.13 cyprian of carthage, to demetrianus ca. 252 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.13</span>
+              <span class="source-copy">
+                <strong>Cyprian of Carthage, To Demetrianus</strong>
+                <span>ca. 252 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.14_Jerome_Invasion_Gaul_Sack_Rome.html" data-source-card data-search="p3.14 jerome on the invasion of gaul and the sack of rome letter 123: 409 c.e.; letter 127: 412 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.14</span>
+              <span class="source-copy">
+                <strong>Jerome on the Invasion of Gaul and the Sack of Rome</strong>
+                <span>Letter 123: 409 C.E.; Letter 127: 412 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.15_Salvian_Marseille_Government_God_Book.html" data-source-card data-search="p3.15 salvian of marseille, on the government of god, book 5 ca. 440 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.15</span>
+              <span class="source-copy">
+                <strong>Salvian of Marseille, On the Government of God, Book 5</strong>
+                <span>ca. 440 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.16_Pope_Gelasius_I_Two_Powers.html" data-source-card data-search="p3.16 pope gelasius i on the “two powers” 494 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.16</span>
+              <span class="source-copy">
+                <strong>Pope Gelasius I on the “Two Powers”</strong>
+                <span>494 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.17_Yan_Zhitui_Family_Instructions_Yan.html" data-source-card data-search="p3.17 yan zhitui, family instructions for the yan clan compiled ca. 580s–590s c.e. · comparing empires: the collapse of empires, on china’s division and reunification (textbook pp. 122–125).">
+              <span class="source-code">P3.17</span>
+              <span class="source-copy">
+                <strong>Yan Zhitui, Family Instructions for the Yan Clan</strong>
+                <span>compiled ca. 580s–590s C.E. · Comparing Empires: The Collapse of Empires, on China’s division and reunification (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.18_Ballad_Mulan.html" data-source-card data-search="p3.18 the ballad of mulan probably 5th–6th century c.e. (northern dynasties); later revised · comparing empires: the collapse of empires, on china’s northern dynasties (textbook pp. 122– 125).">
+              <span class="source-code">P3.18</span>
+              <span class="source-copy">
+                <strong>The Ballad of Mulan</strong>
+                <span>probably 5th–6th century C.E. (Northern Dynasties); later revised · Comparing Empires: The Collapse of Empires, on China’s northern dynasties (textbook pp. 122– 125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.19_Edicts_Ashoka_Rock_Minor_Rock.html" data-source-card data-search="p3.19 the edicts of ashoka: rock, minor rock, and pillar edicts ca. 260–242 b.c.e. (ashoka r. ca. 268–232 b.c.e.) · intermittent empire: the case of india (textbook pp. 125–128).">
+              <span class="source-code">P3.19</span>
+              <span class="source-copy">
+                <strong>The Edicts of Ashoka: Rock, Minor Rock, and Pillar Edicts</strong>
+                <span>ca. 260–242 B.C.E. (Ashoka r. ca. 268–232 B.C.E.) · Intermittent Empire: The Case of India (textbook pp. 125–128).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.20_Ashoka_S_Kandahar_Bilingual_Inscription.html" data-source-card data-search="p3.20 ashoka’s kandahar bilingual inscription ca. 260 b.c.e. (“ten years” after ashoka’s consecration) · intermittent empire: the case of india (textbook pp. 125–128).">
+              <span class="source-code">P3.20</span>
+              <span class="source-copy">
+                <strong>Ashoka’s Kandahar Bilingual Inscription</strong>
+                <span>ca. 260 B.C.E. (“ten years” after Ashoka’s consecration) · Intermittent Empire: The Case of India (textbook pp. 125–128).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.21_Kautilya_S_Arthashastra_Watching_King.html" data-source-card data-search="p3.21 kautilya’s arthashastra: watching the king’s officials and counting the kingdom attributed to kautilya, minister of chandragupta maurya (ca. 300 b.c.e.); compiled in its present form in the following centuries · intermittent empire: the case of india (textbook pp. 125–128).">
+              <span class="source-code">P3.21</span>
+              <span class="source-copy">
+                <strong>Kautilya’s Arthashastra: Watching the King’s Officials and Counting the Kingdom</strong>
+                <span>attributed to Kautilya, minister of Chandragupta Maurya (ca. 300 B.C.E.); compiled in its present form in the following centuries · Intermittent Empire: The Case of India (textbook pp. 125–128).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.22_Ammianus_Marcellinus_Huns_Gothic_Crossing.html" data-source-card data-search="p3.22 ammianus marcellinus on the huns, the gothic crossing of the danube, and adrianople written ca. 390 c.e.; events of ca. 375–378 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.22</span>
+              <span class="source-copy">
+                <strong>Ammianus Marcellinus on the Huns, the Gothic Crossing of the Danube, and Adrianople</strong>
+                <span>written ca. 390 C.E.; events of ca. 375–378 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.23_Procopius_Plague_Constantinople.html" data-source-card data-search="p3.23 procopius on the plague in constantinople written ca. 545–550 c.e.; events of 541–542 c.e. · comparing empires: the collapse of empires, on the survival of the eastern empire (textbook pp. 122–125).">
+              <span class="source-code">P3.23</span>
+              <span class="source-copy">
+                <strong>Procopius on the Plague in Constantinople</strong>
+                <span>written ca. 545–550 C.E.; events of 541–542 C.E. · Comparing Empires: The Collapse of Empires, on the survival of the eastern empire (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.24_Priscus_Court_Attila_Greek_Merchant.html" data-source-card data-search="p3.24 priscus at the court of attila: the greek merchant among the huns embassy of 449 c.e.; written later in the fifth century · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.24</span>
+              <span class="source-copy">
+                <strong>Priscus at the Court of Attila: The Greek Merchant among the Huns</strong>
+                <span>embassy of 449 C.E.; written later in the fifth century · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.25_Augustine_Sack_Rome_410.html" data-source-card data-search="p3.25 augustine on the sack of rome in 410 written ca. 413 c.e.; sack of rome 410 c.e. · comparing empires: the collapse of empires (textbook pp. 122–125).">
+              <span class="source-code">P3.25</span>
+              <span class="source-copy">
+                <strong>Augustine on the Sack of Rome in 410</strong>
+                <span>written ca. 413 C.E.; sack of Rome 410 C.E. · Comparing Empires: The Collapse of Empires (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.26_Ashoka_S_Minor_Pillar_Cave.html" data-source-card data-search="p3.26 ashoka’s minor pillar and cave inscriptions: the schism edicts, lumbini, nigali sagar, and barabar dated inscriptions from the 12th to the 20th year after ashoka’s consecration (ca. 256–249 b.c.e.); the schism edicts are undated (ashoka r. ca. 268–232 b.c.e.) · intermittent empire: the case of india (textbook pp. 125–128).">
+              <span class="source-code">P3.26</span>
+              <span class="source-copy">
+                <strong>Ashoka’s Minor Pillar and Cave Inscriptions: The Schism Edicts, Lumbini, Nigali Sagar, and Barabar</strong>
+                <span>dated inscriptions from the 12th to the 20th year after Ashoka’s consecration (ca. 256–249 B.C.E.); the schism edicts are undated (Ashoka r. ca. 268–232 B.C.E.) · Intermittent Empire: The Case of India (textbook pp. 125–128).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.27_Emperor_Xiaowen_Northern_Wei_Move.html" data-source-card data-search="p3.27 emperor xiaowen of the northern wei: the move to luoyang and the reform of xianbei customs events of 493–499 c.e.; recorded in the wei shu (completed 554 c.e.) and the zizhi tongjian (1084 c.e.) · comparing empires: the collapse of empires, on china’s division and reunification (textbook pp. 122–125).">
+              <span class="source-code">P3.27</span>
+              <span class="source-copy">
+                <strong>Emperor Xiaowen of the Northern Wei: The Move to Luoyang and the Reform of Xianbei Customs</strong>
+                <span>events of 493–499 C.E.; recorded in the Wei shu (completed 554 C.E.) and the Zizhi tongjian (1084 C.E.) · Comparing Empires: The Collapse of Empires, on China’s division and reunification (textbook pp. 122–125).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P3.28_Jia_Yi_Faults_Qin_Guo.html" data-source-card data-search="p3.28 jia yi, the faults of qin (guo qin lun), part 1 written probably in the 170s b.c.e. (jia yi, 200–168 b.c.e.); surveys qin history from 361 to 206 b.c.e. · china: from warring states to empire; the collapse of empires (textbook pp. 117–118, 122–124).">
+              <span class="source-code">P3.28</span>
+              <span class="source-copy">
+                <strong>Jia Yi, The Faults of Qin (Guo Qin lun), Part 1</strong>
+                <span>written probably in the 170s B.C.E. (Jia Yi, 200–168 B.C.E.); surveys Qin history from 361 to 206 B.C.E. · China: From Warring States to Empire; The Collapse of Empires (textbook pp. 117–118, 122–124).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No documents in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-4" data-chapter-section aria-labelledby="chapter-4-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">4</div>
+          <div>
+            <p>Chapter 4 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-4-title">Culture and Religion in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">23 documents</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.01_Analects_Confucius_His_Disciples_Virtue.html" data-source-card data-search="p4.1 the analects: confucius and his disciples on virtue, family, and government sayings of confucius (551–479 b.c.e.), gathered by his followers over the following centuries · china and the search for order: the confucian answer (textbook pp. 144–146).">
+              <span class="source-code">P4.1</span>
+              <span class="source-copy">
+                <strong>The Analects: Confucius and His Disciples on Virtue, Family, and Government</strong>
+                <span>sayings of Confucius (551–479 B.C.E.), gathered by his followers over the following centuries · China and the Search for Order: The Confucian Answer (textbook pp. 144–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.02_Filial_Piety_Illustrated_Song_Painting.html" data-source-card data-search="p4.2 filial piety illustrated: a song painting for the classic of filial piety text of the classic composed ca. 3rd–2nd century b.c.e.; illustrated album painted in the song dynasty (960–1279) · china and the search for order: the confucian answer—the family as a model for the state (textbook pp. 145–146).">
+              <span class="source-code">P4.2</span>
+              <span class="source-copy">
+                <strong>Filial Piety Illustrated: A Song Painting for the Classic of Filial Piety</strong>
+                <span>text of the Classic composed ca. 3rd–2nd century B.C.E.; illustrated album painted in the Song dynasty (960–1279) · China and the Search for Order: The Confucian Answer—the family as a model for the state (textbook pp. 145–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.03_Daodejing_Laozi_Selected_Chapters.html" data-source-card data-search="p4.3 the daodejing (laozi): selected chapters traditionally attributed to laozi; compiled in the 4th–3rd centuries b.c.e. (traditional date ca. 500 b.c.e.) · china and the search for order: the daoist answer (textbook pp. 147–148).">
+              <span class="source-code">P4.3</span>
+              <span class="source-copy">
+                <strong>The Daodejing (Laozi): Selected Chapters</strong>
+                <span>traditionally attributed to Laozi; compiled in the 4th–3rd centuries B.C.E. (traditional date ca. 500 B.C.E.) · China and the Search for Order: The Daoist Answer (textbook pp. 147–148).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.04_Mencius_Rulers_Ministers_People.html" data-source-card data-search="p4.4 mencius on rulers, ministers, and the people mencius (ca. 372–289 b.c.e.); the book was compiled by his disciples · china and the search for order: the confucian answer, including the mandate of heaven (textbook pp. 145–146).">
+              <span class="source-code">P4.4</span>
+              <span class="source-copy">
+                <strong>Mencius on Rulers, Ministers, and the People</strong>
+                <span>Mencius (ca. 372–289 B.C.E.); the book was compiled by his disciples · China and the Search for Order: The Confucian Answer, including the Mandate of Heaven (textbook pp. 145–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.05_Dong_Zhongshu_Heaven_Ruler_Learning.html" data-source-card data-search="p4.5 dong zhongshu: heaven, the ruler, and learning in han government dong zhongshu (ca. 195–ca. 115 b.c.e.; traditional dates 179–104), under emperor wu (r. 141–87 b.c.e.) · china and the search for order: the confucian answer; han government and learning (textbook pp. 145–146).">
+              <span class="source-code">P4.5</span>
+              <span class="source-copy">
+                <strong>Dong Zhongshu: Heaven, the Ruler, and Learning in Han Government</strong>
+                <span>Dong Zhongshu (ca. 195–ca. 115 B.C.E.; traditional dates 179–104), under Emperor Wu (r. 141–87 B.C.E.) · China and the Search for Order: The Confucian Answer; Han government and learning (textbook pp. 145–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.06_Debate_Salt_Iron_81_B.html" data-source-card data-search="p4.6 the debate on salt and iron, 81 b.c.e. court debate of 81 b.c.e.; written up by huan kuan, mid-1st century b.c.e. · china and the search for order: the legalist answer and the confucian answer; han government (textbook pp. 144–146).">
+              <span class="source-code">P4.6</span>
+              <span class="source-copy">
+                <strong>The Debate on Salt and Iron, 81 B.C.E.</strong>
+                <span>court debate of 81 B.C.E.; written up by Huan Kuan, mid-1st century B.C.E. · China and the Search for Order: The Legalist Answer and The Confucian Answer; Han government (textbook pp. 144–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.07_Chandogya_Upanishad_Rebirth_Conduct_Salt.html" data-source-card data-search="p4.7 the chandogya upanishad: rebirth by conduct, and salt in water composed in sanskrit, probably between the 8th and 6th centuries b.c.e. or somewhat later (date uncertain; transmitted orally) · cultural traditions of classical india: from ritual sacrifice to philosophical speculation (textbook pp. 149–151).">
+              <span class="source-code">P4.7</span>
+              <span class="source-copy">
+                <strong>The Chandogya Upanishad: Rebirth by Conduct, and Salt in Water</strong>
+                <span>composed in Sanskrit, probably between the 8th and 6th centuries B.C.E. or somewhat later (date uncertain; transmitted orally) · Cultural Traditions of Classical India: From Ritual Sacrifice to Philosophical Speculation (textbook pp. 149–151).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.08_Two_Dialogues_Buddha_Kutadanta_Samannaphala.html" data-source-card data-search="p4.8 two dialogues of the buddha: the kutadanta and samannaphala suttas set in magadha in the buddha’s lifetime (5th century b.c.e.); written down in the 1st century b.c.e. · cultural traditions of classical india: the buddhist challenge (textbook pp. 151–154).">
+              <span class="source-code">P4.8</span>
+              <span class="source-copy">
+                <strong>Two Dialogues of the Buddha: The Kutadanta and Samannaphala Suttas</strong>
+                <span>set in Magadha in the Buddha’s lifetime (5th century B.C.E.); written down in the 1st century B.C.E. · Cultural Traditions of Classical India: The Buddhist Challenge (textbook pp. 151–154).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.09_Psalms_Sisters_Early_Buddhist_Nuns.html" data-source-card data-search="p4.9 psalms of the sisters: early buddhist nuns speak poems ascribed to women of the buddha’s time; gathered and written down by about the 1st century b.c.e. · cultural traditions of classical india: the buddhist challenge; women in the buddhist order (textbook pp. 152–153).">
+              <span class="source-code">P4.9</span>
+              <span class="source-copy">
+                <strong>Psalms of the Sisters: Early Buddhist Nuns Speak</strong>
+                <span>poems ascribed to women of the Buddha’s time; gathered and written down by about the 1st century B.C.E. · Cultural Traditions of Classical India: The Buddhist Challenge; women in the Buddhist order (textbook pp. 152–153).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.10_Bhagavad_Gita_Duty_Without_Attachment.html" data-source-card data-search="p4.10 the bhagavad gita: duty without attachment composed over a long period, often placed between the 5th century b.c.e. and the 2nd century c.e.; the textbook gives its final form by about 300 c.e. · cultural traditions of classical india: hinduism as a religion of duty and devotion (textbook pp. 154–155).">
+              <span class="source-code">P4.10</span>
+              <span class="source-copy">
+                <strong>The Bhagavad Gita: Duty Without Attachment</strong>
+                <span>composed over a long period, often placed between the 5th century B.C.E. and the 2nd century C.E.; the textbook gives its final form by about 300 C.E. · Cultural Traditions of Classical India: Hinduism as a Religion of Duty and Devotion (textbook pp. 154–155).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.11_Great_Stupa_Sanchi.html" data-source-card data-search="p4.11 the great stupa at sanchi brick core, 3rd century b.c.e. (tradition: ashoka); enlarged in the 2nd–1st centuries b.c.e.; carved gateways, ca. 1st century b.c.e.–1st century c.e. · cultural traditions of classical india: the buddhist challenge—stupas, monasteries, and ashoka’s patronage (textbook pp. 152–153).">
+              <span class="source-code">P4.11</span>
+              <span class="source-copy">
+                <strong>The Great Stupa at Sanchi</strong>
+                <span>brick core, 3rd century B.C.E. (tradition: Ashoka); enlarged in the 2nd–1st centuries B.C.E.; carved gateways, ca. 1st century B.C.E.–1st century C.E. · Cultural Traditions of Classical India: The Buddhist Challenge—stupas, monasteries, and Ashoka’s patronage (textbook pp. 152–153).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.12_Ashoka_S_Edicts_Dhamma_Religions.html" data-source-card data-search="p4.12 ashoka’s edicts on dhamma, religions, and the buddhist sangha ca. 258–249 b.c.e. for the dated edicts selected here (ashoka r. ca. 268–232 b.c.e.) · cultural traditions of classical india: the buddhist challenge, including ashoka’s patronage (textbook pp. 152–153); compared with roman patronage of christianity (textbook pp. 170–171).">
+              <span class="source-code">P4.12</span>
+              <span class="source-copy">
+                <strong>Ashoka’s Edicts on Dhamma, Religions, and the Buddhist Sangha</strong>
+                <span>ca. 258–249 B.C.E. for the dated edicts selected here (Ashoka r. ca. 268–232 B.C.E.) · Cultural Traditions of Classical India: The Buddhist Challenge, including Ashoka’s patronage (textbook pp. 152–153); compared with Roman patronage of Christianity (textbook pp. 170–171).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.13_Coins_Kanishka_I_Buddha_Among.html" data-source-card data-search="p4.13 coins of kanishka i: the buddha among the gods of kushan coinage kanishka i, ca. 127–150 c.e. by the most common reckoning (the dates of the kushan kings are disputed) · cultural traditions of classical india: the buddhist challenge; the spread of new religions, including map 4.1 (textbook pp. 153–154, 170).">
+              <span class="source-code">P4.13</span>
+              <span class="source-copy">
+                <strong>Coins of Kanishka I: The Buddha among the Gods of Kushan Coinage</strong>
+                <span>Kanishka I, ca. 127–150 C.E. by the most common reckoning (the dates of the Kushan kings are disputed) · Cultural Traditions of Classical India: The Buddhist Challenge; The Spread of New Religions, including Map 4.1 (textbook pp. 153–154, 170).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.14_Faxian_Record_Buddhistic_Kingdoms.html" data-source-card data-search="p4.14 faxian, a record of buddhistic kingdoms journey of 399–ca. 412 c.e. (legge’s title: 399–414); account written ca. 414–416 c.e. · cultural traditions of classical india: the buddhist challenge; the spread of new religions, including map 4.1 (textbook pp. 152–154, 170).">
+              <span class="source-code">P4.14</span>
+              <span class="source-copy">
+                <strong>Faxian, A Record of Buddhistic Kingdoms</strong>
+                <span>journey of 399–ca. 412 C.E. (Legge’s title: 399–414); account written ca. 414–416 C.E. · Cultural Traditions of Classical India: The Buddhist Challenge; The Spread of New Religions, including Map 4.1 (textbook pp. 152–154, 170).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.15_Hebrew_Prophets_Justice_One_God.html" data-source-card data-search="p4.15 hebrew prophets on justice and one god: amos, micah, and isaiah 45 amos and micah, 8th century b.c.e.; isaiah 45, ca. 550–539 b.c.e.; the books were gathered and edited later · toward monotheism: the search for god in the middle east—judaism (textbook pp. 157–159).">
+              <span class="source-code">P4.15</span>
+              <span class="source-copy">
+                <strong>Hebrew Prophets on Justice and One God: Amos, Micah, and Isaiah 45</strong>
+                <span>Amos and Micah, 8th century B.C.E.; Isaiah 45, ca. 550–539 B.C.E.; the books were gathered and edited later · Toward Monotheism: The Search for God in the Middle East—Judaism (textbook pp. 157–159).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.16_Sermon_Mount_Matthew_5_7.html" data-source-card data-search="p4.16 the sermon on the mount (matthew 5–7) gospel of matthew, written in greek ca. 80–90 c.e.; the teachings are set in the lifetime of jesus (ca. 4 b.c.e.–ca. 30 c.e.) · the birth of christianity: the lives of the founders (textbook pp. 164–165); the spread of new religions (textbook pp. 167–170).">
+              <span class="source-code">P4.16</span>
+              <span class="source-copy">
+                <strong>The Sermon on the Mount (Matthew 5–7)</strong>
+                <span>Gospel of Matthew, written in Greek ca. 80–90 C.E.; the teachings are set in the lifetime of Jesus (ca. 4 B.C.E.–ca. 30 C.E.) · The Birth of Christianity: The Lives of the Founders (textbook pp. 164–165); The Spread of New Religions (textbook pp. 167–170).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.17_Pliny_Younger_Trajan_Christians.html" data-source-card data-search="p4.17 pliny the younger and trajan on the christians letters of ca. 110–113 c.e. (pliny, governor of bithynia and pontus; trajan, emperor 98–117 c.e.) · the birth of christianity: the spread of new religions (textbook pp. 167–170).">
+              <span class="source-code">P4.17</span>
+              <span class="source-copy">
+                <strong>Pliny the Younger and Trajan on the Christians</strong>
+                <span>letters of ca. 110–113 C.E. (Pliny, governor of Bithynia and Pontus; Trajan, emperor 98–117 C.E.) · The Birth of Christianity: The Spread of New Religions (textbook pp. 167–170).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.18_Emperor_Julian_Pagan_Priests_Christian.html" data-source-card data-search="p4.18 emperor julian on pagan priests and christian charity julian, letter 22 to arsacius, high priest of galatia, ca. 362 c.e. (julian, emperor 361–363 c.e.) · the birth of christianity: the spread of new religions—care for the poor; roman state and religion (textbook pp. 167–171).">
+              <span class="source-code">P4.18</span>
+              <span class="source-copy">
+                <strong>Emperor Julian on Pagan Priests and Christian Charity</strong>
+                <span>Julian, Letter 22 to Arsacius, high priest of Galatia, ca. 362 C.E. (Julian, emperor 361–363 C.E.) · The Birth of Christianity: The Spread of New Religions—care for the poor; Roman state and religion (textbook pp. 167–171).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.19_Eusebius_Life_Constantine_Vision_Patronage.html" data-source-card data-search="p4.19 eusebius, life of constantine: vision, patronage, and law eusebius of caesarea, written ca. 337–339 c.e.; the events are of 312–325 c.e. · the birth of christianity: the spread of new religions—roman patronage compared with ashokan patronage (textbook pp. 170–171).">
+              <span class="source-code">P4.19</span>
+              <span class="source-copy">
+                <strong>Eusebius, Life of Constantine: Vision, Patronage, and Law</strong>
+                <span>Eusebius of Caesarea, written ca. 337–339 C.E.; the events are of 312–325 C.E. · The Birth of Christianity: The Spread of New Religions—Roman patronage compared with Ashokan patronage (textbook pp. 170–171).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.20_Theodosian_Code_Imperial_Laws_Religion.html" data-source-card data-search="p4.20 the theodosian code: imperial laws on religion, 326–381 c.e. five laws dated 326, 341, 346 (date doubted), 380, and 381 c.e.; collected in the theodosian code, published 438 c.e. · the birth of christianity: institutions, controversies, and divisions; the spread of new religions (textbook pp. 170–172).">
+              <span class="source-code">P4.20</span>
+              <span class="source-copy">
+                <strong>The Theodosian Code: Imperial Laws on Religion, 326–381 C.E.</strong>
+                <span>five laws dated 326, 341, 346 (date doubted), 380, and 381 C.E.; collected in the Theodosian Code, published 438 C.E. · The Birth of Christianity: Institutions, Controversies, and Divisions; The Spread of New Religions (textbook pp. 170–172).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.21_Assalayana_Sutta_Buddha_Questioned_Four.html" data-source-card data-search="p4.21 the assalayana sutta: the buddha questioned on the four castes set at savatthi in the buddha’s lifetime (5th century b.c.e.); written down in the 1st century b.c.e. · cultural traditions of classical india: the buddhist challenge (textbook pp. 151–154).">
+              <span class="source-code">P4.21</span>
+              <span class="source-copy">
+                <strong>The Assalayana Sutta: The Buddha Questioned on the Four Castes</strong>
+                <span>set at Savatthi in the Buddha’s lifetime (5th century B.C.E.); written down in the 1st century B.C.E. · Cultural Traditions of Classical India: The Buddhist Challenge (textbook pp. 151–154).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.22_Satapatha_Brahmana_Sacred_Fire_Carried.html" data-source-card data-search="p4.22 the satapatha brahmana: the sacred fire carried east, and the burial mounds of the “easterns” composed in sanskrit by brahmin ritual schools over a long period, often placed between the 8th and 6th centuries b.c.e. (date debated; transmitted orally) · cultural traditions of classical india: from ritual sacrifice to philosophical speculation; the buddhist challenge (textbook pp. 149–154).">
+              <span class="source-code">P4.22</span>
+              <span class="source-copy">
+                <strong>The Satapatha Brahmana: The Sacred Fire Carried East, and the Burial Mounds of the “Easterns”</strong>
+                <span>composed in Sanskrit by Brahmin ritual schools over a long period, often placed between the 8th and 6th centuries B.C.E. (date debated; transmitted orally) · Cultural Traditions of Classical India: From Ritual Sacrifice to Philosophical Speculation; The Buddhist Challenge (textbook pp. 149–154).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P4.23_Emperor_Xuan_Han_System_Rule.html" data-source-card data-search="p4.23 emperor xuan on the han system of rule, with related passages from the han shu han shu compiled by ban gu, ca. 58–92 c.e.; the exchange between emperor xuan and his heir took place after 54 b.c.e.; related passages on 141–33 b.c.e. · china and the search for order: the legalist answer and the confucian answer; han government (textbook pp. 144–146).">
+              <span class="source-code">P4.23</span>
+              <span class="source-copy">
+                <strong>Emperor Xuan on the Han System of Rule, with Related Passages from the Han shu</strong>
+                <span>Han shu compiled by Ban Gu, ca. 58–92 C.E.; the exchange between Emperor Xuan and his heir took place after 54 B.C.E.; related passages on 141–33 B.C.E. · China and the Search for Order: The Legalist Answer and The Confucian Answer; Han government (textbook pp. 144–146).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No documents in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-5" data-chapter-section aria-labelledby="chapter-5-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">5</div>
+          <div>
+            <p>Chapter 5 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-5-title">Society and Inequality in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">21 documents</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.01_Bhagavad_Gita_Duty_Four_Classes.html" data-source-card data-search="p5.1 the bhagavad gita on duty and the four classes ca. 5th–2nd century b.c.e. (traditional scholarly range; the dating is uncertain) · class and caste in india: caste as varna (textbook pp. 193–195).">
+              <span class="source-code">P5.1</span>
+              <span class="source-copy">
+                <strong>The Bhagavad Gita on Duty and the Four Classes</strong>
+                <span>ca. 5th–2nd century B.C.E. (traditional scholarly range; the dating is uncertain) · Class and Caste in India: Caste as Varna (textbook pp. 193–195).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.02_Megasthenes_Classes_India.html" data-source-card data-search="p5.2 megasthenes on the classes of india ca. 300 b.c.e. (megasthenes’ lost indika), as quoted by strabo in the early 1st century c.e. · class and caste in india: caste as varna; the functions of caste (textbook pp. 193–197).">
+              <span class="source-code">P5.2</span>
+              <span class="source-copy">
+                <strong>Megasthenes on the Classes of India</strong>
+                <span>ca. 300 B.C.E. (Megasthenes’ lost Indika), as quoted by Strabo in the early 1st century C.E. · Class and Caste in India: Caste as Varna; The Functions of Caste (textbook pp. 193–197).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.03_Kautilya_S_Arthashastra_Class_Duties.html" data-source-card data-search="p5.3 kautilya’s arthashastra: class duties, farming, and the property of women attributed to kautilya, traditionally ca. 300 b.c.e.; compiled from earlier material between about the 2nd century b.c.e. and the 3rd century c.e. · class and caste in india: the functions of caste (textbook pp. 196–197); comparing patriarchies (textbook pp. 204–212).">
+              <span class="source-code">P5.3</span>
+              <span class="source-copy">
+                <strong>Kautilya’s Arthashastra: Class Duties, Farming, and the Property of Women</strong>
+                <span>attributed to Kautilya, traditionally ca. 300 B.C.E.; compiled from earlier material between about the 2nd century B.C.E. and the 3rd century C.E. · Class and Caste in India: The Functions of Caste (textbook pp. 196–197); Comparing Patriarchies (textbook pp. 204–212).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.04_Laws_Manu_Classes_Outcastes_Servitude.html" data-source-card data-search="p5.4 the laws of manu: classes, outcastes, servitude, and women composed in the early centuries c.e. (dates in the literature range from about 200 b.c.e. to 400 c.e.; many scholars favor about the 2nd century c.e.) · class and caste in india: caste as varna, caste as jati (textbook pp. 193–197); comparing patriarchies (textbook pp. 204–212).">
+              <span class="source-code">P5.4</span>
+              <span class="source-copy">
+                <strong>The Laws of Manu: Classes, Outcastes, Servitude, and Women</strong>
+                <span>composed in the early centuries C.E. (dates in the literature range from about 200 B.C.E. to 400 C.E.; many scholars favor about the 2nd century C.E.) · Class and Caste in India: Caste as Varna, Caste as Jati (textbook pp. 193–197); Comparing Patriarchies (textbook pp. 204–212).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.05_Faxian_Central_India_Chandalas.html" data-source-card data-search="p5.5 faxian on central india and the chandalas journey of 399–414 c.e.; written down about 416 c.e. · class and caste in india: caste as jati; the functions of caste (textbook pp. 196–197).">
+              <span class="source-code">P5.5</span>
+              <span class="source-copy">
+                <strong>Faxian on Central India and the Chandalas</strong>
+                <span>journey of 399–414 C.E.; written down about 416 C.E. · Class and Caste in India: Caste as Jati; The Functions of Caste (textbook pp. 196–197).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.06_Ban_Gu_Land_Debt_Wang.html" data-source-card data-search="p5.6 ban gu on land, debt, and wang mang’s edict (han shu 24 and 99) memorials and edicts of ca. 168 b.c.e. to 12 c.e.; recorded in the han shu in the 1st century c.e. · society and the state in china: an elite of officials, the landlord class, peasants, merchants (textbook pp. 188–193).">
+              <span class="source-code">P5.6</span>
+              <span class="source-copy">
+                <strong>Ban Gu on Land, Debt, and Wang Mang’s Edict (Han shu 24 and 99)</strong>
+                <span>memorials and edicts of ca. 168 B.C.E. to 12 C.E.; recorded in the Han shu in the 1st century C.E. · Society and the State in China: An Elite of Officials, The Landlord Class, Peasants, Merchants (textbook pp. 188–193).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.07_Two_Han_Folk_Songs_Old.html" data-source-card data-search="p5.7 two han folk songs: “old poem” and “the eastern gate” anonymous songs of the han dynasty (206 b.c.e.–220 c.e.); waley dates “the eastern gate” to the 1st century b.c.e. · society and the state in china: peasants (textbook pp. 192–193).">
+              <span class="source-code">P5.7</span>
+              <span class="source-copy">
+                <strong>Two Han Folk Songs: “Old Poem” and “The Eastern Gate”</strong>
+                <span>anonymous songs of the Han dynasty (206 B.C.E.–220 C.E.); Waley dates “The Eastern Gate” to the 1st century B.C.E. · Society and the State in China: Peasants (textbook pp. 192–193).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.08_Yellow_Turban_Rising_Hou_Han.html" data-source-card data-search="p5.8 the yellow turban rising in the hou han shu events of 184 c.e.; recorded by fan ye in the first half of the 5th century c.e. · society and the state in china: peasants, including the yellow turban rebellion (textbook pp. 192– 193).">
+              <span class="source-code">P5.8</span>
+              <span class="source-copy">
+                <strong>The Yellow Turban Rising in the Hou Han shu</strong>
+                <span>events of 184 C.E.; recorded by Fan Ye in the first half of the 5th century C.E. · Society and the State in China: Peasants, including the Yellow Turban Rebellion (textbook pp. 192– 193).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.09_Han_Tomb_Models_Watchtower_Granary.html" data-source-card data-search="p5.9 han tomb models: a watchtower and a granary tower eastern han dynasty, ca. 1st–early 3rd century c.e. (met dating: 1–233) · society and the state in china: the landlord class (textbook pp. 190–191).">
+              <span class="source-code">P5.9</span>
+              <span class="source-copy">
+                <strong>Han Tomb Models: A Watchtower and a Granary Tower</strong>
+                <span>Eastern Han dynasty, ca. 1st–early 3rd century C.E. (Met dating: 1–233) · Society and the State in China: The Landlord Class (textbook pp. 190–191).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.10_Xenophon_Slaves_Silver_Mines_Athens.html" data-source-card data-search="p5.10 xenophon on slaves in the silver mines of athens ca. 355 b.c.e. (the pamphlet on ways and means) · slavery: the case of the roman empire: slavery and civilization (textbook pp. 198–199).">
+              <span class="source-code">P5.10</span>
+              <span class="source-copy">
+                <strong>Xenophon on Slaves in the Silver Mines of Athens</strong>
+                <span>ca. 355 B.C.E. (the pamphlet On Ways and Means) · Slavery: The Case of the Roman Empire: Slavery and Civilization (textbook pp. 198–199).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.11_Aristotle_Slaves_Nature_Politics_Book.html" data-source-card data-search="p5.11 aristotle on slaves by nature (politics, book 1) ca. 330s b.c.e. · slavery: the case of the roman empire: slavery and civilization (textbook pp. 198–199).">
+              <span class="source-code">P5.11</span>
+              <span class="source-copy">
+                <strong>Aristotle on Slaves by Nature (Politics, Book 1)</strong>
+                <span>ca. 330s B.C.E. · Slavery: The Case of the Roman Empire: Slavery and Civilization (textbook pp. 198–199).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.12_Cato_Varro_Slaves_Roman_Farm.html" data-source-card data-search="p5.12 cato and varro on slaves on the roman farm cato, on agriculture, ca. 160 b.c.e.; varro, on agriculture, 37 b.c.e. · slavery: the case of the roman empire: the making of roman slavery (textbook pp. 199–201).">
+              <span class="source-code">P5.12</span>
+              <span class="source-copy">
+                <strong>Cato and Varro on Slaves on the Roman Farm</strong>
+                <span>Cato, On Agriculture, ca. 160 B.C.E.; Varro, On Agriculture, 37 B.C.E. · Slavery: The Case of the Roman Empire: The Making of Roman Slavery (textbook pp. 199–201).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.13_Appian_Civil_Wars_Land_Slaves.html" data-source-card data-search="p5.13 appian, civil wars: land and slaves (1.7) and hortensia’s speech (4.32–34) events of the 2nd century b.c.e. and of 42 b.c.e.; written by appian in the 150s–160s c.e. · slavery: the case of the roman empire: the making of roman slavery (textbook pp. 199–201); comparing patriarchies (textbook pp. 204–212).">
+              <span class="source-code">P5.13</span>
+              <span class="source-copy">
+                <strong>Appian, Civil Wars: Land and Slaves (1.7) and Hortensia’s Speech (4.32–34)</strong>
+                <span>events of the 2nd century B.C.E. and of 42 B.C.E.; written by Appian in the 150s–160s C.E. · Slavery: The Case of the Roman Empire: The Making of Roman Slavery (textbook pp. 199–201); Comparing Patriarchies (textbook pp. 204–212).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.14_Pliny_Younger_Two_Letters_His.html" data-source-card data-search="p5.14 pliny the younger: two letters on his slaves and freedmen ca. 100–108 c.e. · slavery: the case of the roman empire: the making of roman slavery (textbook pp. 199–201).">
+              <span class="source-code">P5.14</span>
+              <span class="source-copy">
+                <strong>Pliny the Younger: Two Letters on His Slaves and Freedmen</strong>
+                <span>ca. 100–108 C.E. · Slavery: The Case of the Roman Empire: The Making of Roman Slavery (textbook pp. 199–201).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.15_Tacitus_Freedmen_Slaves_Pedanius_Secundus.html" data-source-card data-search="p5.15 tacitus on freedmen and the slaves of pedanius secundus events of 56 and 61 c.e.; written by tacitus about 115–120 c.e. · slavery: the case of the roman empire: the making of roman slavery (textbook pp. 199–203, including the spartacus feature on pp. 202–203).">
+              <span class="source-code">P5.15</span>
+              <span class="source-copy">
+                <strong>Tacitus on Freedmen and the Slaves of Pedanius Secundus</strong>
+                <span>events of 56 and 61 C.E.; written by Tacitus about 115–120 C.E. · Slavery: The Case of the Roman Empire: The Making of Roman Slavery (textbook pp. 199–203, including the Spartacus feature on pp. 202–203).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.16_Gaius_Institutes_Book_1_Freemen.html" data-source-card data-search="p5.16 gaius, institutes, book 1: freemen, slaves, and freedmen ca. 160 c.e. · slavery: the case of the roman empire: the making of roman slavery (textbook pp. 199–201).">
+              <span class="source-code">P5.16</span>
+              <span class="source-copy">
+                <strong>Gaius, Institutes, Book 1: Freemen, Slaves, and Freedmen</strong>
+                <span>ca. 160 C.E. · Slavery: The Case of the Roman Empire: The Making of Roman Slavery (textbook pp. 199–201).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.17_Pseudo_Aristotle_Economics_Portrait_Good.html" data-source-card data-search="p5.17 pseudo-aristotle, economics: the portrait of a good wife attributed to aristotle (4th century b.c.e.); the author and date of this section are uncertain · comparing patriarchies: contrasting patriarchies, athens and sparta (textbook pp. 208–212).">
+              <span class="source-code">P5.17</span>
+              <span class="source-copy">
+                <strong>Pseudo-Aristotle, Economics: The Portrait of a Good Wife</strong>
+                <span>attributed to Aristotle (4th century B.C.E.); the author and date of this section are uncertain · Comparing Patriarchies: Contrasting Patriarchies, Athens and Sparta (textbook pp. 208–212).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.18_Ban_Zhao_Lessons_Women.html" data-source-card data-search="p5.18 ban zhao, lessons for women ca. 100–110 c.e.; preserved in the hou han shu (5th century c.e.) · comparing patriarchies: a changing patriarchy, the case of china (textbook pp. 205–208).">
+              <span class="source-code">P5.18</span>
+              <span class="source-copy">
+                <strong>Ban Zhao, Lessons for Women</strong>
+                <span>ca. 100–110 C.E.; preserved in the Hou Han shu (5th century C.E.) · Comparing Patriarchies: A Changing Patriarchy, The Case of China (textbook pp. 205–208).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.19_Psalms_Sisters_Therigatha.html" data-source-card data-search="p5.19 psalms of the sisters (therigatha) poems of early buddhist nuns; the collection was probably written down in the 1st century b.c.e. · comparing patriarchies (textbook pp. 204–212); class and caste in india (textbook pp. 193–197).">
+              <span class="source-code">P5.19</span>
+              <span class="source-copy">
+                <strong>Psalms of the Sisters (Therigatha)</strong>
+                <span>poems of early Buddhist nuns; the collection was probably written down in the 1st century B.C.E. · Comparing Patriarchies (textbook pp. 204–212); Class and Caste in India (textbook pp. 193–197).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.20_Livy_Debate_Over_Oppian_Law.html" data-source-card data-search="p5.20 livy on the debate over the oppian law events of 195 b.c.e.; written by livy in the decades around the turn of the era · comparing patriarchies (textbook pp. 204–212); slavery: the case of the roman empire, for roman household and class (textbook pp. 198–203).">
+              <span class="source-code">P5.20</span>
+              <span class="source-copy">
+                <strong>Livy on the Debate over the Oppian Law</strong>
+                <span>events of 195 B.C.E.; written by Livy in the decades around the turn of the era · Comparing Patriarchies (textbook pp. 204–212); Slavery: The Case of the Roman Empire, for Roman household and class (textbook pp. 198–203).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P5.21_Ban_Gu_Han_Granaries_Farm.html" data-source-card data-search="p5.21 ban gu on han granaries, farm policy, and famine (han shu 24a) events of 155 b.c.e. to the reign of emperor ai (7–1 b.c.e.); written by ban gu in the han shu, late 1st century c.e. · society and the state in china: an elite of officials, the landlord class, peasants, merchants (textbook pp. 188–193).">
+              <span class="source-code">P5.21</span>
+              <span class="source-copy">
+                <strong>Ban Gu on Han Granaries, Farm Policy, and Famine (Han shu 24A)</strong>
+                <span>events of 155 B.C.E. to the reign of Emperor Ai (7–1 B.C.E.); written by Ban Gu in the Han shu, late 1st century C.E. · Society and the State in China: An Elite of Officials, The Landlord Class, Peasants, Merchants (textbook pp. 188–193).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No documents in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-6" data-chapter-section aria-labelledby="chapter-6-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">6</div>
+          <div>
+            <p>Chapter 6 · 600 B.C.E.–1200 C.E.</p>
+            <h2 id="chapter-6-title">Africa, the Americas, and Pacific Oceania</h2>
+          </div>
+          <span class="chapter-count">27 documents</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.01_Periplus_Erythraean_Sea_Adulis_East.html" data-source-card data-search="p6.1 the periplus of the erythraean sea on adulis and the east african coast mid-1st century c.e. (anonymous; exact date debated) · civilizations of africa: axum (textbook pp. 234–235), and bantu africa: the east african coast (pp. 247– 249).">
+              <span class="source-code">P6.1</span>
+              <span class="source-copy">
+                <strong>The Periplus of the Erythraean Sea on Adulis and the East African Coast</strong>
+                <span>Mid-1st century C.E. (anonymous; exact date debated) · Civilizations of Africa: Axum (textbook pp. 234–235), and Bantu Africa: the East African coast (pp. 247– 249).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.02_Cosmas_Indicopleustes_Aksum_S_Gold.html" data-source-card data-search="p6.2 cosmas indicopleustes on aksum’s gold trade and the monument at adulis mid-6th century c.e. (describing a visit to adulis made some 25 years earlier) · civilizations of africa: axum (textbook pp. 234–235).">
+              <span class="source-code">P6.2</span>
+              <span class="source-copy">
+                <strong>Cosmas Indicopleustes on Aksum’s Gold Trade and the Monument at Adulis</strong>
+                <span>Mid-6th century C.E. (describing a visit to Adulis made some 25 years earlier) · Civilizations of Africa: Axum (textbook pp. 234–235).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.03_King_Ezana_Aksum_Trilingual_Stone.html" data-source-card data-search="p6.3 king ezana of aksum: a trilingual stone and a gold coin mid-4th century c.e. (stone dated about 330–350 by the photographer’s file names; coin attributed to about 330–360) · civilizations of africa: axum: the making of a christian kingdom (textbook pp. 234–235).">
+              <span class="source-code">P6.3</span>
+              <span class="source-copy">
+                <strong>King Ezana of Aksum: A Trilingual Stone and a Gold Coin</strong>
+                <span>Mid-4th century C.E. (stone dated about 330–350 by the photographer’s file names; coin attributed to about 330–360) · Civilizations of Africa: Axum: The Making of a Christian Kingdom (textbook pp. 234–235).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.04_Excavating_Jenne_Jeno_Reports_Middle.html" data-source-card data-search="p6.4 excavating jenne-jeno: reports from the middle niger site occupied from about the 3rd century b.c.e.; excavators’ reports of 1983 and 2001 · civilizations of africa: along the niger river: cities without states (textbook pp. 235–237).">
+              <span class="source-code">P6.4</span>
+              <span class="source-copy">
+                <strong>Excavating Jenne-jeno: Reports from the Middle Niger</strong>
+                <span>Site occupied from about the 3rd century B.C.E.; excavators’ reports of 1983 and 2001 · Civilizations of Africa: Along the Niger River: Cities without States (textbook pp. 235–237).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.05_Lydenburg_Heads_Mpumalanga_South_Africa.html" data-source-card data-search="p6.5 the lydenburg heads, mpumalanga, south africa about 500–700 c.e. (university dating) · alternatives to civilization: bantu africa: cultural encounters and social variation (textbook pp. 247–249).">
+              <span class="source-code">P6.5</span>
+              <span class="source-copy">
+                <strong>The Lydenburg Heads, Mpumalanga, South Africa</strong>
+                <span>About 500–700 C.E. (university dating) · Alternatives to Civilization: Bantu Africa: Cultural Encounters and Social Variation (textbook pp. 247–249).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.06_Foragers_Farmers_Zambia_Genetic_Study.html" data-source-card data-search="p6.6 foragers and farmers in zambia: a genetic study of the batwa (2024) modern study (published 2024) of living communities and of the archaeology of the luangwa valley · alternatives to civilization: bantu africa: cultural encounters and social variation (textbook pp. 247–249).">
+              <span class="source-code">P6.6</span>
+              <span class="source-copy">
+                <strong>Foragers and Farmers in Zambia: A Genetic Study of the BaTwa (2024)</strong>
+                <span>Modern study (published 2024) of living communities and of the archaeology of the Luangwa valley · Alternatives to Civilization: Bantu Africa: Cultural Encounters and Social Variation (textbook pp. 247–249).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.07_Rock_Paintings_Tsodilo_Botswana.html" data-source-card data-search="p6.7 rock paintings at tsodilo, botswana paintings of uncertain and varied date; use of the site over many thousands of years · alternatives to civilization: bantu africa: cultural encounters and social variation, and religion (textbook pp. 247–250).">
+              <span class="source-code">P6.7</span>
+              <span class="source-copy">
+                <strong>Rock Paintings at Tsodilo, Botswana</strong>
+                <span>Paintings of uncertain and varied date; use of the site over many thousands of years · Alternatives to Civilization: Bantu Africa: Cultural Encounters and Social Variation, and Religion (textbook pp. 247–250).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.08_Teotihuacan_S_Monumental_Core_Avenue.html" data-source-card data-search="p6.8 teotihuacan’s monumental core: the avenue of the dead and the feathered serpent pyramid city flourished about 100 b.c.e.–650 c.e.; pyramid dated about 150–250 c.e.; adosada platform about a century later · civilizations of mesoamerica: teotihuacan (textbook pp. 240–241).">
+              <span class="source-code">P6.8</span>
+              <span class="source-copy">
+                <strong>Teotihuacan’s Monumental Core: The Avenue of the Dead and the Feathered Serpent Pyramid</strong>
+                <span>City flourished about 100 B.C.E.–650 C.E.; pyramid dated about 150–250 C.E.; Adosada platform about a century later · Civilizations of Mesoamerica: Teotihuacan (textbook pp. 240–241).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.09_Murals_Teotihuacan_Apartment_Compounds.html" data-source-card data-search="p6.9 murals from teotihuacan apartment compounds later centuries of the city (the museum fragment is dated 500–550 c.e.) · civilizations of mesoamerica: teotihuacan (textbook pp. 240–241).">
+              <span class="source-code">P6.9</span>
+              <span class="source-copy">
+                <strong>Murals from Teotihuacan Apartment Compounds</strong>
+                <span>Later centuries of the city (the museum fragment is dated 500–550 C.E.) · Civilizations of Mesoamerica: Teotihuacan (textbook pp. 240–241).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.10_Teotihuacan_Tripod_Vessel.html" data-source-card data-search="p6.10 a teotihuacan tripod vessel 350–450 c.e. · civilizations of mesoamerica: teotihuacan and the wider region (textbook pp. 237–241).">
+              <span class="source-code">P6.10</span>
+              <span class="source-copy">
+                <strong>A Teotihuacan Tripod Vessel</strong>
+                <span>350–450 C.E. · Civilizations of Mesoamerica: Teotihuacan and the wider region (textbook pp. 237–241).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.11_Tikal_Stela_31_Arrival_Siyaj.html" data-source-card data-search="p6.11 tikal stela 31 and the arrival of siyaj k’ahk’ in 378 monument dedicated 445 c.e., recording events of 378 c.e. · civilizations of mesoamerica: maya and teotihuacan (textbook pp. 238–241).">
+              <span class="source-code">P6.11</span>
+              <span class="source-copy">
+                <strong>Tikal Stela 31 and the Arrival of Siyaj K’ahk’ in 378</strong>
+                <span>Monument dedicated 445 C.E., recording events of 378 C.E. · Civilizations of Mesoamerica: Maya and Teotihuacan (textbook pp. 238–241).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.12_Yaxchilan_Lintels_24_26_Shield.html" data-source-card data-search="p6.12 yaxchilan lintels 24 and 26: shield jaguar and lady xook lintel 24 carved about 723–726 c.e., showing a ritual of 29 october 709; lintel 26 carved 9 february 724 · civilizations of mesoamerica: maya (textbook pp. 238–239).">
+              <span class="source-code">P6.12</span>
+              <span class="source-copy">
+                <strong>Yaxchilan Lintels 24 and 26: Shield Jaguar and Lady Xook</strong>
+                <span>Lintel 24 carved about 723–726 C.E., showing a ritual of 29 October 709; Lintel 26 carved 9 February 724 · Civilizations of Mesoamerica: Maya (textbook pp. 238–239).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.13_Rainfall_Records_Yucatan_Lake_Belize.html" data-source-card data-search="p6.13 rainfall records from a yucatan lake and a belize cave climate records covering the classic maya period; data published 1995–2012 · civilizations of mesoamerica: maya (textbook p. 239).">
+              <span class="source-code">P6.13</span>
+              <span class="source-copy">
+                <strong>Rainfall Records from a Yucatan Lake and a Belize Cave</strong>
+                <span>Climate records covering the Classic Maya period; data published 1995–2012 · Civilizations of Mesoamerica: Maya (textbook p. 239).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.14_Chich_N_Itz_Northern_Maya.html" data-source-card data-search="p6.14 chichén itzá: a northern maya center after the southern courts fell buildings begun about 750 c.e. and flourishing to about 1000 c.e. and after · civilizations of mesoamerica: maya (textbook pp. 238–239).">
+              <span class="source-code">P6.14</span>
+              <span class="source-copy">
+                <strong>Chichén Itzá: A Northern Maya Center after the Southern Courts Fell</strong>
+                <span>Buildings begun about 750 C.E. and flourishing to about 1000 C.E. and after · Civilizations of Mesoamerica: Maya (textbook pp. 238–239).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.15_Hopewell_Earthworks_Mound_City_Newark.html" data-source-card data-search="p6.15 hopewell earthworks: mound city and the newark octagon hopewell tradition, about 1–400 c.e.; the mounds seen today are modern restorations · north america: ancestral pueblo and mound builders (textbook pp. 251–252).">
+              <span class="source-code">P6.15</span>
+              <span class="source-copy">
+                <strong>Hopewell Earthworks: Mound City and the Newark Octagon</strong>
+                <span>Hopewell tradition, about 1–400 C.E.; the mounds seen today are modern restorations · North America: Ancestral Pueblo and Mound Builders (textbook pp. 251–252).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.16_Hopewell_Exotic_Materials_Copper_Obsidian.html" data-source-card data-search="p6.16 hopewell exotic materials: copper, obsidian, and mica hopewell tradition, about 1–400 c.e. · north america: mound builders and the hopewell exchange sphere (textbook pp. 251–252).">
+              <span class="source-code">P6.16</span>
+              <span class="source-copy">
+                <strong>Hopewell Exotic Materials: Copper, Obsidian, and Mica</strong>
+                <span>Hopewell tradition, about 1–400 C.E. · North America: Mound Builders and the Hopewell exchange sphere (textbook pp. 251–252).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.17_Chaco_Canyon_Great_Houses_Roads.html" data-source-card data-search="p6.17 chaco canyon: great houses, roads, and a cache of cylinder jars ancestral puebloan; mid-800s to 1100s c.e. · north america: ancestral pueblo and chaco (textbook pp. 250–251).">
+              <span class="source-code">P6.17</span>
+              <span class="source-copy">
+                <strong>Chaco Canyon: Great Houses, Roads, and a Cache of Cylinder Jars</strong>
+                <span>Ancestral Puebloan; mid-800s to 1100s C.E. · North America: Ancestral Pueblo and Chaco (textbook pp. 250–251).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.18_Pueblo_Bonito_Burial_Crypt_Archaeogenomic.html" data-source-card data-search="p6.18 the pueblo bonito burial crypt: an archaeogenomic study (2017) burials dated about 800–1130 c.e.; published as a modern study in 2017 · north america: ancestral pueblo and chaco (textbook pp. 250–251).">
+              <span class="source-code">P6.18</span>
+              <span class="source-copy">
+                <strong>The Pueblo Bonito Burial Crypt: An Archaeogenomic Study (2017)</strong>
+                <span>Burials dated about 800–1130 C.E.; published as a modern study in 2017 · North America: Ancestral Pueblo and Chaco (textbook pp. 250–251).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.19_Noqo_Lpi_Gambler_Navajo_Narrative.html" data-source-card data-search="p6.19 noqoìlpi, the gambler: a navajo narrative of the great house at chaco recorded in 1889 (a tradition about a chacoan great house built about 850–1150 c.e.) · north america: ancestral pueblo and chaco (textbook pp. 250–251).">
+              <span class="source-code">P6.19</span>
+              <span class="source-copy">
+                <strong>Noqoìlpi, the Gambler: A Navajo Narrative of the Great House at Chaco</strong>
+                <span>Recorded in 1889 (a tradition about a Chacoan great house built about 850–1150 C.E.) · North America: Ancestral Pueblo and Chaco (textbook pp. 250–251).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.20_Nan_Madol_Pohnpei_Chiefly_Ceremonial.html" data-source-card data-search="p6.20 nan madol, pohnpei: a chiefly ceremonial center built and used about 1200–1500 c.e. (outside the chapter’s main date range) · alternatives to civilization: pacific oceania: pohnpei and tonga (textbook pp. 254–255).">
+              <span class="source-code">P6.20</span>
+              <span class="source-copy">
+                <strong>Nan Madol, Pohnpei: A Chiefly Ceremonial Center</strong>
+                <span>Built and used about 1200–1500 C.E. (outside the chapter’s main date range) · Alternatives to Civilization: Pacific Oceania: Pohnpei and Tonga (textbook pp. 254–255).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.21_Drought_Ancient_Maya_Civilization_NOAA.html" data-source-card data-search="p6.21 drought and the ancient maya civilization: a noaa paleoclimate summary (2021) modern study (noaa, october 2021) summarizing climate research published 1995–2012 on records covering about 800–1000 c.e. · civilizations of mesoamerica: maya (textbook p. 239).">
+              <span class="source-code">P6.21</span>
+              <span class="source-copy">
+                <strong>Drought and the Ancient Maya Civilization: A NOAA Paleoclimate Summary (2021)</strong>
+                <span>Modern study (NOAA, October 2021) summarizing climate research published 1995–2012 on records covering about 800–1000 C.E. · Civilizations of Mesoamerica: Maya (textbook p. 239).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.22_Teotihuacan_Aztec_Memory_Sahag_N.html" data-source-card data-search="p6.22 teotihuacan in aztec memory: sahagún’s historia general spanish text ca. 1575–1577, from nahuatl accounts gathered from about 1558; describes teotihuacan (flourished ca. 100 b.c.e.–650 c.e.) · civilizations of mesoamerica: teotihuacan (textbook pp. 240–241).">
+              <span class="source-code">P6.22</span>
+              <span class="source-copy">
+                <strong>Teotihuacan in Aztec Memory: Sahagún’s Historia general</strong>
+                <span>Spanish text ca. 1575–1577, from Nahuatl accounts gathered from about 1558; describes Teotihuacan (flourished ca. 100 B.C.E.–650 C.E.) · Civilizations of Mesoamerica: Teotihuacan (textbook pp. 240–241).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.23_Diego_De_Landa_Chich_N.html" data-source-card data-search="p6.23 diego de landa on chichén itzá, mayapan, and maya books written ca. 1566 (surviving copy later and abridged); traditions of chichén itzá (ca. 750–1100 c.e.) and mayapan (ca. 1200–1450 c.e.) · civilizations of mesoamerica: maya (textbook pp. 238–239).">
+              <span class="source-code">P6.23</span>
+              <span class="source-copy">
+                <strong>Diego de Landa on Chichén Itzá, Mayapan, and Maya Books</strong>
+                <span>written ca. 1566 (surviving copy later and abridged); traditions of Chichén Itzá (ca. 750–1100 C.E.) and Mayapan (ca. 1200–1450 C.E.) · Civilizations of Mesoamerica: Maya (textbook pp. 238–239).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.24_Genetic_Legacy_Bantu_Expansion_Continent.html" data-source-card data-search="p6.24 the genetic legacy of the bantu expansion: a continent-wide dna study (2024) modern study (published online november 2023; in print january 2024) of dna from 1,763 living africans and 12 late iron age individuals, on an expansion that began about 6,000–4,000 years ago · alternatives to civilization: bantu africa: cultural encounters and social variation (textbook pp. 247–249).">
+              <span class="source-code">P6.24</span>
+              <span class="source-copy">
+                <strong>The Genetic Legacy of the Bantu Expansion: A Continent-Wide DNA Study (2024)</strong>
+                <span>Modern study (published online November 2023; in print January 2024) of DNA from 1,763 living Africans and 12 Late Iron Age individuals, on an expansion that began about 6,000–4,000 years ago · Alternatives to Civilization: Bantu Africa: Cultural Encounters and Social Variation (textbook pp. 247–249).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.25_Hopewell_Farming_Earthworks_Religion_National.html" data-source-card data-search="p6.25 hopewell farming, earthworks, and religion: national park service accounts (2021–2025) modern agency writing (national park service web pages, 2021–2025) on the hopewell tradition, about 1–400 c.e., and on crops first domesticated in eastern north america at least 3,000 years ago · north america: mound builders and the hopewell exchange sphere (textbook pp. 251–252).">
+              <span class="source-code">P6.25</span>
+              <span class="source-copy">
+                <strong>Hopewell Farming, Earthworks, and Religion: National Park Service Accounts (2021–2025)</strong>
+                <span>Modern agency writing (National Park Service web pages, 2021–2025) on the Hopewell tradition, about 1–400 C.E., and on crops first domesticated in eastern North America at least 3,000 years ago · North America: Mound Builders and the Hopewell exchange sphere (textbook pp. 251–252).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.26_Chaco_Canyon_S_Environment_Drought.html" data-source-card data-search="p6.26 chaco canyon’s environment, drought, and migrations: national park service accounts (2015–2024) modern agency writing (national park service web pages, last updated 2015–2024) on farming and water at chaco canyon, about 800–1200 c.e., and on the droughts and migrations of the 1100s and 1200s · north america: ancestral pueblo and chaco (textbook pp. 250–251).">
+              <span class="source-code">P6.26</span>
+              <span class="source-copy">
+                <strong>Chaco Canyon’s Environment, Drought, and Migrations: National Park Service Accounts (2015–2024)</strong>
+                <span>Modern agency writing (National Park Service web pages, last updated 2015–2024) on farming and water at Chaco Canyon, about 800–1200 C.E., and on the droughts and migrations of the 1100s and 1200s · North America: Ancestral Pueblo and Chaco (textbook pp. 250–251).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Primary_Sources/P6.27_Population_Collapse_Congo_Rainforest_Archaeological.html" data-source-card data-search="p6.27 population collapse in the congo rainforest: an archaeological study of the bantu expansion (2021) modern study (published february 2021) of 1,149 radiocarbon dates and 115 pottery styles from the congo rainforest, covering about 1000 b.c.e. to 1900 c.e. · alternatives to civilization: bantu africa: cultural encounters and social variation (textbook pp. 247–249).">
+              <span class="source-code">P6.27</span>
+              <span class="source-copy">
+                <strong>Population Collapse in the Congo Rainforest: An Archaeological Study of the Bantu Expansion (2021)</strong>
+                <span>Modern study (published February 2021) of 1,149 radiocarbon dates and 115 pottery styles from the Congo rainforest, covering about 1000 B.C.E. to 1900 C.E. · Alternatives to Civilization: Bantu Africa: Cultural Encounters and Social Variation (textbook pp. 247–249).</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No documents in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 2 · Second Wave Civilizations · History B1 · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'document' : 'documents'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>

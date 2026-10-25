@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashoka — A Retrospective. Scholarly Article A3.45 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Scholarly Article A3.45 | Ashoka — A Retrospective</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.45_Ashoka_Retrospective.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 3 · A3.45</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A3.45">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A3.45</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Ashoka — A Retrospective</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Romila Thapar</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Ashoka — A Retrospective</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><em>Economic and Political Weekly</em> 44, no. 45 (2009)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Original journal pages 31–32</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/25663762">https://www.jstor.org/stable/25663762</a></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.3, 3.4, 4.5</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.3.1 Qualifies; 3.3.2 Supports; 3.3.3 Qualifies; 3.4.3 Qualifies; 4.5.1 Counters; 4.5.2 Supports</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thapar argues that Ashoka should be seen not only as a Buddhist but as a statesman holding together a diverse empire, whose dhamma was a universalizing social ethic of tolerance with real limits in practice; much of the lecture then traces how Buddhist, Brahmanical, later royal, colonial, and nationalist writers remembered, ignored, or appropriated him.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author's note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A3.45_Ashoka_Retrospective_page1.png" alt="Original journal page 31." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 31.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 31)</summary>
+<p>Ashoka - A Retrospective
+ ROMILA THAPAR _
+ Ashoka of the Maurya dynasty is
+ today perceived as one of the
+ greatest rulers of our history. But
+ over the millennia he was
+ perceived in various ways and a
+ retrospective of his influence is
+ almost a tour through the entire
+ span of Indian history. Why was
+ this extraordinary ruler
+ seemingly ignored by some; why
+ has he become so prominent in
+ recent times? How has his
+ influence permeated through
+ different historical periods and
+ how have his legacy and ideas
+ been appropriated, by whom and
+ in what form? Is it possible to
+ draw ideas from him for our
+ contemporary concerns
+ without doing harm to the
+ historical context?
+ Delivered as the keynote address to the
+ conference on "Ashoka and the Making of
+ Modern India" held in Delhi, 5-7 August 2009,
+ sponsored by the University of Texas at Austin,
+ the Jawaharlal Nehru University, the Indian
+ Council for Historical Research, the American
+ Institute of Indian Studies, and the India
+ International Centre, and organised by Patrick
+ Olivelle of the University of Texas.
+ Romila Thapar (romila.thapar@gmail.com) is
+ professor emeritus at Jawaharlal Nehru
+ University, New Delhi.
+ To speak of the king Ashoka of the
+ Maurya dynasty in a retrospective
+ vein is to race through virtually the
+ entire span of Indian history. The question
+ frequently asked is, why was this extra
+ ordinary ruler seemingly ignored in the
+ past centuries and why has he become so
+ prominent in recent times. Subsequent to
+ his reign he is thought to have been gradu
+ ally set aside. Only in recent times were
+ his inscriptions deciphered providing evi
+ dence of his ideas and actions. Neverthe
+ less, we have to ask whether these were
+ actually ignored through much of Indian
+ history or whether they were appropriated
+ and if so, by whom, in what form and are
+ we still appropriating them or ignoring
+ them in any essential way?
+ Many modern assessments have tended
+ to view him largely only as a Buddhist.
+ When placed in a historical context in more
+ recent times the man and his ideas come to
+ be liberated from this single perspective.
+ We need to see him both as a statesman in
+ the context of inheriting and sustaining an
+ empire in a particular historical period,
+ and as a person with a strong commitment
+ to changing society through what might be
+ called the propagation of social ethics.
+ Empires of the ancient world are often
+ thought to have operated through the vio
+ lence of conquest and the persuasion of
+ ideology, the latter often intended to bring
+ about a relative cultural uniformity. The
+ method of conquest and the resistance to it
+ varied, requiring subsequent adjustments
+ in systems of governing and in cultural
+ expression. Ancient empires incorporated
+ contiguous territories which allowed of
+ some broad-based similarities within their
+ boundaries. Nevertheless disparities per
+ sisted. This was unlike colonial empires
+ conquered across the oceans. These re
+ quired new cultural articulations but did
+ not necessarily aim at cultural uniformity.
+ The variations within the Mauryan
+ Empire were immense and continued into
+ later times. Ecologies changed from region
+ to region, as did social forms and econo
+ mies. The area was a subcontinent of multi
+ ple and diverse patterns of living, of lan
+ guages and of forms of worship. This is ap
+ parent not only from textual sources but
+ even more so from the excavation of sites of
+ this period. The Mauryan system attempted
+ to incorporate the diversity but the degrees
+ of assimilation in the regions were not simi
+ lar as is particularly evident from the di
+ verse cultural patterns that emerged on the
+ disintegration of the empire. How was this
+ diversity to be welded into an empire?
+ The Ashokan edicts might be the best
+ way of initiating a reassessment of the
+ king and the nature of his policies. Most of
+ the edicts are personal statements of how
+ he saw himself as combining political sov
+ ereignty and governance with closeness to
+ what have been regarded as heterodox
+ views. They were heterodox vis-a-vis
+ brahmanical orthodoxy but the larger
+ number of his subjects would not have
+ found them alien. His reading of political
+ sovereignty, both the conquest of Jambu
+ dvipa and the welfare of his praja (sub
+ jects),1 did not contradict his perspective
+ on required policies. The edicts, moving
+ between the two, often take shape as a
+ discourse on governance and ethics.
+ Ashoka had to explain his understand
+ ing of dhamma given the multiplicity of
+ senses in which the term was being used.
+ This ranged from the dharma of the
+ varnashrama dharma in which the obliga
+ tions of caste were pre-eminent, to the
+ questioning of this by various Shramana
+ sects such as the Buddhists and Jainas. For
+ Ashoka, dhamma was essentially a code of
+ ethical behaviour and the benefits thereof.
+ This had parallels with Buddhist teaching
+ but the two are not equated in the public
+ domain. Thus in the Greek and Aramaic
+ renderings of his edicts he uses terms that
+ have a context in these languages, and a
+ meaning close to his definition of dhamma,
+ as for example, eusebeia meaning virtue,
+ in Greek.2 He does not refer to it as the
+ teachings of the Buddha. It would seem that
+ he was attempting to universalise a code
+ focused on social ethics and on the accom
+ modation of diverse views. His dhamma
+ did not derive from divine inspiration even
+ if its observance promised heaven. It was
+ Economic &amp; Political weekly Q3S3 November 7, 2009 vol xliv no 45 31</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A3.45_Ashoka_Retrospective_page2.png" alt="Original journal page 32." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 32.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 32)</summary>
+<p>more in keeping with the ethic conditioned
+ by the logic of given social situations.
+ His formulations of dhamma were
+ intended to influence the conduct of cate
+ gories of people in relation to each other,
+ especially where they involved unequal
+ relationships. There was a repeated em
+ phasis on harmonious social relations and
+ often, though not always, of categories
+ described almost as opposite pairs, as for
+ example, parents and children, kinsmen
+ and friends, teachers and pupils, employ
+ ers and employees, brahmanas and shra
+ manas. The empire included a spectrum
+ of societies where these categories were
+ variously organised. The underlining of
+ this social ethic was virtually the reversal
+ of the other system, the varnashrama
+ dharma. Ashoka mentions neither varna
+ nor jati nor does he refer to caste relations
+ as important. More general values were
+ also called up such as not injuring animals
+ and humans, being forgiving, observing
+ piety and adhering to the truth.
+ His advocating tolerance and non-violence
+ as official policy made him an unusual rul
+ er. However, there is a small but significant
+ discrepancy in what he propagated and in
+ a couple of policy actions. These suggest
+ that ahimsa as his official policy had limits,
+ determined by circumstances.
+ Tolerance among Sects
+ Hostility between the pasandas/sects -
+ orthodox and heterodox - and dissident
+ groups evolving into sects required that
+ the social ethic had to highlight tolerance
+ among these sects. Ashoka sought the ad
+ vancement of the essentials of all sects and
+ this according to him was only possible if
+ each treated the other with respect.3 He
+ states that in honouring the views of others
+ one is honouring one's own sect. Yet this
+ sits uncomfortably with his edict ordering
+ the expulsion of dissident monks from
+ Buddhist monasteries.4 Possibly for him
+ there was a distinction between activities
+ within the Buddhist Sangha, and the need
+ to rule without ideological prejudices.
+ Monastic disputes were to be expected as
+ the institution of monasteries had almost
+ become polities in miniature. Contentions
+ over rules and authority could disturb the
+ general equilibrium sought by governance.
+ Nevertheless, his statement that all sects
+ should be treated with equal respect was
+ an innovation both in politics and among
+ religious groups. This strand of thought
+ was not unfamiliar in later times among
+ those sects that aspired to universalistic
+ values. The popular, but somewhat inef
+ fective, current definition of secularism in
+ India - sarva-dharma-samabhava (equal
+ respect for all religions) - suggests a dis
+ tant parallel with the Ashokan idea and
+ echoes some of its insufficiencies.
+ More striking in an imperial system was
+ Ashoka's claim to forsaking war and
+ violence. However, this had a caveat. If
+ war was unavoidable then he hoped that
+ the victorious would be satisfied with light
+ punishments.5 Curiously however, the ata
+ vikas (forest-dwellers) were at the receiv
+ ing end of a fierce threat by the king of be
+ ing killed - without any ostensible reason.
+ Did this result from the encroachment by
+ the state into forests and the resistance to
+ this by forest-dwellers? This of course has
+ been a continuous activity in Indian
+ history and still persists.
+ The choice of such an ethic privileging
+ ahimsa and the idea of tolerance as mutual
+ and equitable respect among competing
+ groups may have also have been influenced
+ by the problems of governing a subcontinental
+ territory. The inaudible dialogue between
+ the edicts and the ideas that became the
+ prescriptions of the Arthashastra suggests
+ seeming similarities but significant differ
+ ences. For Kautilya, political integration
+ required conquest followed by a central
+ ised administration. Proximity to this
+ model was frequently resorted to in dis
+ cussions on administration in Orientalist
+ discourse but the severity of the centrali
+ sation proposed would have been difficult
+ in practice. Far more investigation is needed
+ to try and approximate the reality of
+ administration in those times and its pat
+ terns varying according to region.
+ The edicts seem more sensitive to a flex
+ ible administration. This is demonstrated
+ in his orders to his officers and in the func
+ tions of the dhamma-mahamattas, spe
+ cially appointed officers more particularly
+ concerned with the well-being of his
+ subjects. Adjustments to local conditions
+ in the patterns of governance were likely
+ and I have suggested that administration
+ was diversified.6 Whereas there was a rel
+ atively centralised administration in the
+ Ganga plain with its epicentre in Magadha
+ at that time, this was somewhat different
+ from the less centralised administration
+ in other areas - Gandhara, Saurashtra,
+ Kalinga and Karnataka. The forested
+ regions probably experienced a minimal
+ control provided the forest dwellers were
+ forthcoming with their produce. Lack of
+ cooperation from these forest dwellers
+ may have been the reason for the dire
+ threats from the king. At one level, dham
+ ma may have been an attempt to provide a
+ pivot in the form of a persuasive ethic.
+ These ideas differ from what we associ
+ ate with ancient empires, where, for
+ instance, the validation of imperial rule
+ generally came from a deity or through
+ claims to divinity. Ashoka's references to
+ deities are more in passing. For example,
+ the title of devanampiya (the beloved of
+ the gods), which he used together with
+ raja, had little resemblance to the more
+ exaggerated titles of post-Mauryan times;
+ or his claim that because of the wide
+ spread practice of dhamma, the devas,
+ meaning either the gods or kings, were
+ now mingling with the people, is a state
+ ment the meaning of which remains con
+ troversial.7 He refers to the sound of the
+ drum heralding dhamma and displays of
+ heavenly chariots, of elephants, balls of
+ fire and celestial forms (divyani rupani)8
+ almost as an ancillary to spectacle and
+ magic. In the Ashokan cosmos the gods
+ are rather shadowy figures with uncertain
+ roles, rather than being the omniscient
+ ones who control the universe.
+ The distinction between his being
+ persuaded of the Buddha's teaching with
+ some attachment to the Sangha, and his
+ perception of himself as a ruler with a dis
+ tinct purpose, can be observed in refer
+ ences to him from later sources. These can
+ perhaps be differentiated into three cate
+ gories. The first is obviously Ashoka as the
+ exemplary king of the Buddhist sources,
+ as in the Ashokavadana of the northern
+ Buddhist tradition or the Dipavamsa and
+ Mahavamsa of the Pali Theravada tradi
+ tion. The second is the seeming disappear
+ ance of Ashoka in brahmanical texts, but
+ which has been questioned in recent times.
+ The last would be the few but significant
+ associations with him, directly or indirectly,
+ by later rulers in their inscriptions.
+ The decipherment of the brahmi script
+ in the 19th century drawing on the
+ 32 November 7, 2009 vol xliv no 45 E2HI Economic &amp; Political weekly</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Thapar, Romila. “Ashoka — A Retrospective.” <em>Economic and Political Weekly</em> 44, no. 45 (2009): 31–37. <a href="https://www.jstor.org/stable/25663762">https://www.jstor.org/stable/25663762</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Romila Thapar, “Ashoka — A Retrospective,” <em>Economic and Political Weekly</em> 44, no. 45 (2009): 31–32, <a href="https://www.jstor.org/stable/25663762">https://www.jstor.org/stable/25663762</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thapar, “Ashoka,” 31–32.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2–3 correspond to original journal pages 31–32. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

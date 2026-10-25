@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quantifying the Sources of Slaves in the Early Roman Empire. Scholarly Article A5.24 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Scholarly Article A5.24 | Quantifying the Sources of Slaves in the Early Roman Empire</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.24_Quantifying_Sources_Slaves_Early_Roman.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 5 · A5.24</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A5.24">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A5.24</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Quantifying the Sources of Slaves in the Early Roman Empire</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Walter Scheidel</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Quantifying the Sources of Slaves in the Early Roman Empire</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><em>Journal of Roman Studies</em> 87 (1997)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Original journal pages 156–157</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/301373">https://www.jstor.org/stable/301373</a></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">5.3</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">5.3.3 Challenges</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Scheidel uses simple demographic models to argue that under the Principate "natural reproduction made a greater contribution to the Roman slave supply than child exposure, warfare, and the slave trade taken together." His models also suggest that manumission was "rather low" on average and rare before age thirty, so that freed people, especially freedwomen, had few children and contributed less to the citizen body than often assumed.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author's note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A5.24_Quantifying_Sources_Slaves_Early_Roman_page1.png" alt="Original journal page 156." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 156.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 156)</summary>
+<p>QUANTIFYING THE SOURCES OF SLAVES IN
+ THE EARLY ROMAN EMPIRE*
+ By WALTER SCHEIDEL
+ I. ARGUMENT
+ The relative importance of different sources of slaves in the Roman Empire during
+ the Principate cannot be gauged from ancient texts. However, simple demographic
+ models show that, for purely statistical reasons, natural reproduction made a greater
+ contribution to the Roman slave supply than child exposure, warfare, and the slave
+ trade taken together and was in all probability several times as important as any other
+ single source. The most plausible projections also suggest that on average the incidence
+ of manumission was rather low. By implication, overall fertility of ex-slaves in general
+ and of freedwomen in particular would be low as well, which must have reduced their
+ chances of acquiring legal privileges that accrued from sexual reproduction.
+ II. PREVIOUS APPROACHES
+ When Harris addressed the question of the 'relative importance of the various
+ sources of slaves in the Roman Empire' some twenty years ago, he correctly pointed out
+ that 'the topic is not new'.1 Even so, neither his paper nor subsequent studies have
+ brought us any closer to a plausible estimate of roughly how many slaves were born to
+ slaves and how many were enslaved at some stage of their lives. As I will try to show,
+ this impasse is solely due to a consistent lack of demographic conceptualization. Harris,
+ for instance, in what is introduced as a mere 'surmise' puts the total number of slaves in
+ the early Roman Empire at ten million, a figure thought to represent between one-sixth
+ and one-fifth of the entire population. He concludes his discussion of the factors
+ favouring and impeding the natural reproduction of slavery with the assertion that while
+ 'more than half a million new slaves were needed every single year',2 'slave-born slaves
+ alone will have left a deficiency of several hundred thousand a year in the empire's
+ supply of new slaves'.' Taken at face value, these statements imply that at least half, a
+ probably more than half, of all slaves were not the offspring of slaves and that all other
+ sources combined accounted for at least one-half of the Roman slave supply. Harris
+ identifies these sources as enslavement in war, the raising of exposed or sold children,
+ and the cross-border slave trade, but singles out child exposure as the only source
+ capable of meeting overall demand.4
+ Bradley, in his paper on the Roman slave supply, from the outset takes it as a given
+ that the question of how Roman slave-owners satisfied their needs and requirements is
+ not only 'colossal', which is undeniably true, but 'in the absence of quantifiable data can
+ only be answered impressionistically on the basis of mechanisms of supply known to
+ * I am indebted in particular to Peter Garnsey and
+ anonymous readers for prompting me to clarify my
+ argument. I also wish to thank Keith Bradley, Richard
+ Duncan-Jones, Bruce Frier, Keith Hopkins, Richard
+ Saller, Susan Treggiari, and Thomas Wiedemann
+ who kindly read previous drafts. The views expressed
+ and the methods adopted in this paper are of course
+ exclusively my own.
+ 1 W. V. Harris, 'Towards a study of the Roman
+ slave trade', in J. H. D'Arms and E. C. Kopff (eds),
+ The Seaborne Commerce of Ancient Rome (1980), I I7.
+ There would be little point in embarking on a
+ comprehensive overview of previous research on this
+ issue, which is why I will refer to only some of the
+ most recent pertinent work.
+ 2 Harris, op. cit. (n. i), i I 8, based on the assumption
+ of a 'social life expectancy' of fewer than 20 years for
+ io million slaves.
+ 3 op. cit. (n. i), I2I. For a restatement of this view,
+ see idem, 'Child-exposure in the Roman Empire',
+ JRS 84 (I 994), i 8.
+ 4 Harris, op. cit. (n. i), I2I-5, esp. I23-4. In his
+ later article, op. cit. (n. 3), io, Harris assumes that
+ most exposed infants would die, while most of the
+ survivors were enslaved. On the implications of this
+ scenario see the text below at nn. 36-9.</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A5.24_Quantifying_Sources_Slaves_Early_Roman_page2.png" alt="Original journal page 157." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 157.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 157)</summary>
+<p>QUANTIFYING THE SOURCES OF SLAVES IN THE EARLY ROMAN EMPIRE I57
+ have existed in the Roman world', which seems far less obvious.5 He rightly argues
+ against an overly schematic scenario that juxtaposes 'warfare under the Republic and
+ breeding under the Empire as the two respective principal sources of supply' and gives
+ natural reproduction its due as 'the only dependable possibility for providing a steady
+ source of new slaves over time, even if in and of itself it cannot have met total demand'.6
+ While recourse to 'a model of sources of supply acting and reacting on each other in
+ conjunction' is as a matter of course the only sensible approach, it does not give us any
+ idea of the likely contribution of each source.7 In the most recent restatement of his
+ views, Bradley claims that 'the rate of natural reproduction among Roman slaves cannot
+ be measured' ,8 which is correct in a strict sense but does not necessarily forestall a rough
+ estimate at least for the post-Republican period. His conclusion that 'no single source
+ ever completely dominated the rest'9 thus lacks a quantitative basis.
+ The same reluctance to embark on controlled speculation pervades the recent
+ massive study of vernae by Herrmann-Otto, who repeatedly rejects a demographic
+ approach to her topic entailing any quantification, however tentative.10 She is right in
+ concluding that the study of the ancient evidence of vernae only documents the fact that
+ some slaves engaged in reproduction but cannot reveal the significance and scope of this
+ phenomenon.11 It does not follow from this assessment, however, that we have to
+ confine ourselves to the unhelpfully vague notion that natural reproduction was an
+ 'important' element of Roman slave society.12
+ The problem of slave reproduction is succinctly brought into focus by Patterson in
+ his comparative study Slavery and Social Death where he distinguishes between
+ 'biological' reproduction - the capacity of a slave population to produce a number of
+ persons equal to or greater than itself - and 'social' reproduction - the ability of a
+ slave population to reproduce itself if non-biological attrition factors such as manumis-
+ sion and migration are taken into account.13 High rates of manumission can render a
+ biologically reproducing slave population socially non-reproductive. Two of his
+ observations warrant particular attention. First, a large influx of slaves of a given age or
+ sex can make any claim, however outwardly correct, that such a population is non-
+ reproductive misleading in that this failure fully to reproduce themselves is a function
+ of the age or sex structure created by import rather than of the mating behaviour 
+ slaves. And second, he points out that 'even if a slave population is biologically
+ nonreproductive, birth may still remain the single most important source of slaves'.
+ That reproduction does not meet total demand need not mean that other sources are
+ more important than unfree birth or even come close to being as important. It is often,
+ in Patterson's words, 'the simple mathematics of reproduction' that militate against any
+ such notion.15
+ I K. R. Bradley, 'On the Roman slave supply and
+ slave breeding', in M. I. Finley (ed.), Classical
+ Slavery (I987), 42.
+ 6 ibid., 59.
+ 7 ibid. In his (generally excellent) book Slavery and
+ Society at Rome (I994), similar weight - in terms of
+ space allotted - is given to different sources of vastly
+ different potential, ranging from breeding to kidnap-
+ ping of travellers (32-8).
+ 8 Bradley, op. cit. (n. 7), 34.
+ 9 op. cit. (n. 7), 43.
+ 10 E. Herrmann-Otto, Ex ancilla natus: Unter-
+ suchungen zu den "hausgeborenen " Sklaven und Sklav-
+ innen im Westen des romischen Kaiserreiches (I994),
+ e.g., 3, 3 n. 7, 6, and see below. Not having given
+ enough thought to the matter, I adopted a comparably
+ pessimistic stance in my 'Columellas privates ius
+ liberorum', Latomus 53 (I994), 5 I3-27. Cf. also T. G.
+ Parkin, Demography and Roman Society (I 992), I22:
+ 'a slave population is far from a natural one, and its
+ demographic regime, which probably varied sharply
+ over space and time, remains difficult to elucidate or
+ even to make conjectures about' (my italics), or P. R. C.
+ Weaver, 'Children of freedmen (and freedwomen)',
+ in B. Rawson (ed.), Marriage, Divorce, and Children
+ in Ancient Rome (I99I), I76: 'Slave origin comprises
+ both those born as slaves (including vernae, born in
+ the familia) and those who were born free but
+ subsequently enslaved (from whatever cause or
+ source). There are no means available of determining
+ even approximately what proportion fell into each
+ category' (last italics mine).
+ 11 Herrmann-Otto, op. cit. (n. IO), 227. Cf. my
+ review in Tyche I I (I996), 274-8.
+ 12 Thus Herrmann-Otto, op. cit. (n. IO), 287, 4I I.
+ 13 0. Patterson, Slavery and Social Death (I982),
+ I32.
+ 14 op. cit. (n. I3), I33. One might therefore wonder
+ to what extent the slave populations of the Caribbean
+ and Latin America which were shaped by continuous
+ selective import and failed fully to reproduce them-
+ selves were intrinsically more 'typical' than the self-
+ contained and highly reproductive slave population of
+ the United States. See below, in the appendix.
+ 15 op. cit. (n. I3), I33.</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Scheidel, Walter. “Quantifying the Sources of Slaves in the Early Roman Empire.” <em>Journal of Roman Studies</em> 87 (1997): 156–69. <a href="https://www.jstor.org/stable/301373">https://www.jstor.org/stable/301373</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Walter Scheidel, “Quantifying the Sources of Slaves in the Early Roman Empire,” <em>Journal of Roman Studies</em> 87 (1997): 156–57, <a href="https://www.jstor.org/stable/301373">https://www.jstor.org/stable/301373</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Scheidel, “Quantifying the Sources,” 156–57.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2–3 correspond to original journal pages 156–157. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

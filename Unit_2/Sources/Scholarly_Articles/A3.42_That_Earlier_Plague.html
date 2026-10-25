@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="That Earlier Plague. Scholarly Article A3.42 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Scholarly Article A3.42 | That Earlier Plague</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.42_That_Earlier_Plague.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 3 · A3.42</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A3.42">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A3.42</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">That Earlier Plague</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Josiah C. Russell</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">That Earlier Plague</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><em>Demography</em> 5, no. 1 (1968)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Original journal pages 174–175</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/2060203">https://www.jstor.org/stable/2060203</a></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.5</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.5.3 Supports</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Russell argues that the plague that appeared about 542 and recurred into the seventh century cut the population of the Mediterranean world by 40 to 50 percent, wrecked Justinian's prospects of restoring the whole Roman Empire, shrank Byzantine armies, and opened the way for the Arab conquests. He concludes that "the plague by its sheer power molded sixth- and seventh-century society" into the pattern of the Middle Ages, one that no later ruler "could break."</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author's note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A3.42_That_Earlier_Plague_page1.png" alt="Original journal page 174." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 174.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 174)</summary>
+<p>THAT EARLIER PLAGUE
+ JOSIAH C. RUSSELL*
+ RESUMEN
+ La plaga que aparecio alrededor del ano 542 de nuestra era, continu6 como una ser
+ durante la septima centuria y siguio un modelo muy parecido al de la Peste Negra del siglo XIV.
+ Previamente el emperador Bizantino Justiniano (527-565) habia recapturado el norte de Africa
+ anteriormente controlado por los Vandalos y la mayor parte de Italia de manos de los Ostrogod
+ La perspectiva de restablecimiento del completo Imperio Romano parecia buena desde que las con-
+ diciones en el Este eran excelentes y la mayor parte del Oeste habria recibido con alegria sus ejercitos.
+ La plaga interrumpi6 y probablemente hi o imposible el cumplimiento de ese programa. Casi
+ tan destructiva como la posterior (Peste Negra) esta plaga redujo la poblaci6n entre 40 y 50 por
+ ciento hacia el fin del siglo. Esto simplific6 la cultura al reducir el tamaiio de las ciudades. La mds
+ alta mortalidad de las pequeinas familias perjudic6 al clero y a los grupos mds educados. Las mds
+ ligeras perdidas en las areas secas tendieron a alterar el balance entre semi-nomades y areas de
+ colonizaci6n. La sociedad fue cambiada radicalmente y quedo emocionalmente desequilibrada.
+ Bajo el peso de la creciente depresion y perdida de la poblaci6n, el Imperio Bizantino tuvo que
+ reducir el tamanio de sus ejercitos. No solo fue la ofensiva en el Oeste abandonada despues del 565
+ sino que las defensas al Sur fueron tan debilitadas que el Islam, en la siguiente centuria tomarta
+ facilmente Egipto y Siria. Las condiciones mas simples inducidas por la plaga ofrecieron una opor-
+ tunidad ideal para el desarrollo y la difusion del Islam especialmente en las areas nomanes y semi-
+ nomades. En el Oeste la amenaza de expansi6n de los francos se debilit6 y creci6 el localismo. El
+ patron de dominacion de Griegos, Arabes, y Germanos iba a persistar por si.glos.
+ SUMMARY
+ The plaque, appearing about A.D. 542, continued as a series of epidemics well into the seventh
+ century and followed a pattern much like that of the fourteenth century Black Death. Just previously,
+ the Byzantine Emperor Justinian (527-565) had recaptured North Africa from the Vandals and
+ much of Italy from the Ostrogoths. The prospect of reestablishing the whole Roman Empire seemed
+ good since conditions in the east were excellent and much of the west might welcome his armies.
+ The plaque interrupted and probably made impossible the fulfillment of that program. About as
+ destructive as the later plague, it reduced the population 40-50 percent by the end of the century.
+ This simplified culture by cutting down the size of the cities. Heavier mortality of smaller house-
+ holds injured the clergy and the more literate groups. The lighter losses in the dry areas tended to
+ upset the balance between semi-nomadic and settled lands. Society was changed radically and upset
+ emotionally.
+ Burdened by increasing depression and loss of population, the Byzantine Empire had to reduce
+ the size of its field armies. Not only was the offensive in the West abandoned after 56.5, but the southern
+ defenses were so weakened that Islam, in the next century, tore away Egypt and Syria. The simpler
+ conditions induced by the plague offered an ideal opportunity for the development and spread of
+ Islam, particularly in the nomadic and semi-nomadic areas. In the west the threat of Frankish
+ expansion weakened and localism increased. The general pattern of Greek, Arab, and German
+ dominance was to persist for centuries.
+ Almost exactly eight centuries before
+ the great epidemics of the plague of the
+ fourteenth to fifteenth centuries, an earli-
+ er series occurred which paralleled that
+ later one in many ways. Historians vary
+ in their interpretation of its effects, and,
+ although many do not even mention it,
+ Stein and Bury devoted much attention
+ to those epidemics and Bury even sug-
+ gested that the earlier plague was as dead-
+ ly as the second.' Historians of science
+ take the plague very seriously: Zinsser
+ regarded it as a decisive influence, while a
+ great authority on the disease, Hirst,
+ wrote, "Doubtless, this calamity played
+ an important part in giving rise to the
+ Dark Ages."2 Since the question of why
+ * Texas A. &amp; I. University.
+ IE. Stein, Histoire du Bas-Empire (Paris:
+ 1949), II, 758-60; J. B. Bury, History of the
+ Later Roman Empire (New York, 1958), II, 62-
+ 66. Both Lynn Thorndike and J. W. Thompson
+ give attention to the plague in their texts.
+ 2 Hans Zinsser, Rats, Lice and History (Boston,
+ 1935), p. 133; L. Fabian Hirst, The Conquest of
+ 174</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #B7C7AE;">
+    <img src="images/A3.42_That_Earlier_Plague_page2.png" alt="Original journal page 175." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 175.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 175)</summary>
+<p>That Earlier Plague 175
+ the Classical world changed to the medi-
+ eval is still very much the subject of dis-
+ cussion, the extent of the influence of the
+ plague is well worth considering.3
+ The problem is complicated. Justinian
+ was trying to restore the Roman Empire
+ just before the plague struck in 541-42.
+ Would he have had a real chance to suc-
+ ceed, had the plague not occurred? If so,
+ the extent and nature of the catastrophe
+ produced by the plague must be consid-
+ ered. These have not actually been as-
+ sessed in their totality and, perhaps even
+ more important, in their effects upon dif-
+ ferential mortality and economic life.
+ Finally, can these effects of the plague
+ have altered the Mediterranean-European
+ culture to the extent that medieval condi-
+ tions derived naturally (and perhaps in-
+ evitably) from postplague conditions?
+ The setback to the Byzantine state
+ following the plague cast a long shadow
+ back over even the preceding century,
+ making it easy to attribute Justinian's
+ failure to the vastness of his plans.4 The
+ adequacy of his resources and the condi-
+ tions of the empire need examination to
+ see whether that explanation is necessary.
+ If population was increasing in the Em-
+ pire before the plague, it should have been
+ adding strength to the manpower of the
+ Emnpire. Imperial finance and morale were
+ also vital. And, of course, there is the
+ question of whether the imperial armies
+ were equal to the task of taking and hold-
+ ing the former territories of the earlier
+ Roman Empire.
+ The core of Byzantine strength lay in
+ Asia Minor and the Balkans. The increas-
+ ing population of those areas in 395-476
+ helped save the eastern half of the empire
+ when the western half fell to the Germans.
+ With probably sixteen million persons
+ (perhaps two-thirds of the eastern half of
+ the empire) they were the chief source of
+ strength.5 Several hints point to rising
+ population there just before the plague.
+ In the Balkans the city of Stobi was pros-
+ perous and increasing in the period, and
+ the province of Istria was exporting grain
+ to Ravenna.6 Greece, to the south of the
+ Balkans, was enjoying a prosperous era.7
+ Little information comes from Asia Mi-
+ nor, but Syria, to its south, experienced a
+ great sixth century: the new silk manu-
+ facturers added to an already great pros-
+ perity. "East of Antioch, in what is now
+ desert, there are ruins of scores of well-
+ built and evidently once prosperous vil-
+ lages all built in the fifth and sixth cen-
+ turies."8 There seems to be no evidence
+ Plague (Oxford, 1953), p. 7; and H. E. Sigerist,
+ Civilization and Disease (Chicago, 1965), pp.
+ 114-15.
+ 3 Mortimer Chambers (ed.), The Fall of Rome,
+ Can it be Explained? (New York, 1963). Disease
+ is mentioned on p. 120. In general, the time is
+ earlier than the sixth century. For later data, see
+ A. F. Havighurst (ed.), The Pirenne Thesis.
+ Analysis, Criticism and Revision (Boston, 1958).
+ 4Most recently, "Not only were his ambitions
+ more than the Empire as it has come to be could
+ afford [but] as to foreign policy, he set [as] a goal
+ the colossal task of restoring the Roman Empire
+ to its former boundaries-a goal which, as events
+ showed, was unattainable," John W. Barker,
+ Justinian and the Latter Roman Empire (Madi-
+ son, 1966), p. 192. See also, C. Diehl in The Cam-
+ bridge Medieval History (1966), II, 52.
+ 6 P. Charanis, for increase of population, in
+ XIIP Congries International d'Etudes byzantines
+ (Beograd, 1963), I, 286; J. C. Russell, Late Ancient
+ and Medieval Population (Philadelphia, 1958), p.
+ 148 and pp. 71-88. As G. Ostrogorsky thought in
+ "Die Steuersystem in Byzantinischen Altertum
+ und Mittelalter," Byzantium VI (1931), 233.
+ Noted by S. Vryonis Jr., "Hellas Resurgent," in
+ Lynn White, The Transformation of the Roman
+ World (Los Angeles, 1966), pp. 107-8.
+ 6 E. Kitzinger, "A Survey of the Early Chris-
+ tian Town of Stobi," Dumbarton Oaks Papers
+ (1946), III, 81-182; esp. pp. 101, 111, and 148;
+ Knud Hannestan, "The Italian Agriculture Dur-
+ ing the Ostrogothic Period," XIIe Congr'es
+ International d'Etudes byzantines, op. cit., II,
+ 157.
+ 7 E. L. Woodward, Christianity and National-
+ ism in the Later Roman Empire (London, 1916),
+ pp. 24-25.
+ 8 G. Tchalenko, Villages antiques de la Syrie
+ du Nord (Paris: 1953), p. 422; P. Charanis,
+ Dumbarton Oaks Papers, (1959), XIII, p. 39;
+ A. H. M. Jones, The Later Roman Empire (Nor-
+ man, Oklahoma, 1964), p. 823; and P. Goubert,
+ "Le problMme ghassanide a la veille d'Islam," Vie
+ Congre's international d'Etudes byzantines, p. 117.</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Russell, Josiah C. “That Earlier Plague.” <em>Demography</em> 5, no. 1 (1968): 174–84. <a href="https://www.jstor.org/stable/2060203">https://www.jstor.org/stable/2060203</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Josiah C. Russell, “That Earlier Plague,” <em>Demography</em> 5, no. 1 (1968): 174–75, <a href="https://www.jstor.org/stable/2060203">https://www.jstor.org/stable/2060203</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Russell, “That Earlier Plague,” 174–75.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2–3 correspond to original journal pages 174–175. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

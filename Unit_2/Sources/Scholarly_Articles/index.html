@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scholarly article archive for Unit 2: Second Wave Civilizations, Chapters 3–6, 600 B.C.E.–1200 C.E..">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Unit 2 Scholarly Article Archive | Second Wave Civilizations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --forest-light: #904628;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 16px 38px rgba(73, 35, 21, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(124, 148, 115, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(183, 199, 174,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(252, 251, 248,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(252, 251, 248,.96);
+      box-shadow: 0 8px 22px rgba(73, 35, 21,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(124, 148, 115,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(252, 251, 248,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(124, 148, 115,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(183, 199, 174,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(183, 199, 174,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(73, 35, 21,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #EDF1EB;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">A</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Ways of the World · Chapters 3–6</p>
+      <h1>Scholarly Article Archive</h1>
+      <p class="hero-subtitle">Journal scholarship on second-wave empires, religions, and the Americas, reproduced as two-page facsimile excerpts.</p>
+      <div class="hero-meta">
+        <span>Unit 2 · Second Wave Civilizations</span>
+        <span>Chapters 3–6</span>
+        <span>600 B.C.E.–1200 C.E.</span>
+        <span>189 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Scholarly Articles</span>
+      <div class="chapter-links"><a href="#chapter-3"><span>3</span><span class="link-title">State and Empire in Eurasia/North Africa</span></a><a href="#chapter-4"><span>4</span><span class="link-title">Culture and Religion in Eurasia/North Africa</span></a><a href="#chapter-5"><span>5</span><span class="link-title">Society and Inequality in Eurasia/North Africa</span></a><a href="#chapter-6"><span>6</span><span class="link-title">Africa, the Americas, and Pacific Oceania</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Facsimile excerpts</p>
+        <h2>Read the pages as published.</h2>
+        <p>Each entry reproduces two continuous pages directly from the article. Original page numbers, note calls, notes, emphasis, tables, and spelling remain visible.</p>
+        <p>Under each page, “Text of this page” gives the machine-read text for searching and screen readers; it may contain scanning errors, so quote from the page image.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the journal pages.</h2>
+        <p>Use the full footnote citation the first time and the shortened form afterward. Cite the original journal pages shown on the facsimile, not reader page numbers, and create your own footnote numbering.</p>
+        <p>If an article quotes a primary document you did not consult yourself, use a “quoted in” note. The JSTOR link may require the Bakersfield College library login.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search scholarly articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, journal, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">189 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No scholarly articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+      <section class="chapter-section" id="chapter-3" data-chapter-section aria-labelledby="chapter-3-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">3</div>
+          <div>
+            <p>Chapter 3 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-3-title">State and Empire in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">53 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.01_Place_Emperor_Asoka_Ancient_Indian.html" data-source-card data-search="a3.1 the place of the emperor asoka in ancient indian political thought henry s. albinski · the place of the emperor asoka in ancient indian political thought">
+              <span class="source-code">A3.1</span>
+              <span class="source-copy">
+                <strong>The Place of the Emperor Asoka in Ancient Indian Political Thought</strong>
+                <span>Henry S. Albinski · The Place of the Emperor Asoka in Ancient Indian Political Thought</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.02_Was_Rome_Polis.html" data-source-card data-search="a3.2 was rome a polis? clifford ando · was rome a polis?">
+              <span class="source-code">A3.2</span>
+              <span class="source-copy">
+                <strong>Was Rome a Polis?</strong>
+                <span>Clifford Ando · Was Rome a Polis?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.03_Herodotus_Catalogues_Persian_Empire_Light.html" data-source-card data-search="a3.3 herodotus&#x27; catalogues of the persian empire in the light of the monuments and the greek literary tradition o. kimball armayor · herodotus&#x27; catalogues of the persian empire in the light of the monuments and the greek literary tradition">
+              <span class="source-code">A3.3</span>
+              <span class="source-copy">
+                <strong>Herodotus' Catalogues of the Persian Empire in the Light of the Monuments and the Greek Literary Tradition</strong>
+                <span>O. Kimball Armayor · Herodotus' Catalogues of the Persian Empire in the Light of the Monuments and the Greek Literary Tradition</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.04_Hsiung_Nu_Imperial_Confederacy_Organization.html" data-source-card data-search="a3.4 the hsiung-nu imperial confederacy: organization and foreign policy thomas j. barfield · the hsiung-nu imperial confederacy: organization and foreign policy">
+              <span class="source-code">A3.4</span>
+              <span class="source-copy">
+                <strong>The Hsiung-nu Imperial Confederacy: Organization and Foreign Policy</strong>
+                <span>Thomas J. Barfield · The Hsiung-nu Imperial Confederacy: Organization and Foreign Policy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.05_Mission_Udjahorresnet_Those_Ezra_Nehemiah.html" data-source-card data-search="a3.5 the mission of udjahorresnet and those of ezra and nehemiah joseph blenkinsopp · the mission of udjahorresnet and those of ezra and nehemiah">
+              <span class="source-code">A3.5</span>
+              <span class="source-copy">
+                <strong>The Mission of Udjahorresnet and Those of Ezra and Nehemiah</strong>
+                <span>Joseph Blenkinsopp · The Mission of Udjahorresnet and Those of Ezra and Nehemiah</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.06_Vanishing_Paradigm_Fall_Rome.html" data-source-card data-search="a3.6 the vanishing paradigm of the fall of rome glen w. bowersock · the vanishing paradigm of the fall of rome">
+              <span class="source-code">A3.6</span>
+              <span class="source-copy">
+                <strong>The Vanishing Paradigm of the Fall of Rome</strong>
+                <span>Glen W. Bowersock · The Vanishing Paradigm of the Fall of Rome</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.07_Rise_Function_Holy_Man_Late.html" data-source-card data-search="a3.7 the rise and function of the holy man in late antiquity peter brown · the rise and function of the holy man in late antiquity">
+              <span class="source-code">A3.7</span>
+              <span class="source-copy">
+                <strong>The Rise and Function of the Holy Man in Late Antiquity</strong>
+                <span>Peter Brown · The Rise and Function of the Holy Man in Late Antiquity</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.08_Connectivity_Communication_Achaemenid_Empire.html" data-source-card data-search="a3.8 connectivity and communication in the achaemenid empire henry p. colburn · connectivity and communication in the achaemenid empire">
+              <span class="source-code">A3.8</span>
+              <span class="source-copy">
+                <strong>Connectivity and Communication in the Achaemenid Empire</strong>
+                <span>Henry P. Colburn · Connectivity and Communication in the Achaemenid Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.09_Fatal_Charades_Roman_Executions_Staged.html" data-source-card data-search="a3.9 fatal charades: roman executions staged as mythological enactments k. m. coleman · fatal charades: roman executions staged as mythological enactments">
+              <span class="source-code">A3.9</span>
+              <span class="source-copy">
+                <strong>Fatal Charades: Roman Executions Staged as Mythological Enactments</strong>
+                <span>K. M. Coleman · Fatal Charades: Roman Executions Staged as Mythological Enactments</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.10_Beginnings_Bureaucracy_China_Origin_Hsien.html" data-source-card data-search="a3.10 the beginnings of bureaucracy in china: the origin of the hsien h. g. creel · the beginnings of bureaucracy in china: the origin of the hsien">
+              <span class="source-code">A3.10</span>
+              <span class="source-copy">
+                <strong>The Beginnings of Bureaucracy in China: The Origin of the Hsien</strong>
+                <span>H. G. Creel · The Beginnings of Bureaucracy in China: The Origin of the Hsien</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.11_State_Formation_Periodization_Inner_Asian.html" data-source-card data-search="a3.11 state formation and periodization in inner asian history nicola di cosmo · state formation and periodization in inner asian history">
+              <span class="source-code">A3.11</span>
+              <span class="source-copy">
+                <strong>State Formation and Periodization in Inner Asian History</strong>
+                <span>Nicola Di Cosmo · State Formation and Periodization in Inner Asian History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.12_Usurpers_Constantine_III_407_411.html" data-source-card data-search="a3.12 the usurpers constantine iii (407–411) and jovinus (411–413) j. f. drinkwater · the usurpers constantine iii (407–411) and jovinus (411–413)">
+              <span class="source-code">A3.12</span>
+              <span class="source-copy">
+                <strong>The Usurpers Constantine III (407–411) and Jovinus (411–413)</strong>
+                <span>J. F. Drinkwater · The Usurpers Constantine III (407–411) and Jovinus (411–413)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.13_Satrapal_Sardis_Achaemenid_Bowls_Achaemenid.html" data-source-card data-search="a3.13 satrapal sardis: achaemenid bowls in an achaemenid capital elspeth r. m. dusinberre · satrapal sardis: achaemenid bowls in an achaemenid capital">
+              <span class="source-code">A3.13</span>
+              <span class="source-copy">
+                <strong>Satrapal Sardis: Achaemenid Bowls in an Achaemenid Capital</strong>
+                <span>Elspeth R. M. Dusinberre · Satrapal Sardis: Achaemenid Bowls in an Achaemenid Capital</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.14_Athenian_Democratic_Ideology_Herodotus_Histories.html" data-source-card data-search="a3.14 athenian democratic ideology and herodotus&#x27; histories sara forsdyke · athenian democratic ideology and herodotus&#x27; histories">
+              <span class="source-code">A3.14</span>
+              <span class="source-copy">
+                <strong>Athenian Democratic Ideology and Herodotus' Histories</strong>
+                <span>Sara Forsdyke · Athenian Democratic Ideology and Herodotus' Histories</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.15_Spirit_Oka.html" data-source-card data-search="a3.15 the spirit of aśoka tuvia gelblum · the spirit of aśoka">
+              <span class="source-code">A3.15</span>
+              <span class="source-copy">
+                <strong>The Spirit of Aśoka</strong>
+                <span>Tuvia Gelblum · The Spirit of Aśoka</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.16_Rome_Ravenna_Last_Western_Emperors.html" data-source-card data-search="a3.16 rome, ravenna and the last western emperors andrew gillett · rome, ravenna and the last western emperors">
+              <span class="source-code">A3.16</span>
+              <span class="source-copy">
+                <strong>Rome, Ravenna and the Last Western Emperors</strong>
+                <span>Andrew Gillett · Rome, Ravenna and the Last Western Emperors</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.17_Plague_Under_Marcus_Aurelius.html" data-source-card data-search="a3.17 the plague under marcus aurelius j. f. gilliam · the plague under marcus aurelius">
+              <span class="source-code">A3.17</span>
+              <span class="source-copy">
+                <strong>The Plague under Marcus Aurelius</strong>
+                <span>J. F. Gilliam · The Plague under Marcus Aurelius</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.18_Rome_Constantinople_Barbarians.html" data-source-card data-search="a3.18 rome, constantinople, and the barbarians walter goffart · rome, constantinople, and the barbarians">
+              <span class="source-code">A3.18</span>
+              <span class="source-copy">
+                <strong>Rome, Constantinople, and the Barbarians</strong>
+                <span>Walter Goffart · Rome, Constantinople, and the Barbarians</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.19_Environmental_Fall_Roman_Empire.html" data-source-card data-search="a3.19 the environmental fall of the roman empire kyle harper · the environmental fall of the roman empire">
+              <span class="source-code">A3.19</span>
+              <span class="source-copy">
+                <strong>The Environmental Fall of the Roman Empire</strong>
+                <span>Kyle Harper · The Environmental Fall of the Roman Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.20_Huns_End_Roman_Empire_Western.html" data-source-card data-search="a3.20 the huns and the end of the roman empire in western europe peter heather · the huns and the end of the roman empire in western europe">
+              <span class="source-code">A3.20</span>
+              <span class="source-copy">
+                <strong>The Huns and the End of the Roman Empire in Western Europe</strong>
+                <span>Peter Heather · The Huns and the End of the Roman Empire in Western Europe</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.21_Exemplar_State_Ideology_Self_Cultivation.html" data-source-card data-search="a3.21 the exemplar state: ideology, self-cultivation, and power in fourth-century china charles holcombe · the exemplar state: ideology, self-cultivation, and power in fourth-century china">
+              <span class="source-code">A3.21</span>
+              <span class="source-copy">
+                <strong>The Exemplar State: Ideology, Self-Cultivation, and Power in Fourth-Century China</strong>
+                <span>Charles Holcombe · The Exemplar State: Ideology, Self-Cultivation, and Power in Fourth-Century China</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.22_Re_Imagining_China_Chinese_Identity.html" data-source-card data-search="a3.22 re-imagining china: the chinese identity crisis at the start of the southern dynasties period charles holcombe · re-imagining china: the chinese identity crisis at the start of the southern dynasties period">
+              <span class="source-code">A3.22</span>
+              <span class="source-copy">
+                <strong>Re-Imagining China: The Chinese Identity Crisis at the Start of the Southern Dynasties Period</strong>
+                <span>Charles Holcombe · Re-Imagining China: The Chinese Identity Crisis at the Start of the Southern Dynasties Period</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.23_Taxes_Trade_Roman_Empire_200.html" data-source-card data-search="a3.23 taxes and trade in the roman empire (200 b.c.–a.d. 400) keith hopkins · taxes and trade in the roman empire (200 b.c.–a.d. 400)">
+              <span class="source-code">A3.23</span>
+              <span class="source-copy">
+                <strong>Taxes and Trade in the Roman Empire (200 B.C.–A.D. 400)</strong>
+                <span>Keith Hopkins · Taxes and Trade in the Roman Empire (200 B.C.–A.D. 400)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.24_Bandits_Judaea_Arabia.html" data-source-card data-search="a3.24 bandits in judaea and arabia benjamin isaac · bandits in judaea and arabia">
+              <span class="source-code">A3.24</span>
+              <span class="source-copy">
+                <strong>Bandits in Judaea and Arabia</strong>
+                <span>Benjamin Isaac · Bandits in Judaea and Arabia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.25_Unified_China_Divided_Europe.html" data-source-card data-search="a3.25 unified china and divided europe chiu yu ko, mark koyama, and tuan-hwee sng · unified china and divided europe">
+              <span class="source-code">A3.25</span>
+              <span class="source-copy">
+                <strong>Unified China and Divided Europe</strong>
+                <span>Chiu Yu Ko, Mark Koyama, and Tuan-Hwee Sng · Unified China and Divided Europe</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.26_Notes_Kandahar_Edict_Asoka.html" data-source-card data-search="a3.26 notes on the kandahar edict of asoka d. d. kosambi · notes on the kandahar edict of asoka">
+              <span class="source-code">A3.26</span>
+              <span class="source-copy">
+                <strong>Notes on the Kandahar Edict of Asoka</strong>
+                <span>D. D. Kosambi · Notes on the Kandahar Edict of Asoka</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.27_Barbarians_Gaul_Usurpers_Britain.html" data-source-card data-search="a3.27 barbarians in gaul, usurpers in britain michael kulikowski · barbarians in gaul, usurpers in britain">
+              <span class="source-code">A3.27</span>
+              <span class="source-copy">
+                <strong>Barbarians in Gaul, Usurpers in Britain</strong>
+                <span>Michael Kulikowski · Barbarians in Gaul, Usurpers in Britain</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.28_Initium_Mali_Romano_Imperio_Contemporary.html" data-source-card data-search="a3.28 initium mali romano imperio: contemporary reactions to the battle of adrianople noel lenski · initium mali romano imperio: contemporary reactions to the battle of adrianople">
+              <span class="source-code">A3.28</span>
+              <span class="source-copy">
+                <strong>Initium mali Romano imperio: Contemporary Reactions to the Battle of Adrianople</strong>
+                <span>Noel Lenski · Initium mali Romano imperio: Contemporary Reactions to the Battle of Adrianople</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.29_Religion_Empire_Spectre_Orientalism_Recent.html" data-source-card data-search="a3.29 religion, empire, and the spectre of orientalism: a recent controversy in achaemenid studies bruce lincoln · religion, empire, and the spectre of orientalism: a recent controversy in achaemenid studies">
+              <span class="source-code">A3.29</span>
+              <span class="source-copy">
+                <strong>Religion, Empire, and the Spectre of Orientalism: A Recent Controversy in Achaemenid Studies</strong>
+                <span>Bruce Lincoln · Religion, Empire, and the Spectre of Orientalism: A Recent Controversy in Achaemenid Studies</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.30_Galen_Antonine_Plague.html" data-source-card data-search="a3.30 galen and the antonine plague r. j. littman and m. l. littman · galen and the antonine plague">
+              <span class="source-code">A3.30</span>
+              <span class="source-copy">
+                <strong>Galen and the Antonine Plague</strong>
+                <span>R. J. Littman and M. L. Littman · Galen and the Antonine Plague</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.31_Inscription_Udja_Orresnet_Collaborator_S.html" data-source-card data-search="a3.31 the inscription of udjaḥorresnet: a collaborator&#x27;s testament alan b. lloyd · the inscription of udjaḥorresnet: a collaborator&#x27;s testament">
+              <span class="source-code">A3.31</span>
+              <span class="source-copy">
+                <strong>The Inscription of Udjaḥorresnet: A Collaborator's Testament</strong>
+                <span>Alan B. Lloyd · The Inscription of Udjaḥorresnet: A Collaborator's Testament</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.32_Oka_S_Disparagement_Domestic_Ritual.html" data-source-card data-search="a3.32 aśoka&#x27;s disparagement of domestic ritual and its validation by the brahmins timothy lubin · aśoka&#x27;s disparagement of domestic ritual and its validation by the brahmins">
+              <span class="source-code">A3.32</span>
+              <span class="source-copy">
+                <strong>Aśoka's Disparagement of Domestic Ritual and Its Validation by the Brahmins</strong>
+                <span>Timothy Lubin · Aśoka's Disparagement of Domestic Ritual and Its Validation by the Brahmins</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.33_Climate_Change_During_After_Roman.html" data-source-card data-search="a3.33 climate change during and after the roman empire: reconstructing the past from scientific and historical evidence michael mccormick, ulf büntgen, mark a. cane, edward r. cook, kyle harper, peter huybers, thomas litt, sturt w. manning, paul andrew mayewski, alexander f. m. more, kurt nicolussi, and willy tegel · climate change during and after the roman empire: reconstructing the past from scientific and historical evidence">
+              <span class="source-code">A3.33</span>
+              <span class="source-copy">
+                <strong>Climate Change during and after the Roman Empire: Reconstructing the Past from Scientific and Historical Evidence</strong>
+                <span>Michael McCormick, Ulf Büntgen, Mark A. Cane, Edward R. Cook, Kyle Harper, Peter Huybers, Thomas Litt, Sturt W. Manning, Paul Andrew Mayewski, Alexander F. M. More, Kurt Nicolussi, and Willy Tegel · Climate Change during and after the Roman Empire: Reconstructing the Past from Scientific and Historical Evidence</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.34_Empire_City_Augustus_Julian_Obligations.html" data-source-card data-search="a3.34 empire and city, augustus to julian: obligations, excuses and status fergus millar · empire and city, augustus to julian: obligations, excuses and status">
+              <span class="source-code">A3.34</span>
+              <span class="source-copy">
+                <strong>Empire and City, Augustus to Julian: Obligations, Excuses and Status</strong>
+                <span>Fergus Millar · Empire and City, Augustus to Julian: Obligations, Excuses and Status</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.35_Rejecting_Catastrophe_Case_Justinianic_Plague.html" data-source-card data-search="a3.35 rejecting catastrophe: the case of the justinianic plague lee mordechai and merle eisenberg · rejecting catastrophe: the case of the justinianic plague">
+              <span class="source-code">A3.35</span>
+              <span class="source-copy">
+                <strong>Rejecting Catastrophe: The Case of the Justinianic Plague</strong>
+                <span>Lee Mordechai and Merle Eisenberg · Rejecting Catastrophe: The Case of the Justinianic Plague</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.36_Who_Are_Herodotus_Persians.html" data-source-card data-search="a3.36 who are herodotus&#x27; persians? rosaria vignolo munson · who are herodotus&#x27; persians?">
+              <span class="source-code">A3.36</span>
+              <span class="source-copy">
+                <strong>Who Are Herodotus' Persians?</strong>
+                <span>Rosaria Vignolo Munson · Who Are Herodotus' Persians?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.37_Speech_Action_Herodotus_Debate_Constitutions.html" data-source-card data-search="a3.37 speech and action: herodotus&#x27; debate on the constitutions christopher pelling · speech and action: herodotus&#x27; debate on the constitutions">
+              <span class="source-code">A3.37</span>
+              <span class="source-copy">
+                <strong>Speech and Action: Herodotus' Debate on the Constitutions</strong>
+                <span>Christopher Pelling · Speech and Action: Herodotus' Debate on the Constitutions</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.38_One_That_Pervades_All_Ancient.html" data-source-card data-search="a3.38 &quot;the one that pervades the all&quot; in ancient chinese political thought: the origins of &quot;the great unity&quot; paradigm yuri pines · &quot;the one that pervades the all&quot; in ancient chinese political thought: the origins of &quot;the great unity&quot; paradigm">
+              <span class="source-code">A3.38</span>
+              <span class="source-copy">
+                <strong>"The One That Pervades the All" in Ancient Chinese Political Thought: The Origins of "The Great Unity" Paradigm</strong>
+                <span>Yuri Pines · "The One That Pervades the All" in Ancient Chinese Political Thought: The Origins of "The Great Unity" Paradigm</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.39_Between_Man_God_Sacrifice_Roman.html" data-source-card data-search="a3.39 between man and god: sacrifice in the roman imperial cult s. r. f. price · between man and god: sacrifice in the roman imperial cult">
+              <span class="source-code">A3.39</span>
+              <span class="source-copy">
+                <strong>Between Man and God: Sacrifice in the Roman Imperial Cult</strong>
+                <span>S. R. F. Price · Between Man and God: Sacrifice in the Roman Imperial Cult</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.40_Decree_Decius_Religion_Empire.html" data-source-card data-search="a3.40 the decree of decius and the religion of empire j. b. rives · the decree of decius and the religion of empire">
+              <span class="source-code">A3.40</span>
+              <span class="source-copy">
+                <strong>The Decree of Decius and the Religion of Empire</strong>
+                <span>J. B. Rives · The Decree of Decius and the Religion of Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.41_Parthenon_Frieze_Apadana_Reliefs_Persepolis.html" data-source-card data-search="a3.41 the parthenon frieze and the apadana reliefs at persepolis: reassessing a programmatic relationship margaret cool root · the parthenon frieze and the apadana reliefs at persepolis: reassessing a programmatic relationship">
+              <span class="source-code">A3.41</span>
+              <span class="source-copy">
+                <strong>The Parthenon Frieze and the Apadana Reliefs at Persepolis: Reassessing a Programmatic Relationship</strong>
+                <span>Margaret Cool Root · The Parthenon Frieze and the Apadana Reliefs at Persepolis: Reassessing a Programmatic Relationship</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.42_That_Earlier_Plague.html" data-source-card data-search="a3.42 that earlier plague josiah c. russell · that earlier plague">
+              <span class="source-code">A3.42</span>
+              <span class="source-copy">
+                <strong>That Earlier Plague</strong>
+                <span>Josiah C. Russell · That Earlier Plague</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.43_Law_Communication_Qin_Western_Han.html" data-source-card data-search="a3.43 law and communication in qin and western han china charles sanft · law and communication in qin and western han china">
+              <span class="source-code">A3.43</span>
+              <span class="source-copy">
+                <strong>Law and Communication in Qin and Western Han China</strong>
+                <span>Charles Sanft · Law and Communication in Qin and Western Han China</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.44_Networks_Territories_Cartography_Ancient_States.html" data-source-card data-search="a3.44 networks, territories, and the cartography of ancient states monica l. smith · networks, territories, and the cartography of ancient states">
+              <span class="source-code">A3.44</span>
+              <span class="source-copy">
+                <strong>Networks, Territories, and the Cartography of Ancient States</strong>
+                <span>Monica L. Smith · Networks, Territories, and the Cartography of Ancient States</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.45_Ashoka_Retrospective.html" data-source-card data-search="a3.45 ashoka — a retrospective romila thapar · ashoka — a retrospective">
+              <span class="source-code">A3.45</span>
+              <span class="source-copy">
+                <strong>Ashoka — A Retrospective</strong>
+                <span>Romila Thapar · Ashoka — A Retrospective</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.46_Oka_Buddhism.html" data-source-card data-search="a3.46 aśoka and buddhism romila thapar · aśoka and buddhism">
+              <span class="source-code">A3.46</span>
+              <span class="source-copy">
+                <strong>Aśoka and Buddhism</strong>
+                <span>Romila Thapar · Aśoka and Buddhism</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.47_War_Space_Evolution_Old_World.html" data-source-card data-search="a3.47 war, space, and the evolution of old world complex societies peter turchin, thomas e. currie, edward a. l. turner, and sergey gavrilets · war, space, and the evolution of old world complex societies">
+              <span class="source-code">A3.47</span>
+              <span class="source-copy">
+                <strong>War, Space, and the Evolution of Old World Complex Societies</strong>
+                <span>Peter Turchin, Thomas E. Currie, Edward A. L. Turner, and Sergey Gavrilets · War, Space, and the Evolution of Old World Complex Societies</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.48_Civilis_Princeps_Between_Citizen_King.html" data-source-card data-search="a3.48 civilis princeps: between citizen and king andrew wallace-hadrill · civilis princeps: between citizen and king">
+              <span class="source-code">A3.48</span>
+              <span class="source-copy">
+                <strong>Civilis Princeps: Between Citizen and King</strong>
+                <span>Andrew Wallace-Hadrill · Civilis Princeps: Between Citizen and King</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.49_Continuitists_Catastrophists_Towns_Post_Roman.html" data-source-card data-search="a3.49 continuitists, catastrophists, and the towns of post-roman northern italy bryan ward-perkins · continuitists, catastrophists, and the towns of post-roman northern italy">
+              <span class="source-code">A3.49</span>
+              <span class="source-copy">
+                <strong>Continuitists, Catastrophists, and the Towns of Post-Roman Northern Italy</strong>
+                <span>Bryan Ward-Perkins · Continuitists, Catastrophists, and the Towns of Post-Roman Northern Italy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.50_Other_Transition_Ancient_World_Feudalism.html" data-source-card data-search="a3.50 the other transition: from the ancient world to feudalism chris wickham · the other transition: from the ancient world to feudalism">
+              <span class="source-code">A3.50</span>
+              <span class="source-copy">
+                <strong>The Other Transition: From the Ancient World to Feudalism</strong>
+                <span>Chris Wickham · The Other Transition: From the Ancient World to Feudalism</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.51_Becoming_Roman_Staying_Greek_Culture.html" data-source-card data-search="a3.51 becoming roman, staying greek: culture, identity and the civilizing process in the roman east greg woolf · becoming roman, staying greek: culture, identity and the civilizing process in the roman east">
+              <span class="source-code">A3.51</span>
+              <span class="source-copy">
+                <strong>Becoming Roman, Staying Greek: Culture, Identity and the Civilizing Process in the Roman East</strong>
+                <span>Greg Woolf · Becoming Roman, Staying Greek: Culture, Identity and the Civilizing Process in the Roman East</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.52_Monumental_Writing_Expansion_Roman_Society.html" data-source-card data-search="a3.52 monumental writing and the expansion of roman society in the early empire greg woolf · monumental writing and the expansion of roman society in the early empire">
+              <span class="source-code">A3.52</span>
+              <span class="source-copy">
+                <strong>Monumental Writing and the Expansion of Roman Society in the Early Empire</strong>
+                <span>Greg Woolf · Monumental Writing and the Expansion of Roman Society in the Early Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A3.53_Social_Status_Ch_Evidence_Y.html" data-source-card data-search="a3.53 social status in the ch&#x27;in: evidence from the yün-meng legal documents. part one: commoners robin d. s. yates · social status in the ch&#x27;in: evidence from the yün-meng legal documents. part one: commoners">
+              <span class="source-code">A3.53</span>
+              <span class="source-copy">
+                <strong>Social Status in the Ch'in: Evidence from the Yün-meng Legal Documents. Part One: Commoners</strong>
+                <span>Robin D. S. Yates · Social Status in the Ch'in: Evidence from the Yün-meng Legal Documents. Part One: Commoners</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-4" data-chapter-section aria-labelledby="chapter-4-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">4</div>
+          <div>
+            <p>Chapter 4 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-4-title">Culture and Religion in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">34 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.01_Inevitable_Treason_Dong_Zhongshu_S.html" data-source-card data-search="a4.1 inevitable treason: dong zhongshu&#x27;s theory of historical cycles and early attempts to invalidate the han mandate gary arbuckle · inevitable treason: dong zhongshu&#x27;s theory of historical cycles and early attempts to invalidate the han mandate">
+              <span class="source-code">A4.1</span>
+              <span class="source-copy">
+                <strong>Inevitable Treason: Dong Zhongshu's Theory of Historical Cycles and Early Attempts to Invalidate the Han Mandate</strong>
+                <span>Gary Arbuckle · Inevitable Treason: Dong Zhongshu's Theory of Historical Cycles and Early Attempts to Invalidate the Han Mandate</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.02_Constantine_S_Prohibition_Pagan_Sacrifice.html" data-source-card data-search="a4.2 constantine&#x27;s prohibition of pagan sacrifice t. d. barnes · constantine&#x27;s prohibition of pagan sacrifice">
+              <span class="source-code">A4.2</span>
+              <span class="source-copy">
+                <strong>Constantine's Prohibition of Pagan Sacrifice</strong>
+                <span>T. D. Barnes · Constantine's Prohibition of Pagan Sacrifice</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.03_Statistics_Conversion_Roman_Aristocracy.html" data-source-card data-search="a4.3 statistics and the conversion of the roman aristocracy t. d. barnes · statistics and the conversion of the roman aristocracy">
+              <span class="source-code">A4.3</span>
+              <span class="source-copy">
+                <strong>Statistics and the Conversion of the Roman Aristocracy</strong>
+                <span>T. D. Barnes · Statistics and the Conversion of the Roman Aristocracy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.04_Religious_Evolution.html" data-source-card data-search="a4.4 religious evolution robert n. bellah · religious evolution">
+              <span class="source-code">A4.4</span>
+              <span class="source-copy">
+                <strong>Religious Evolution</strong>
+                <span>Robert N. Bellah · Religious Evolution</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.05_What_Is_Axial_About_Axial.html" data-source-card data-search="a4.5 what is axial about the axial age? robert n. bellah · what is axial about the axial age?">
+              <span class="source-code">A4.5</span>
+              <span class="source-copy">
+                <strong>What Is Axial about the Axial Age?</strong>
+                <span>Robert N. Bellah · What Is Axial about the Axial Age?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.06_Amba_Ha_Vetaketu_Literary_Connections.html" data-source-card data-search="a4.6 ambaṭṭha and śvetaketu: literary connections between the upaniṣads and early buddhist narratives brian black · ambaṭṭha and śvetaketu: literary connections between the upaniṣads and early buddhist narratives">
+              <span class="source-code">A4.6</span>
+              <span class="source-copy">
+                <strong>Ambaṭṭha and Śvetaketu: Literary Connections between the Upaniṣads and Early Buddhist Narratives</strong>
+                <span>Brian Black · Ambaṭṭha and Śvetaketu: Literary Connections between the Upaniṣads and Early Buddhist Narratives</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.07_Emperor_Bishop_Self_Conscious_Transformation.html" data-source-card data-search="a4.7 from emperor to bishop: the self-conscious transformation of political power in the fourth century a.d. g. w. bowersock · from emperor to bishop: the self-conscious transformation of political power in the fourth century a.d.">
+              <span class="source-code">A4.7</span>
+              <span class="source-copy">
+                <strong>From Emperor to Bishop: The Self-Conscious Transformation of Political Power in the Fourth Century A.D.</strong>
+                <span>G. W. Bowersock · From Emperor to Bishop: The Self-Conscious Transformation of Political Power in the Fourth Century A.D.</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.08_Inventing_Axial_Age_Origins_Uses.html" data-source-card data-search="a4.8 inventing the axial age: the origins and uses of a historical concept john d. boy and john torpey · inventing the axial age: the origins and uses of a historical concept">
+              <span class="source-code">A4.8</span>
+              <span class="source-copy">
+                <strong>Inventing the Axial Age: The Origins and Uses of a Historical Concept</strong>
+                <span>John D. Boy and John Torpey · Inventing the Axial Age: The Origins and Uses of a Historical Concept</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.09_Constantine_Problem_Anti_Pagan_Legislation.html" data-source-card data-search="a4.9 constantine and the problem of anti-pagan legislation in the fourth century scott bradbury · constantine and the problem of anti-pagan legislation in the fourth century">
+              <span class="source-code">A4.9</span>
+              <span class="source-copy">
+                <strong>Constantine and the Problem of Anti-Pagan Legislation in the Fourth Century</strong>
+                <span>Scott Bradbury · Constantine and the Problem of Anti-Pagan Legislation in the Fourth Century</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.10_Aspects_Christianization_Roman_Aristocracy.html" data-source-card data-search="a4.10 aspects of the christianization of the roman aristocracy p. r. l. brown · aspects of the christianization of the roman aristocracy">
+              <span class="source-code">A4.10</span>
+              <span class="source-copy">
+                <strong>Aspects of the Christianization of the Roman Aristocracy</strong>
+                <span>P. R. L. Brown · Aspects of the Christianization of the Roman Aristocracy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.11_Hermeneutics_Omens_Bankruptcy_Moral_Cosmology.html" data-source-card data-search="a4.11 the hermeneutics of omens: the bankruptcy of moral cosmology in western han china (206 bce–8 ce) liang cai · the hermeneutics of omens: the bankruptcy of moral cosmology in western han china (206 bce–8 ce)">
+              <span class="source-code">A4.11</span>
+              <span class="source-copy">
+                <strong>The Hermeneutics of Omens: The Bankruptcy of Moral Cosmology in Western Han China (206 BCE–8 CE)</strong>
+                <span>Liang Cai · The Hermeneutics of Omens: The Bankruptcy of Moral Cosmology in Western Han China (206 BCE–8 CE)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.12_Discourse_What_Is_Primary_Agga.html" data-source-card data-search="a4.12 the discourse on what is primary (aggañña-sutta): an annotated translation steven collins · the discourse on what is primary (aggañña-sutta): an annotated translation">
+              <span class="source-code">A4.12</span>
+              <span class="source-copy">
+                <strong>The Discourse on What Is Primary (Aggañña-Sutta): An Annotated Translation</strong>
+                <span>Steven Collins · The Discourse on What Is Primary (Aggañña-Sutta): An Annotated Translation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.13_Insinuations_Womanly_Influence_Aspect_Christianization.html" data-source-card data-search="a4.13 insinuations of womanly influence: an aspect of the christianization of the roman aristocracy kate cooper · insinuations of womanly influence: an aspect of the christianization of the roman aristocracy">
+              <span class="source-code">A4.13</span>
+              <span class="source-copy">
+                <strong>Insinuations of Womanly Influence: An Aspect of the Christianization of the Roman Aristocracy</strong>
+                <span>Kate Cooper · Insinuations of Womanly Influence: An Aspect of the Christianization of the Roman Aristocracy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.14_Why_Were_Early_Christians_Persecuted.html" data-source-card data-search="a4.14 why were the early christians persecuted? g. e. m. de ste. croix · why were the early christians persecuted?">
+              <span class="source-code">A4.14</span>
+              <span class="source-copy">
+                <strong>Why Were the Early Christians Persecuted?</strong>
+                <span>G. E. M. de Ste. Croix · Why Were the Early Christians Persecuted?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.15_Constantine_Consensus.html" data-source-card data-search="a4.15 constantine and consensus h. a. drake · constantine and consensus">
+              <span class="source-code">A4.15</span>
+              <span class="source-copy">
+                <strong>Constantine and Consensus</strong>
+                <span>H. A. Drake · Constantine and Consensus</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.16_Lambs_Into_Lions_Explaining_Early.html" data-source-card data-search="a4.16 lambs into lions: explaining early christian intolerance h. a. drake · lambs into lions: explaining early christian intolerance">
+              <span class="source-code">A4.16</span>
+              <span class="source-copy">
+                <strong>Lambs into Lions: Explaining Early Christian Intolerance</strong>
+                <span>H. A. Drake · Lambs into Lions: Explaining Early Christian Intolerance</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.17_Axial_Age_Emergence_Transcendental_Visions.html" data-source-card data-search="a4.17 the axial age: the emergence of transcendental visions and the rise of clerics shmuel n. eisenstadt · the axial age: the emergence of transcendental visions and the rise of clerics">
+              <span class="source-code">A4.17</span>
+              <span class="source-copy">
+                <strong>The Axial Age: The Emergence of Transcendental Visions and the Rise of Clerics</strong>
+                <span>Shmuel N. Eisenstadt · The Axial Age: The Emergence of Transcendental Visions and the Rise of Clerics</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.18_Bishops_Temples_Eastern_Roman_Empire.html" data-source-card data-search="a4.18 bishops and temples in the eastern roman empire a.d. 320–435 garth fowden · bishops and temples in the eastern roman empire a.d. 320–435">
+              <span class="source-code">A4.18</span>
+              <span class="source-copy">
+                <strong>Bishops and Temples in the Eastern Roman Empire A.D. 320–435</strong>
+                <span>Garth Fowden · Bishops and Temples in the Eastern Roman Empire A.D. 320–435</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.19_Early_Buddhist_Kingship.html" data-source-card data-search="a4.19 early buddhist kingship balkrishna g. gokhale · early buddhist kingship">
+              <span class="source-code">A4.19</span>
+              <span class="source-copy">
+                <strong>Early Buddhist Kingship</strong>
+                <span>Balkrishna G. Gokhale · Early Buddhist Kingship</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.20_Buddha_S_Book_Genesis.html" data-source-card data-search="a4.20 the buddha&#x27;s book of genesis? richard gombrich · the buddha&#x27;s book of genesis?">
+              <span class="source-code">A4.20</span>
+              <span class="source-copy">
+                <strong>The Buddha's Book of Genesis?</strong>
+                <span>Richard Gombrich · The Buddha's Book of Genesis?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.21_Criticism_Powerful_Women_Western_Han.html" data-source-card data-search="a4.21 the criticism of powerful women by western han dynasty portent experts bret hinsch · the criticism of powerful women by western han dynasty portent experts">
+              <span class="source-code">A4.21</span>
+              <span class="source-copy">
+                <strong>The Criticism of Powerful Women by Western Han Dynasty Portent Experts</strong>
+                <span>Bret Hinsch · The Criticism of Powerful Women by Western Han Dynasty Portent Experts</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.22_Confucian_Values_Practices_Han_China.html" data-source-card data-search="a4.22 &quot;confucian&quot; values and practices in han china michael loewe · &quot;confucian&quot; values and practices in han china">
+              <span class="source-code">A4.22</span>
+              <span class="source-copy">
+                <strong>"Confucian" Values and Practices in Han China</strong>
+                <span>Michael Loewe · "Confucian" Values and Practices in Han China</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.23_Two_Types_Conversion_Early_Christianity.html" data-source-card data-search="a4.23 two types of conversion to early christianity ramsay macmullen · two types of conversion to early christianity">
+              <span class="source-code">A4.23</span>
+              <span class="source-copy">
+                <strong>Two Types of Conversion to Early Christianity</strong>
+                <span>Ramsay MacMullen · Two Types of Conversion to Early Christianity</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.24_Trade_Urbanism_Agricultural_Expansion_Buddhist.html" data-source-card data-search="a4.24 trade, urbanism, and agricultural expansion: buddhist monastic institutions and the state in the early historic western deccan kathleen d. morrison · trade, urbanism, and agricultural expansion: buddhist monastic institutions and the state in the early historic western deccan">
+              <span class="source-code">A4.24</span>
+              <span class="source-copy">
+                <strong>Trade, Urbanism, and Agricultural Expansion: Buddhist Monastic Institutions and the State in the Early Historic Western Deccan</strong>
+                <span>Kathleen D. Morrison · Trade, Urbanism, and Agricultural Expansion: Buddhist Monastic Institutions and the State in the Early Historic Western Deccan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.25_Systematic_Assessment_Axial_Age_Proposals.html" data-source-card data-search="a4.25 a systematic assessment of &quot;axial age&quot; proposals using global comparative historical evidence daniel austin mullins, daniel hoyer, christina collins, thomas currie, kevin feeney, pieter françois, patrick e. savage, harvey whitehouse, and peter turchin · a systematic assessment of &quot;axial age&quot; proposals using global comparative historical evidence">
+              <span class="source-code">A4.25</span>
+              <span class="source-copy">
+                <strong>A Systematic Assessment of "Axial Age" Proposals Using Global Comparative Historical Evidence</strong>
+                <span>Daniel Austin Mullins, Daniel Hoyer, Christina Collins, Thomas Currie, Kevin Feeney, Pieter François, Patrick E. Savage, Harvey Whitehouse, and Peter Turchin · A Systematic Assessment of "Axial Age" Proposals Using Global Comparative Historical Evidence</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.26_La_Vieille_Route_Reconsidered_Alternative.html" data-source-card data-search="a4.26 la vieille route reconsidered: alternative paths for early transmission of buddhism beyond the borderlands of south asia jason neelis · la vieille route reconsidered: alternative paths for early transmission of buddhism beyond the borderlands of south asia">
+              <span class="source-code">A4.26</span>
+              <span class="source-copy">
+                <strong>La Vieille Route Reconsidered: Alternative Paths for Early Transmission of Buddhism Beyond the Borderlands of South Asia</strong>
+                <span>Jason Neelis · La Vieille Route Reconsidered: Alternative Paths for Early Transmission of Buddhism Beyond the Borderlands of South Asia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.27_Confucian_Piety_Individualism_Han_China.html" data-source-card data-search="a4.27 confucian piety and individualism in han china michael nylan · confucian piety and individualism in han china">
+              <span class="source-code">A4.27</span>
+              <span class="source-copy">
+                <strong>Confucian Piety and Individualism in Han China</strong>
+                <span>Michael Nylan · Confucian Piety and Individualism in Han China</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.28_Rebel_Is_Justified_Image_Zhouxin.html" data-source-card data-search="a4.28 to rebel is justified? the image of zhouxin and the legitimacy of rebellion in the chinese political tradition yuri pines · to rebel is justified? the image of zhouxin and the legitimacy of rebellion in the chinese political tradition">
+              <span class="source-code">A4.28</span>
+              <span class="source-copy">
+                <strong>To Rebel is Justified? The Image of Zhouxin and the Legitimacy of Rebellion in the Chinese Political Tradition</strong>
+                <span>Yuri Pines · To Rebel is Justified? The Image of Zhouxin and the Legitimacy of Rebellion in the Chinese Political Tradition</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.29_Doing_Business_Lord_Lending_Interest.html" data-source-card data-search="a4.29 doing business for the lord: lending on interest and written loan contracts in the mūlasarvāstivāda-vinaya gregory schopen · doing business for the lord: lending on interest and written loan contracts in the mūlasarvāstivāda-vinaya">
+              <span class="source-code">A4.29</span>
+              <span class="source-copy">
+                <strong>Doing Business for the Lord: Lending on Interest and Written Loan Contracts in the Mūlasarvāstivāda-vinaya</strong>
+                <span>Gregory Schopen · Doing Business for the Lord: Lending on Interest and Written Loan Contracts in the Mūlasarvāstivāda-vinaya</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.30_Aristocracy_Monetization_Plato_Parmenides_Herakleitos.html" data-source-card data-search="a4.30 aristocracy and monetization: plato, parmenides, herakleitos, and pindar richard seaford · aristocracy and monetization: plato, parmenides, herakleitos, and pindar">
+              <span class="source-code">A4.30</span>
+              <span class="source-copy">
+                <strong>Aristocracy and Monetization: Plato, Parmenides, Herakleitos, and Pindar</strong>
+                <span>Richard Seaford · Aristocracy and Monetization: Plato, Parmenides, Herakleitos, and Pindar</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.31_Christianizing_Urban_Empire_Analysis_Based.html" data-source-card data-search="a4.31 christianizing the urban empire: an analysis based on 22 greco-roman cities rodney stark · christianizing the urban empire: an analysis based on 22 greco-roman cities">
+              <span class="source-code">A4.31</span>
+              <span class="source-copy">
+                <strong>Christianizing the Urban Empire: An Analysis Based on 22 Greco-Roman Cities</strong>
+                <span>Rodney Stark · Christianizing the Urban Empire: An Analysis Based on 22 Greco-Roman Cities</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.32_Reconstructing_Rise_Christianity_Role_Women.html" data-source-card data-search="a4.32 reconstructing the rise of christianity: the role of women rodney stark · reconstructing the rise of christianity: the role of women">
+              <span class="source-code">A4.32</span>
+              <span class="source-copy">
+                <strong>Reconstructing the Rise of Christianity: The Role of Women</strong>
+                <span>Rodney Stark · Reconstructing the Rise of Christianity: The Role of Women</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.33_Axial_Age_New_Age_Religion.html" data-source-card data-search="a4.33 from the axial age to the new age: religion as a dynamic of world history carlton h. tucker · from the axial age to the new age: religion as a dynamic of world history">
+              <span class="source-code">A4.33</span>
+              <span class="source-copy">
+                <strong>From the Axial Age to the New Age: Religion as a Dynamic of World History</strong>
+                <span>Carlton H. Tucker · From the Axial Age to the New Age: Religion as a Dynamic of World History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A4.34_Toward_Social_Interpretation_Early_Christian.html" data-source-card data-search="a4.34 toward a social interpretation of early christian apologetics robert l. wilken · toward a social interpretation of early christian apologetics">
+              <span class="source-code">A4.34</span>
+              <span class="source-copy">
+                <strong>Toward a Social Interpretation of Early Christian Apologetics</strong>
+                <span>Robert L. Wilken · Toward a Social Interpretation of Early Christian Apologetics</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-5" data-chapter-section aria-labelledby="chapter-5-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">5</div>
+          <div>
+            <p>Chapter 5 · 600 B.C.E.–600 C.E.</p>
+            <h2 id="chapter-5-title">Society and Inequality in Eurasia/North Africa</h2>
+          </div>
+          <span class="chapter-count">32 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.01_Animalizing_Slave_Truth_Fiction.html" data-source-card data-search="a5.1 animalizing the slave: the truth of fiction keith bradley · animalizing the slave: the truth of fiction">
+              <span class="source-code">A5.1</span>
+              <span class="source-copy">
+                <strong>Animalizing the Slave: The Truth of Fiction</strong>
+                <span>Keith Bradley · Animalizing the Slave: The Truth of Fiction</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.02_Free_Labour_Public_Works_Rome.html" data-source-card data-search="a5.2 free labour and public works at rome p. a. brunt · free labour and public works at rome">
+              <span class="source-code">A5.2</span>
+              <span class="source-copy">
+                <strong>Free Labour and Public Works at Rome</strong>
+                <span>P. A. Brunt · Free Labour and Public Works at Rome</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.03_Spartan_Wives_Liberation_Licence.html" data-source-card data-search="a5.3 spartan wives: liberation or licence? paul cartledge · spartan wives: liberation or licence?">
+              <span class="source-code">A5.3</span>
+              <span class="source-copy">
+                <strong>Spartan Wives: Liberation or Licence?</strong>
+                <span>Paul Cartledge · Spartan Wives: Liberation or Licence?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.04_Conceptualising_Brahmanical_Patriarchy_Early_India.html" data-source-card data-search="a5.4 conceptualising brahmanical patriarchy in early india: gender, caste, class and state uma chakravarti · conceptualising brahmanical patriarchy in early india: gender, caste, class and state">
+              <span class="source-code">A5.4</span>
+              <span class="source-copy">
+                <strong>Conceptualising Brahmanical Patriarchy in Early India: Gender, Caste, Class and State</strong>
+                <span>Uma Chakravarti · Conceptualising Brahmanical Patriarchy in Early India: Gender, Caste, Class and State</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.05_Seclusion_Separation_Status_Women_Classical.html" data-source-card data-search="a5.5 seclusion, separation, and the status of women in classical athens david cohen · seclusion, separation, and the status of women in classical athens">
+              <span class="source-code">A5.5</span>
+              <span class="source-copy">
+                <strong>Seclusion, Separation, and the Status of Women in Classical Athens</strong>
+                <span>David Cohen · Seclusion, Separation, and the Status of Women in Classical Athens</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.06_Historio_Critical_Hermeneutics_Study_Women.html" data-source-card data-search="a5.6 historio-critical hermeneutics in the study of women in early indian buddhism alice collett · historio-critical hermeneutics in the study of women in early indian buddhism">
+              <span class="source-code">A5.6</span>
+              <span class="source-copy">
+                <strong>Historio-Critical Hermeneutics in the Study of Women in Early Indian Buddhism</strong>
+                <span>Alice Collett · Historio-Critical Hermeneutics in the Study of Women in Early Indian Buddhism</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.07_Intermediate_Realms_Law_Corporate_Groups.html" data-source-card data-search="a5.7 intermediate realms of law: corporate groups and rulers in medieval india donald r. davis jr. · intermediate realms of law: corporate groups and rulers in medieval india">
+              <span class="source-code">A5.7</span>
+              <span class="source-copy">
+                <strong>Intermediate Realms of Law: Corporate Groups and Rulers in Medieval India</strong>
+                <span>Donald R. Davis Jr. · Intermediate Realms of Law: Corporate Groups and Rulers in Medieval India</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.08_Estate_Family_Management_Later_Han.html" data-source-card data-search="a5.8 estate and family management in the later han as seen in the monthly instructions for the four classes of people patricia ebrey · estate and family management in the later han as seen in the monthly instructions for the four classes of people">
+              <span class="source-code">A5.8</span>
+              <span class="source-copy">
+                <strong>Estate and Family Management in the Later Han as Seen in the Monthly Instructions for the Four Classes of People</strong>
+                <span>Patricia Ebrey · Estate and Family Management in the Later Han as Seen in the Monthly Instructions for the Four Classes of People</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.09_Patron_Client_Relations_Later_Han.html" data-source-card data-search="a5.9 patron-client relations in the later han patricia ebrey · patron-client relations in the later han">
+              <span class="source-code">A5.9</span>
+              <span class="source-copy">
+                <strong>Patron-Client Relations in the Later Han</strong>
+                <span>Patricia Ebrey · Patron-Client Relations in the Later Han</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.10_Between_Slavery_Freedom.html" data-source-card data-search="a5.10 between slavery and freedom m. i. finley · between slavery and freedom">
+              <span class="source-code">A5.10</span>
+              <span class="source-copy">
+                <strong>Between Slavery and Freedom</strong>
+                <span>M. I. Finley · Between Slavery and Freedom</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.11_Was_Greek_Civilization_Based_Slave.html" data-source-card data-search="a5.11 was greek civilization based on slave labour? m. i. finley · was greek civilization based on slave labour?">
+              <span class="source-code">A5.11</span>
+              <span class="source-copy">
+                <strong>Was Greek Civilization Based on Slave Labour?</strong>
+                <span>M. I. Finley · Was Greek Civilization Based on Slave Labour?</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.12_Law_Custom_Myth_Aspects_Social.html" data-source-card data-search="a5.12 law, custom and myth: aspects of the social position of women in classical athens john gould · law, custom and myth: aspects of the social position of women in classical athens">
+              <span class="source-code">A5.12</span>
+              <span class="source-copy">
+                <strong>Law, Custom and Myth: Aspects of the Social Position of Women in Classical Athens</strong>
+                <span>John Gould · Law, Custom and Myth: Aspects of the Social Position of Women in Classical Athens</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.13_Ritual_Pollution_Integrator_Caste_Religion.html" data-source-card data-search="a5.13 ritual pollution as an integrator of caste and religion edward b. harper · ritual pollution as an integrator of caste and religion">
+              <span class="source-code">A5.13</span>
+              <span class="source-copy">
+                <strong>Ritual Pollution as an Integrator of Caste and Religion</strong>
+                <span>Edward B. Harper · Ritual Pollution as an Integrator of Caste and Religion</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.14_Demography_Geography_Sources_Roman_Slaves.html" data-source-card data-search="a5.14 demography, geography and the sources of roman slaves w. v. harris · demography, geography and the sources of roman slaves">
+              <span class="source-code">A5.14</span>
+              <span class="source-copy">
+                <strong>Demography, Geography and the Sources of Roman Slaves</strong>
+                <span>W. V. Harris · Demography, Geography and the Sources of Roman Slaves</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.15_Communist_Interpretations_Chinese_Peasant_Wars.html" data-source-card data-search="a5.15 communist interpretations of the chinese peasant wars james p. harrison · communist interpretations of the chinese peasant wars">
+              <span class="source-code">A5.15</span>
+              <span class="source-copy">
+                <strong>Communist Interpretations of the Chinese Peasant Wars</strong>
+                <span>James P. Harrison · Communist Interpretations of the Chinese Peasant Wars</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.16_Origins_Separation_Sexes_China.html" data-source-card data-search="a5.16 the origins of separation of the sexes in china bret hinsch · the origins of separation of the sexes in china">
+              <span class="source-code">A5.16</span>
+              <span class="source-copy">
+                <strong>The Origins of Separation of the Sexes in China</strong>
+                <span>Bret Hinsch · The Origins of Separation of the Sexes in China</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.17_Changing_Relationship_Between_Local_Society.html" data-source-card data-search="a5.17 the changing relationship between local society and the central political power in former han: 206 b.c.–8 a.d. cho-yun hsu · the changing relationship between local society and the central political power in former han: 206 b.c.–8 a.d.">
+              <span class="source-code">A5.17</span>
+              <span class="source-copy">
+                <strong>The Changing Relationship between Local Society and the Central Political Power in Former Han: 206 B.C.–8 A.D.</strong>
+                <span>Cho-Yun Hsu · The Changing Relationship between Local Society and the Central Political Power in Former Han: 206 B.C.–8 A.D.</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.18_Ideology_Status_Women_Ancient_Greece.html" data-source-card data-search="a5.18 ideology and &quot;the status of women&quot; in ancient greece marilyn katz · ideology and &quot;the status of women&quot; in ancient greece">
+              <span class="source-code">A5.18</span>
+              <span class="source-copy">
+                <strong>Ideology and "The Status of Women" in Ancient Greece</strong>
+                <span>Marilyn Katz · Ideology and "The Status of Women" in Ancient Greece</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.19_Seven_Kinds_Hierarchy_Homo_Hierarchicus.html" data-source-card data-search="a5.19 seven kinds of hierarchy in homo hierarchicus pauline kolenda · seven kinds of hierarchy in homo hierarchicus">
+              <span class="source-code">A5.19</span>
+              <span class="source-copy">
+                <strong>Seven Kinds of Hierarchy in Homo Hierarchicus</strong>
+                <span>Pauline Kolenda · Seven Kinds of Hierarchy in Homo Hierarchicus</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.20_Basis_Ancient_Indian_History_I.html" data-source-card data-search="a5.20 the basis of ancient indian history (i) d. d. kosambi · the basis of ancient indian history (i)">
+              <span class="source-code">A5.20</span>
+              <span class="source-copy">
+                <strong>The Basis of Ancient Indian History (I)</strong>
+                <span>D. D. Kosambi · The Basis of Ancient Indian History (I)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.21_Toward_Study_Economic_Views_Sang.html" data-source-card data-search="a5.21 toward a study of the economic views of sang hung-yang j. l. kroll · toward a study of the economic views of sang hung-yang">
+              <span class="source-code">A5.21</span>
+              <span class="source-copy">
+                <strong>Toward a Study of the Economic Views of Sang Hung-yang</strong>
+                <span>J. L. Kroll · Toward a Study of the Economic Views of Sang Hung-yang</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.22_World_View_Peasant_Rebellion_Reflections.html" data-source-card data-search="a5.22 world view and peasant rebellion: reflections on post-mao historiography kwang-ching liu · world view and peasant rebellion: reflections on post-mao historiography">
+              <span class="source-code">A5.22</span>
+              <span class="source-copy">
+                <strong>World View and Peasant Rebellion: Reflections on Post-Mao Historiography</strong>
+                <span>Kwang-Ching Liu · World View and Peasant Rebellion: Reflections on Post-Mao Historiography</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.23_Freedmen_Decurions_Epitaphs_Social_History.html" data-source-card data-search="a5.23 freedmen and decurions: epitaphs and social history in imperial italy henrik mouritsen · freedmen and decurions: epitaphs and social history in imperial italy">
+              <span class="source-code">A5.23</span>
+              <span class="source-copy">
+                <strong>Freedmen and Decurions: Epitaphs and Social History in Imperial Italy</strong>
+                <span>Henrik Mouritsen · Freedmen and Decurions: Epitaphs and Social History in Imperial Italy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.24_Quantifying_Sources_Slaves_Early_Roman.html" data-source-card data-search="a5.24 quantifying the sources of slaves in the early roman empire walter scheidel · quantifying the sources of slaves in the early roman empire">
+              <span class="source-code">A5.24</span>
+              <span class="source-copy">
+                <strong>Quantifying the Sources of Slaves in the Early Roman Empire</strong>
+                <span>Walter Scheidel · Quantifying the Sources of Slaves in the Early Roman Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.25_Size_Economy_Distribution_Income_Roman.html" data-source-card data-search="a5.25 the size of the economy and the distribution of income in the roman empire walter scheidel and steven j. friesen · the size of the economy and the distribution of income in the roman empire">
+              <span class="source-code">A5.25</span>
+              <span class="source-copy">
+                <strong>The Size of the Economy and the Distribution of Income in the Roman Empire</strong>
+                <span>Walter Scheidel and Steven J. Friesen · The Size of the Economy and the Distribution of Income in the Roman Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.26_Origins_Feudalism_India_C_D.html" data-source-card data-search="a5.26 the origins of feudalism in india (c. a.d. 400–650) r. s. sharma · the origins of feudalism in india (c. a.d. 400–650)">
+              <span class="source-code">A5.26</span>
+              <span class="source-copy">
+                <strong>The Origins of Feudalism in India (c. A.D. 400–650)</strong>
+                <span>R. S. Sharma · The Origins of Feudalism in India (c. A.D. 400–650)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.27_Age_Roman_Girls_Marriage_Some.html" data-source-card data-search="a5.27 the age of roman girls at marriage: some reconsiderations brent d. shaw · the age of roman girls at marriage: some reconsiderations">
+              <span class="source-code">A5.27</span>
+              <span class="source-copy">
+                <strong>The Age of Roman Girls at Marriage: Some Reconsiderations</strong>
+                <span>Brent D. Shaw · The Age of Roman Girls at Marriage: Some Reconsiderations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.28_Labor_Market_Early_Roman_Empire.html" data-source-card data-search="a5.28 the labor market of the early roman empire peter temin · the labor market of the early roman empire">
+              <span class="source-code">A5.28</span>
+              <span class="source-copy">
+                <strong>The Labor Market of the Early Roman Empire</strong>
+                <span>Peter Temin · The Labor Market of the Early Roman Empire</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.29_Image_Barbarian_Early_India.html" data-source-card data-search="a5.29 the image of the barbarian in early india romila thapar · the image of the barbarian in early india">
+              <span class="source-code">A5.29</span>
+              <span class="source-copy">
+                <strong>The Image of the Barbarian in Early India</strong>
+                <span>Romila Thapar · The Image of the Barbarian in Early India</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.30_Greek_Slavery_Domination_Property_Back.html" data-source-card data-search="a5.30 greek slavery: from domination to property and back again kostas vlassopoulos · greek slavery: from domination to property and back again">
+              <span class="source-code">A5.30</span>
+              <span class="source-copy">
+                <strong>Greek Slavery: From Domination to Property and Back Again</strong>
+                <span>Kostas Vlassopoulos · Greek Slavery: From Domination to Property and Back Again</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.31_Rebellion_Revolution_Study_Popular_Movements.html" data-source-card data-search="a5.31 rebellion and revolution: the study of popular movements in chinese history frederic wakeman jr. · rebellion and revolution: the study of popular movements in chinese history">
+              <span class="source-code">A5.31</span>
+              <span class="source-copy">
+                <strong>Rebellion and Revolution: The Study of Popular Movements in Chinese History</strong>
+                <span>Frederic Wakeman Jr. · Rebellion and Revolution: The Study of Popular Movements in Chinese History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A5.32_Regularity_Manumission_Rome.html" data-source-card data-search="a5.32 the regularity of manumission at rome thomas e. j. wiedemann · the regularity of manumission at rome">
+              <span class="source-code">A5.32</span>
+              <span class="source-copy">
+                <strong>The Regularity of Manumission at Rome</strong>
+                <span>Thomas E. J. Wiedemann · The Regularity of Manumission at Rome</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-6" data-chapter-section aria-labelledby="chapter-6-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">6</div>
+          <div>
+            <p>Chapter 6 · 600 B.C.E.–1200 C.E.</p>
+            <h2 id="chapter-6-title">Africa, the Americas, and Pacific Oceania</h2>
+          </div>
+          <span class="chapter-count">70 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.01_Anarchism_Archaeology_Anarchic_Societies_Resistance.html" data-source-card data-search="a6.1 anarchism and the archaeology of anarchic societies: resistance to centralization in the coast salish region of the pacific northwest coast bill angelbeck and colin grier · anarchism and the archaeology of anarchic societies: resistance to centralization in the coast salish region of the pacific northwest coast">
+              <span class="source-code">A6.1</span>
+              <span class="source-copy">
+                <strong>Anarchism and the Archaeology of Anarchic Societies: Resistance to Centralization in the Coast Salish Region of the Pacific Northwest Coast</strong>
+                <span>Bill Angelbeck and Colin Grier · Anarchism and the Archaeology of Anarchic Societies: Resistance to Centralization in the Coast Salish Region of the Pacific Northwest Coast</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.02_Classic_Maya_Warfare_Weapons_Spear.html" data-source-card data-search="a6.2 classic maya warfare and weapons: spear, dart, and arrow points of aguateca and copan kazuo aoyama · classic maya warfare and weapons: spear, dart, and arrow points of aguateca and copan">
+              <span class="source-code">A6.2</span>
+              <span class="source-copy">
+                <strong>Classic Maya Warfare and Weapons: Spear, Dart, and Arrow Points of Aguateca and Copan</strong>
+                <span>Kazuo Aoyama · Classic Maya Warfare and Weapons: Spear, Dart, and Arrow Points of Aguateca and Copan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.03_Cahokia_S_Boom_Bust_Context.html" data-source-card data-search="a6.3 cahokia&#x27;s boom and bust in the context of climate change larry v. benson, timothy r. pauketat, and edward r. cook · cahokia&#x27;s boom and bust in the context of climate change">
+              <span class="source-code">A6.3</span>
+              <span class="source-copy">
+                <strong>Cahokia's Boom and Bust in the Context of Climate Change</strong>
+                <span>Larry V. Benson, Timothy R. Pauketat, and Edward R. Cook · Cahokia's Boom and Bust in the Context of Climate Change</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.04_Evolution_Tribal_Social_Networks_Theory.html" data-source-card data-search="a6.4 evolution of &quot;tribal&quot; social networks: theory and prehistoric north american evidence david p. braun and stephen plog · evolution of &quot;tribal&quot; social networks: theory and prehistoric north american evidence">
+              <span class="source-code">A6.4</span>
+              <span class="source-copy">
+                <strong>Evolution of "Tribal" Social Networks: Theory and Prehistoric North American Evidence</strong>
+                <span>David P. Braun and Stephen Plog · Evolution of "Tribal" Social Networks: Theory and Prehistoric North American Evidence</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.05_Atalla_Center_Periphery_Chav_N.html" data-source-card data-search="a6.5 atalla: a center on the periphery of the chavín horizon richard l. burger and ramiro matos mendieta · atalla: a center on the periphery of the chavín horizon">
+              <span class="source-code">A6.5</span>
+              <span class="source-copy">
+                <strong>Atalla: A Center on the Periphery of the Chavín Horizon</strong>
+                <span>Richard L. Burger and Ramiro Matos Mendieta · Atalla: A Center on the Periphery of the Chavín Horizon</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.06_Axum_Fall_Meroe.html" data-source-card data-search="a6.6 axum and the fall of meroe stanley m. burstein · axum and the fall of meroe">
+              <span class="source-code">A6.6</span>
+              <span class="source-copy">
+                <strong>Axum and the Fall of Meroe</strong>
+                <span>Stanley M. Burstein · Axum and the Fall of Meroe</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.07_Pink_Chert_Projectile_Points_Chacoan.html" data-source-card data-search="a6.7 pink chert, projectile points, and the chacoan regional system catherine m. cameron · pink chert, projectile points, and the chacoan regional system">
+              <span class="source-code">A6.7</span>
+              <span class="source-copy">
+                <strong>Pink Chert, Projectile Points, and the Chacoan Regional System</strong>
+                <span>Catherine M. Cameron · Pink Chert, Projectile Points, and the Chacoan Regional System</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.08_State_Society_Teotihuacan_Mexico.html" data-source-card data-search="a6.8 state and society at teotihuacan, mexico george l. cowgill · state and society at teotihuacan, mexico">
+              <span class="source-code">A6.8</span>
+              <span class="source-copy">
+                <strong>State and Society at Teotihuacan, Mexico</strong>
+                <span>George L. Cowgill · State and Society at Teotihuacan, Mexico</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.09_Cultural_Phylogeography_Bantu_Languages_Sub.html" data-source-card data-search="a6.9 cultural phylogeography of the bantu languages of sub-saharan africa thomas e. currie, andrew meade, myrtille guillon, and ruth mace · cultural phylogeography of the bantu languages of sub-saharan africa">
+              <span class="source-code">A6.9</span>
+              <span class="source-copy">
+                <strong>Cultural Phylogeography of the Bantu Languages of Sub-Saharan Africa</strong>
+                <span>Thomas E. Currie, Andrew Meade, Myrtille Guillon, and Ruth Mace · Cultural Phylogeography of the Bantu Languages of Sub-Saharan Africa</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.10_Bringing_Together_Linguistic_Genetic_Evidence.html" data-source-card data-search="a6.10 bringing together linguistic and genetic evidence to test the bantu expansion cesare de filippo, koen bostoen, mark stoneking, and brigitte pakendorf · bringing together linguistic and genetic evidence to test the bantu expansion">
+              <span class="source-code">A6.10</span>
+              <span class="source-copy">
+                <strong>Bringing Together Linguistic and Genetic Evidence to Test the Bantu Expansion</strong>
+                <span>Cesare de Filippo, Koen Bostoen, Mark Stoneking, and Brigitte Pakendorf · Bringing Together Linguistic and Genetic Evidence to Test the Bantu Expansion</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.11_Soil_Erosion_Slope_Management_Ancient.html" data-source-card data-search="a6.11 soil erosion, slope management, and ancient terracing in the maya lowlands nicholas p. dunning and timothy beach · soil erosion, slope management, and ancient terracing in the maya lowlands">
+              <span class="source-code">A6.11</span>
+              <span class="source-copy">
+                <strong>Soil Erosion, Slope Management, and Ancient Terracing in the Maya Lowlands</strong>
+                <span>Nicholas P. Dunning and Timothy Beach · Soil Erosion, Slope Management, and Ancient Terracing in the Maya Lowlands</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.12_Economic_Support_Chaco_Canyon_Society.html" data-source-card data-search="a6.12 economic support of chaco canyon society timothy earle · economic support of chaco canyon society">
+              <span class="source-code">A6.12</span>
+              <span class="source-copy">
+                <strong>Economic Support of Chaco Canyon Society</strong>
+                <span>Timothy Earle · Economic Support of Chaco Canyon Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.13_Meroe_Sudanic_Kingdoms.html" data-source-card data-search="a6.13 meroe and the sudanic kingdoms david n. edwards · meroe and the sudanic kingdoms">
+              <span class="source-code">A6.13</span>
+              <span class="source-copy">
+                <strong>Meroe and the Sudanic Kingdoms</strong>
+                <span>David N. Edwards · Meroe and the Sudanic Kingdoms</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.14_Drought_Maya_Collapse.html" data-source-card data-search="a6.14 drought and the maya collapse richardson b. gill, paul a. mayewski, johan nyberg, gerald h. haug, and larry c. peterson · drought and the maya collapse">
+              <span class="source-code">A6.14</span>
+              <span class="source-copy">
+                <strong>Drought and the Maya Collapse</strong>
+                <span>Richardson B. Gill, Paul A. Mayewski, Johan Nyberg, Gerald H. Haug, and Larry C. Peterson · Drought and the Maya Collapse</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.15_Tiwanaku_Temples_State_Expansion_Tiwanaku.html" data-source-card data-search="a6.15 tiwanaku temples and state expansion: a tiwanaku sunken-court temple in moquegua, peru paul goldstein · tiwanaku temples and state expansion: a tiwanaku sunken-court temple in moquegua, peru">
+              <span class="source-code">A6.15</span>
+              <span class="source-copy">
+                <strong>Tiwanaku Temples and State Expansion: A Tiwanaku Sunken-Court Temple in Moquegua, Peru</strong>
+                <span>Paul Goldstein · Tiwanaku Temples and State Expansion: A Tiwanaku Sunken-Court Temple in Moquegua, Peru</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.16_Identification_Sources_Hopewellian_Obsidian_Middle.html" data-source-card data-search="a6.16 identification of the sources of hopewellian obsidian in the middle west james b. griffin, a. a. gordus, and g. a. wright · identification of the sources of hopewellian obsidian in the middle west">
+              <span class="source-code">A6.16</span>
+              <span class="source-copy">
+                <strong>Identification of the Sources of Hopewellian Obsidian in the Middle West</strong>
+                <span>James B. Griffin, A. A. Gordus, and G. A. Wright · Identification of the Sources of Hopewellian Obsidian in the Middle West</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.17_Bantu_Expansion_Shows_That_Habitat.html" data-source-card data-search="a6.17 bantu expansion shows that habitat alters the route and pace of human dispersals rebecca grollemund, simon branford, koen bostoen, andrew meade, chris venditti, and mark pagel · bantu expansion shows that habitat alters the route and pace of human dispersals">
+              <span class="source-code">A6.17</span>
+              <span class="source-copy">
+                <strong>Bantu Expansion Shows That Habitat Alters the Route and Pace of Human Dispersals</strong>
+                <span>Rebecca Grollemund, Simon Branford, Koen Bostoen, Andrew Meade, Chris Venditti, and Mark Pagel · Bantu Expansion Shows That Habitat Alters the Route and Pace of Human Dispersals</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.18_Empowering_Places_Rock_Shelters_Ritual.html" data-source-card data-search="a6.18 empowering places: rock shelters and ritual control in farmer-forager interactions in the northern province simon hall and ben smith · empowering places: rock shelters and ritual control in farmer-forager interactions in the northern province">
+              <span class="source-code">A6.18</span>
+              <span class="source-copy">
+                <strong>Empowering Places: Rock Shelters and Ritual Control in Farmer-Forager Interactions in the Northern Province</strong>
+                <span>Simon Hall and Ben Smith · Empowering Places: Rock Shelters and Ritual Control in Farmer-Forager Interactions in the Northern Province</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.19_Selective_Borrowing_Possibility_San_Shamanistic.html" data-source-card data-search="a6.19 selective borrowing? the possibility of san shamanistic influence on southern bantu divination and healing practices w. d. hammond-tooke · selective borrowing? the possibility of san shamanistic influence on southern bantu divination and healing practices">
+              <span class="source-code">A6.19</span>
+              <span class="source-copy">
+                <strong>Selective Borrowing? The Possibility of San Shamanistic Influence on Southern Bantu Divination and Healing Practices</strong>
+                <span>W. D. Hammond-Tooke · Selective Borrowing? The Possibility of San Shamanistic Influence on Southern Bantu Divination and Healing Practices</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.20_Bantu_Language_Trees_Reflect_Spread.html" data-source-card data-search="a6.20 bantu language trees reflect the spread of farming across sub-saharan africa: a maximum-parsimony analysis clare janaki holden · bantu language trees reflect the spread of farming across sub-saharan africa: a maximum-parsimony analysis">
+              <span class="source-code">A6.20</span>
+              <span class="source-copy">
+                <strong>Bantu Language Trees Reflect the Spread of Farming across Sub-Saharan Africa: A Maximum-Parsimony Analysis</strong>
+                <span>Clare Janaki Holden · Bantu Language Trees Reflect the Spread of Farming across Sub-Saharan Africa: A Maximum-Parsimony Analysis</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.21_Rise_Fall_Ancient_Maya_Petty.html" data-source-card data-search="a6.21 the rise and fall of an ancient maya petty royal court gyles iannone · the rise and fall of an ancient maya petty royal court">
+              <span class="source-code">A6.21</span>
+              <span class="source-copy">
+                <strong>The Rise and Fall of an Ancient Maya Petty Royal Court</strong>
+                <span>Gyles Iannone · The Rise and Fall of an Ancient Maya Petty Royal Court</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.22_Domestic_Political_Lives_Classic_Maya.html" data-source-card data-search="a6.22 domestic and political lives of classic maya elites: the excavation of rapidly abandoned structures at aguateca, guatemala takeshi inomata, daniela triadan, erick ponciano, estela pinto, richard e. terry, and markus eberl · domestic and political lives of classic maya elites: the excavation of rapidly abandoned structures at aguateca, guatemala">
+              <span class="source-code">A6.22</span>
+              <span class="source-copy">
+                <strong>Domestic and Political Lives of Classic Maya Elites: The Excavation of Rapidly Abandoned Structures at Aguateca, Guatemala</strong>
+                <span>Takeshi Inomata, Daniela Triadan, Erick Ponciano, Estela Pinto, Richard E. Terry, and Markus Eberl · Domestic and Political Lives of Classic Maya Elites: The Excavation of Rapidly Abandoned Structures at Aguateca, Guatemala</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.23_Palace_Fallen_King_Royal_Residential.html" data-source-card data-search="a6.23 in the palace of the fallen king: the royal residential complex at aguateca, guatemala takeshi inomata, daniela triadan, erick ponciano, richard terry, and harriet f. beaubien · in the palace of the fallen king: the royal residential complex at aguateca, guatemala">
+              <span class="source-code">A6.23</span>
+              <span class="source-copy">
+                <strong>In the Palace of the Fallen King: The Royal Residential Complex at Aguateca, Guatemala</strong>
+                <span>Takeshi Inomata, Daniela Triadan, Erick Ponciano, Richard Terry, and Harriet F. Beaubien · In the Palace of the Fallen King: The Royal Residential Complex at Aguateca, Guatemala</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.24_Diffusionism_Reconsidered_Linguistic_Archaeological_Evidence.html" data-source-card data-search="a6.24 diffusionism reconsidered: linguistic and archaeological evidence for prehistoric polynesian contact with southern california terry l. jones and kathryn a. klar · diffusionism reconsidered: linguistic and archaeological evidence for prehistoric polynesian contact with southern california">
+              <span class="source-code">A6.24</span>
+              <span class="source-copy">
+                <strong>Diffusionism Reconsidered: Linguistic and Archaeological Evidence for Prehistoric Polynesian Contact with Southern California</strong>
+                <span>Terry L. Jones and Kathryn A. Klar · Diffusionism Reconsidered: Linguistic and Archaeological Evidence for Prehistoric Polynesian Contact with Southern California</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.25_Ezana_S_Conversion_Reconsidered.html" data-source-card data-search="a6.25 ezana&#x27;s conversion reconsidered steven kaplan · ezana&#x27;s conversion reconsidered">
+              <span class="source-code">A6.25</span>
+              <span class="source-copy">
+                <strong>Ezana's Conversion Reconsidered</strong>
+                <span>Steven Kaplan · Ezana's Conversion Reconsidered</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.26_Mirror_Forest_Dorobo_Hunter_Gatherers.html" data-source-card data-search="a6.26 mirror in the forest: the dorobo hunter-gatherers as an image of the other michael g. kenny · mirror in the forest: the dorobo hunter-gatherers as an image of the other">
+              <span class="source-code">A6.26</span>
+              <span class="source-copy">
+                <strong>Mirror in the Forest: The Dorobo Hunter-Gatherers as an Image of the Other</strong>
+                <span>Michael G. Kenny · Mirror in the Forest: The Dorobo Hunter-Gatherers as an Image of the Other</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.27_Peopling_Pacific_Holistic_Anthropological_Perspective.html" data-source-card data-search="a6.27 peopling of the pacific: a holistic anthropological perspective patrick v. kirch · peopling of the pacific: a holistic anthropological perspective">
+              <span class="source-code">A6.27</span>
+              <span class="source-copy">
+                <strong>Peopling of the Pacific: A Holistic Anthropological Perspective</strong>
+                <span>Patrick V. Kirch · Peopling of the Pacific: A Holistic Anthropological Perspective</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.28_Polynesian_Prehistory_Cultural_Adaptation_Island.html" data-source-card data-search="a6.28 polynesian prehistory: cultural adaptation in island ecosystems patrick v. kirch · polynesian prehistory: cultural adaptation in island ecosystems">
+              <span class="source-code">A6.28</span>
+              <span class="source-copy">
+                <strong>Polynesian Prehistory: Cultural Adaptation in Island Ecosystems</strong>
+                <span>Patrick V. Kirch · Polynesian Prehistory: Cultural Adaptation in Island Ecosystems</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.29_Ethiopian_Sudanese_Frontier_Zone_Ancient.html" data-source-card data-search="a6.29 an ethiopian-sudanese frontier zone in ancient history l. p. kirwan · an ethiopian-sudanese frontier zone in ancient history">
+              <span class="source-code">A6.29</span>
+              <span class="source-copy">
+                <strong>An Ethiopian-Sudanese Frontier Zone in Ancient History</strong>
+                <span>L. P. Kirwan · An Ethiopian-Sudanese Frontier Zone in Ancient History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.30_Rome_Beyond_Southern_Egyptian_Frontier.html" data-source-card data-search="a6.30 rome beyond the southern egyptian frontier l. p. kirwan · rome beyond the southern egyptian frontier">
+              <span class="source-code">A6.30</span>
+              <span class="source-copy">
+                <strong>Rome beyond the Southern Egyptian Frontier</strong>
+                <span>L. P. Kirwan · Rome beyond the Southern Egyptian Frontier</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.31_Institutional_Organization_Mississippian_Religion.html" data-source-card data-search="a6.31 the institutional organization of mississippian religion vernon james knight jr. · the institutional organization of mississippian religion">
+              <span class="source-code">A6.31</span>
+              <span class="source-copy">
+                <strong>The Institutional Organization of Mississippian Religion</strong>
+                <span>Vernon James Knight Jr. · The Institutional Organization of Mississippian Religion</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.32_Polychrome_Pottery_Political_Strategies_Late.html" data-source-card data-search="a6.32 polychrome pottery and political strategies in late and terminal classic lowland maya society lisa j. lecount · polychrome pottery and political strategies in late and terminal classic lowland maya society">
+              <span class="source-code">A6.32</span>
+              <span class="source-copy">
+                <strong>Polychrome Pottery and Political Strategies in Late and Terminal Classic Lowland Maya Society</strong>
+                <span>Lisa J. LeCount · Polychrome Pottery and Political Strategies in Late and Terminal Classic Lowland Maya Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.33_Genetic_Variation_Reveals_Large_Scale.html" data-source-card data-search="a6.33 genetic variation reveals large-scale population expansion and migration during the expansion of bantu-speaking peoples sen li, carina schlebusch, and mattias jakobsson · genetic variation reveals large-scale population expansion and migration during the expansion of bantu-speaking peoples">
+              <span class="source-code">A6.33</span>
+              <span class="source-copy">
+                <strong>Genetic Variation Reveals Large-Scale Population Expansion and Migration during the Expansion of Bantu-Speaking Peoples</strong>
+                <span>Sen Li, Carina Schlebusch, and Mattias Jakobsson · Genetic Variation Reveals Large-Scale Population Expansion and Migration during the Expansion of Bantu-Speaking Peoples</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.34_Collapse_Classic_Maya_Case_Role.html" data-source-card data-search="a6.34 the collapse of the classic maya: a case for the role of water control lisa j. lucero · the collapse of the classic maya: a case for the role of water control">
+              <span class="source-code">A6.34</span>
+              <span class="source-copy">
+                <strong>The Collapse of the Classic Maya: A Case for the Role of Water Control</strong>
+                <span>Lisa J. Lucero · The Collapse of the Classic Maya: A Case for the Role of Water Control</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.35_Destruction_Images_Teotihuacan_Anthropomorphic_Sculpture.html" data-source-card data-search="a6.35 the destruction of images in teotihuacan: anthropomorphic sculpture, elite cults, and the end of a civilization leonardo lópez luján, laura filloy nadal, barbara w. fash, william l. fash, and pilar hernández · the destruction of images in teotihuacan: anthropomorphic sculpture, elite cults, and the end of a civilization">
+              <span class="source-code">A6.35</span>
+              <span class="source-copy">
+                <strong>The Destruction of Images in Teotihuacan: Anthropomorphic Sculpture, Elite Cults, and the End of a Civilization</strong>
+                <span>Leonardo López Luján, Laura Filloy Nadal, Barbara W. Fash, William L. Fash, and Pilar Hernández · The Destruction of Images in Teotihuacan: Anthropomorphic Sculpture, Elite Cults, and the End of a Civilization</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.36_Corporate_Groups_Domestic_Activities_Teotihuacan.html" data-source-card data-search="a6.36 corporate groups and domestic activities at teotihuacan linda manzanilla · corporate groups and domestic activities at teotihuacan">
+              <span class="source-code">A6.36</span>
+              <span class="source-copy">
+                <strong>Corporate Groups and Domestic Activities at Teotihuacan</strong>
+                <span>Linda Manzanilla · Corporate Groups and Domestic Activities at Teotihuacan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.37_Cultural_Transformation_Maya_Postclassic_Community.html" data-source-card data-search="a6.37 cultural transformation at the maya postclassic community of laguna de on, belize marilyn a. masson · cultural transformation at the maya postclassic community of laguna de on, belize">
+              <span class="source-code">A6.37</span>
+              <span class="source-copy">
+                <strong>Cultural Transformation at the Maya Postclassic Community of Laguna de On, Belize</strong>
+                <span>Marilyn A. Masson · Cultural Transformation at the Maya Postclassic Community of Laguna de On, Belize</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.38_Organization_Turquoise_Production_Consumption_Prehistoric.html" data-source-card data-search="a6.38 the organization of turquoise production and consumption by the prehistoric chacoans frances joan mathien · the organization of turquoise production and consumption by the prehistoric chacoans">
+              <span class="source-code">A6.38</span>
+              <span class="source-copy">
+                <strong>The Organization of Turquoise Production and Consumption by the Prehistoric Chacoans</strong>
+                <span>Frances Joan Mathien · The Organization of Turquoise Production and Consumption by the Prehistoric Chacoans</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.39_Inland_Niger_Delta_Before_Empire.html" data-source-card data-search="a6.39 the inland niger delta before the empire of mali: evidence from jenne-jeno roderick j. mcintosh and susan keech mcintosh · the inland niger delta before the empire of mali: evidence from jenne-jeno">
+              <span class="source-code">A6.39</span>
+              <span class="source-copy">
+                <strong>The Inland Niger Delta before the Empire of Mali: Evidence from Jenne-Jeno</strong>
+                <span>Roderick J. McIntosh and Susan Keech McIntosh · The Inland Niger Delta before the Empire of Mali: Evidence from Jenne-Jeno</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.40_Reconceptualizing_Early_Ghana.html" data-source-card data-search="a6.40 reconceptualizing early ghana susan keech mcintosh · reconceptualizing early ghana">
+              <span class="source-code">A6.40</span>
+              <span class="source-copy">
+                <strong>Reconceptualizing Early Ghana</strong>
+                <span>Susan Keech McIntosh · Reconceptualizing Early Ghana</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.41_Teotihuacan.html" data-source-card data-search="a6.41 teotihuacan deborah l. nichols · teotihuacan">
+              <span class="source-code">A6.41</span>
+              <span class="source-copy">
+                <strong>Teotihuacan</strong>
+                <span>Deborah L. Nichols · Teotihuacan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.42_Problem_Bantu_Expansion.html" data-source-card data-search="a6.42 the problem of the bantu expansion roland oliver · the problem of the bantu expansion">
+              <span class="source-code">A6.42</span>
+              <span class="source-copy">
+                <strong>The Problem of the Bantu Expansion</strong>
+                <span>Roland Oliver · The Problem of the Bantu Expansion</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.43_Resettled_Farmers_Making_Mississippian_Polity.html" data-source-card data-search="a6.43 resettled farmers and the making of a mississippian polity timothy r. pauketat · resettled farmers and the making of a mississippian polity">
+              <span class="source-code">A6.43</span>
+              <span class="source-copy">
+                <strong>Resettled Farmers and the Making of a Mississippian Polity</strong>
+                <span>Timothy R. Pauketat · Resettled Farmers and the Making of a Mississippian Polity</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.44_Residues_Feasting_Public_Ritual_Early.html" data-source-card data-search="a6.44 the residues of feasting and public ritual at early cahokia timothy r. pauketat, lucretia s. kelly, gayle j. fritz, neal h. lopinot, scott elias, and eve hargrave · the residues of feasting and public ritual at early cahokia">
+              <span class="source-code">A6.44</span>
+              <span class="source-copy">
+                <strong>The Residues of Feasting and Public Ritual at Early Cahokia</strong>
+                <span>Timothy R. Pauketat, Lucretia S. Kelly, Gayle J. Fritz, Neal H. Lopinot, Scott Elias, and Eve Hargrave · The Residues of Feasting and Public Ritual at Early Cahokia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.45_Matrilocality_Corporate_Strategy_Organization_Production.html" data-source-card data-search="a6.45 matrilocality, corporate strategy, and the organization of production in the chacoan world peter n. peregrine · matrilocality, corporate strategy, and the organization of production in the chacoan world">
+              <span class="source-code">A6.45</span>
+              <span class="source-copy">
+                <strong>Matrilocality, Corporate Strategy, and the Organization of Production in the Chacoan World</strong>
+                <span>Peter N. Peregrine · Matrilocality, Corporate Strategy, and the Organization of Production in the Chacoan World</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.46_Climate_Collapse_Maya_Civilization_Series.html" data-source-card data-search="a6.46 climate and the collapse of maya civilization: a series of multi-year droughts helped to doom an ancient culture larry c. peterson and gerald h. haug · climate and the collapse of maya civilization: a series of multi-year droughts helped to doom an ancient culture">
+              <span class="source-code">A6.46</span>
+              <span class="source-copy">
+                <strong>Climate and the Collapse of Maya Civilization: A Series of Multi-year Droughts Helped to Doom an Ancient Culture</strong>
+                <span>Larry C. Peterson and Gerald H. Haug · Climate and the Collapse of Maya Civilization: A Series of Multi-year Droughts Helped to Doom an Ancient Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.47_Bushmen_Mediators_Nguni_Cosmology.html" data-source-card data-search="a6.47 bushmen as mediators in nguni cosmology frans e. prins and hester lewis · bushmen as mediators in nguni cosmology">
+              <span class="source-code">A6.47</span>
+              <span class="source-copy">
+                <strong>Bushmen as Mediators in Nguni Cosmology</strong>
+                <span>Frans E. Prins and Hester Lewis · Bushmen as Mediators in Nguni Cosmology</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.48_Cultural_Chronological_Context_Early_Holocene.html" data-source-card data-search="a6.48 the cultural and chronological context of early holocene maize and squash domestication in the central balsas river valley, mexico anthony j. ranere, dolores r. piperno, irene holst, ruth dickau, and josé iriarte · the cultural and chronological context of early holocene maize and squash domestication in the central balsas river valley, mexico">
+              <span class="source-code">A6.48</span>
+              <span class="source-copy">
+                <strong>The Cultural and Chronological Context of Early Holocene Maize and Squash Domestication in the Central Balsas River Valley, Mexico</strong>
+                <span>Anthony J. Ranere, Dolores R. Piperno, Irene Holst, Ruth Dickau, and José Iriarte · The Cultural and Chronological Context of Early Holocene Maize and Squash Domestication in the Central Balsas River Valley, Mexico</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.49_Production_Consumption_Sacred_Economy_Material.html" data-source-card data-search="a6.49 production and consumption in a sacred economy: the material correlates of high devotional expression at chaco canyon colin renfrew · production and consumption in a sacred economy: the material correlates of high devotional expression at chaco canyon">
+              <span class="source-code">A6.49</span>
+              <span class="source-copy">
+                <strong>Production and Consumption in a Sacred Economy: The Material Correlates of High Devotional Expression at Chaco Canyon</strong>
+                <span>Colin Renfrew · Production and Consumption in a Sacred Economy: The Material Correlates of High Devotional Expression at Chaco Canyon</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.50_New_Paradigm_African_Early_Iron.html" data-source-card data-search="a6.50 a new paradigm: the african early iron age without bantu migrations john h. robertson and rebecca bradley · a new paradigm: the african early iron age without bantu migrations">
+              <span class="source-code">A6.50</span>
+              <span class="source-copy">
+                <strong>A New Paradigm: The African Early Iron Age without Bantu Migrations</strong>
+                <span>John H. Robertson and Rebecca Bradley · A New Paradigm: The African Early Iron Age without Bantu Migrations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.51_Power_Labor_Dynamics_Change_Chacoan.html" data-source-card data-search="a6.51 power, labor, and the dynamics of change in chacoan political economy dean j. saitta · power, labor, and the dynamics of change in chacoan political economy">
+              <span class="source-code">A6.51</span>
+              <span class="source-copy">
+                <strong>Power, Labor, and the Dynamics of Change in Chacoan Political Economy</strong>
+                <span>Dean J. Saitta · Power, Labor, and the Dynamics of Change in Chacoan Political Economy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.52_Mesoamerican_Urban_Tradition.html" data-source-card data-search="a6.52 the mesoamerican urban tradition william t. sanders and david webster · the mesoamerican urban tradition">
+              <span class="source-code">A6.52</span>
+              <span class="source-copy">
+                <strong>The Mesoamerican Urban Tradition</strong>
+                <span>William T. Sanders and David Webster · The Mesoamerican Urban Tradition</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.53_Maya_Collapse.html" data-source-card data-search="a6.53 on the maya collapse robert s. santley, thomas w. killion, and mark t. lycett · on the maya collapse">
+              <span class="source-code">A6.53</span>
+              <span class="source-copy">
+                <strong>On the Maya Collapse</strong>
+                <span>Robert S. Santley, Thomas W. Killion, and Mark T. Lycett · On the Maya Collapse</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.54_Complex_Iron_Smelting_Prehistoric_Culture.html" data-source-card data-search="a6.54 complex iron smelting and prehistoric culture in tanzania peter schmidt and donald h. avery · complex iron smelting and prehistoric culture in tanzania">
+              <span class="source-code">A6.54</span>
+              <span class="source-copy">
+                <strong>Complex Iron Smelting and Prehistoric Culture in Tanzania</strong>
+                <span>Peter Schmidt and Donald H. Avery · Complex Iron Smelting and Prehistoric Culture in Tanzania</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.55_Initial_Formation_Indigenous_Crop_Complex.html" data-source-card data-search="a6.55 initial formation of an indigenous crop complex in eastern north america at 3800 b.p. bruce d. smith and richard a. yarnell · initial formation of an indigenous crop complex in eastern north america at 3800 b.p.">
+              <span class="source-code">A6.55</span>
+              <span class="source-copy">
+                <strong>Initial Formation of an Indigenous Crop Complex in Eastern North America at 3800 B.P.</strong>
+                <span>Bruce D. Smith and Richard A. Yarnell · Initial Formation of an Indigenous Crop Complex in Eastern North America at 3800 B.P.</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.56_Commodity_Gift_Teotihuacan_Obsidian_Maya.html" data-source-card data-search="a6.56 commodity or gift: teotihuacan obsidian in the maya region michael w. spence · commodity or gift: teotihuacan obsidian in the maya region">
+              <span class="source-code">A6.56</span>
+              <span class="source-copy">
+                <strong>Commodity or Gift: Teotihuacan Obsidian in the Maya Region</strong>
+                <span>Michael W. Spence · Commodity or Gift: Teotihuacan Obsidian in the Maya Region</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.57_Obsidian_Production_State_Teotihuacan.html" data-source-card data-search="a6.57 obsidian production and the state in teotihuacan michael w. spence · obsidian production and the state in teotihuacan">
+              <span class="source-code">A6.57</span>
+              <span class="source-copy">
+                <strong>Obsidian Production and the State in Teotihuacan</strong>
+                <span>Michael W. Spence · Obsidian Production and the State in Teotihuacan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.58_Burials_Dedicated_Old_Temple_Quetzalcoatl.html" data-source-card data-search="a6.58 burials dedicated to the old temple of quetzalcoatl at teotihuacan, mexico saburo sugiyama · burials dedicated to the old temple of quetzalcoatl at teotihuacan, mexico">
+              <span class="source-code">A6.58</span>
+              <span class="source-copy">
+                <strong>Burials Dedicated to the Old Temple of Quetzalcoatl at Teotihuacan, Mexico</strong>
+                <span>Saburo Sugiyama · Burials Dedicated to the Old Temple of Quetzalcoatl at Teotihuacan, Mexico</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.59_Dedicatory_Burial_Offering_Complexes_Moon.html" data-source-card data-search="a6.59 dedicatory burial/offering complexes at the moon pyramid, teotihuacan: a preliminary report of 1998–2004 explorations saburo sugiyama and leonardo lópez luján · dedicatory burial/offering complexes at the moon pyramid, teotihuacan: a preliminary report of 1998–2004 explorations">
+              <span class="source-code">A6.59</span>
+              <span class="source-copy">
+                <strong>Dedicatory Burial/Offering Complexes at the Moon Pyramid, Teotihuacan: A Preliminary Report of 1998–2004 Explorations</strong>
+                <span>Saburo Sugiyama and Leonardo López Luján · Dedicatory Burial/Offering Complexes at the Moon Pyramid, Teotihuacan: A Preliminary Report of 1998–2004 Explorations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.60_Worldview_Materialized_Teotihuacan_Mexico.html" data-source-card data-search="a6.60 worldview materialized in teotihuacan, mexico saburo sugiyama · worldview materialized in teotihuacan, mexico">
+              <span class="source-code">A6.60</span>
+              <span class="source-copy">
+                <strong>Worldview Materialized in Teotihuacan, Mexico</strong>
+                <span>Saburo Sugiyama · Worldview Materialized in Teotihuacan, Mexico</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.61_Making_Breaking_Pots_Chaco_World.html" data-source-card data-search="a6.61 making and breaking pots in the chaco world h. wolcott toll · making and breaking pots in the chaco world">
+              <span class="source-code">A6.61</span>
+              <span class="source-copy">
+                <strong>Making and Breaking Pots in the Chaco World</strong>
+                <span>H. Wolcott Toll · Making and Breaking Pots in the Chaco World</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.62_Mound_Building_Prestige_Goods_Exchange.html" data-source-card data-search="a6.62 mound building and prestige goods exchange: changing strategies in the cahokia chiefdom mary beth d. trubitt · mound building and prestige goods exchange: changing strategies in the cahokia chiefdom">
+              <span class="source-code">A6.62</span>
+              <span class="source-copy">
+                <strong>Mound Building and Prestige Goods Exchange: Changing Strategies in the Cahokia Chiefdom</strong>
+                <span>Mary Beth D. Trubitt · Mound Building and Prestige Goods Exchange: Changing Strategies in the Cahokia Chiefdom</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.63_Memory_Meaning_Masonry_Late_Bonito.html" data-source-card data-search="a6.63 memory, meaning, and masonry: the late bonito chacoan landscape ruth m. van dyke · memory, meaning, and masonry: the late bonito chacoan landscape">
+              <span class="source-code">A6.63</span>
+              <span class="source-copy">
+                <strong>Memory, Meaning, and Masonry: The Late Bonito Chacoan Landscape</strong>
+                <span>Ruth M. Van Dyke · Memory, Meaning, and Masonry: The Late Bonito Chacoan Landscape</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.64_New_Linguistic_Evidence_Bantu_Expansion.html" data-source-card data-search="a6.64 new linguistic evidence and ‘the bantu expansion’ j. vansina · new linguistic evidence and ‘the bantu expansion’">
+              <span class="source-code">A6.64</span>
+              <span class="source-copy">
+                <strong>New Linguistic Evidence and ‘the Bantu Expansion’</strong>
+                <span>J. Vansina · New Linguistic Evidence and ‘the Bantu Expansion’</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.65_Western_Bantu_Expansion.html" data-source-card data-search="a6.65 western bantu expansion jan vansina · western bantu expansion">
+              <span class="source-code">A6.65</span>
+              <span class="source-copy">
+                <strong>Western Bantu Expansion</strong>
+                <span>Jan Vansina · Western Bantu Expansion</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.66_Settlement_History_Classic_Collapse_Copan.html" data-source-card data-search="a6.66 settlement history and the classic collapse at copan: a redefined chronological perspective david webster and anncorinne freter · settlement history and the classic collapse at copan: a redefined chronological perspective">
+              <span class="source-code">A6.66</span>
+              <span class="source-copy">
+                <strong>Settlement History and the Classic Collapse at Copan: A Redefined Chronological Perspective</strong>
+                <span>David Webster and AnnCorinne Freter · Settlement History and the Classic Collapse at Copan: A Redefined Chronological Perspective</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.67_Ancient_Maya_Political_Present.html" data-source-card data-search="a6.67 the ancient maya and the political present richard r. wilk · the ancient maya and the political present">
+              <span class="source-code">A6.67</span>
+              <span class="source-copy">
+                <strong>The Ancient Maya and the Political Present</strong>
+                <span>Richard R. Wilk · The Ancient Maya and the Political Present</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.68_Ritual_Mound_Formation_During_Bonito.html" data-source-card data-search="a6.68 ritual and mound formation during the bonito phase in chaco canyon w. h. wills · ritual and mound formation during the bonito phase in chaco canyon">
+              <span class="source-code">A6.68</span>
+              <span class="source-copy">
+                <strong>Ritual and Mound Formation during the Bonito Phase in Chaco Canyon</strong>
+                <span>W. H. Wills · Ritual and Mound Formation during the Bonito Phase in Chaco Canyon</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.69_Bone_Chemistry_Body_Parts_Growth.html" data-source-card data-search="a6.69 bone chemistry, body parts, and growth marks: evaluating ohio hopewell and cahokia mississippian seasonality, subsistence, ritual, and feasting richard w. yerkes · bone chemistry, body parts, and growth marks: evaluating ohio hopewell and cahokia mississippian seasonality, subsistence, ritual, and feasting">
+              <span class="source-code">A6.69</span>
+              <span class="source-copy">
+                <strong>Bone Chemistry, Body Parts, and Growth Marks: Evaluating Ohio Hopewell and Cahokia Mississippian Seasonality, Subsistence, Ritual, and Feasting</strong>
+                <span>Richard W. Yerkes · Bone Chemistry, Body Parts, and Growth Marks: Evaluating Ohio Hopewell and Cahokia Mississippian Seasonality, Subsistence, Ritual, and Feasting</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Scholarly_Articles/A6.70_Cultural_Context_Plant_Domestication_Eastern.html" data-source-card data-search="a6.70 the cultural context of plant domestication in eastern north america bruce d. smith · the cultural context of plant domestication in eastern north america">
+              <span class="source-code">A6.70</span>
+              <span class="source-copy">
+                <strong>The Cultural Context of Plant Domestication in Eastern North America</strong>
+                <span>Bruce D. Smith · The Cultural Context of Plant Domestication in Eastern North America</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 2 · Second Wave Civilizations · History B1 · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>

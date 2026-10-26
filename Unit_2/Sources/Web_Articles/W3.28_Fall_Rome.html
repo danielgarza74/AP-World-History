@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fall of Rome. Web Article W3.28 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Web Article W3.28 | Fall of Rome</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/W3.28_Fall_Rome.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 3 · W3.28</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W3.28">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W3.28</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Fall of Rome</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Dennis RM Campbell</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">Dennis RM Campbell, Associate Professor of History, San Francisco State University</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">OER Project</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">n.d.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.5</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.5.4 Qualifies; 3.5.2 Qualifies; 3.5.1 Qualifies</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,212 words (complete article)</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><strong>Headed for a fall</strong></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">At its peak in 117 CE, the Roman Empire covered some 2.3 million square miles (5.9 million square kilometers) over three continents, Africa, Asia, and Europe. It is estimated that perhaps 60 million people lived within its borders. It was one of the largest and most powerful empires in the ancient world. However the empire could not maintain this size. Within a few decades of Emperor Trajan’s death in 117 CE, Mesopotamia was lost to the Parthians of ancient Iran. The Romans would never again hold Mesopotamia.1</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In Europe, the long border through heavily wooded Germania proved too expensive to defend, forcing the Empire to concede land to German tribes and pull back to the Rhone and Danube Rivers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">When Diocletian became the Roman Emperor in 284 CE, he inherited an empire on the verge of collapse. He was preceded by several weak rulers who rose too quickly and were often assassinated. International trade networks were failing and the vast, connected world of the Roman Empire almost disappeared. When Diocletian took charge, he brought about a series of changes to save his empire. Most of these changes would not last long past his death, but he did bring about some much-needed stability. In the West, the empire would limp forward for another century and a half, while in the East, it would reign for over a millennium.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Diocletian created the tetrarchy which divided the empire between four rulers: two senior emperors and two junior ones. Together they would rule the vast empire. Yet soon after his death in 311 CE, the rulers were back to fighting each other for control. Constantine the Great (ruled 306–337 CE) would emerge as the victor. Under Constantine, Christianity became legal and eventually the dominant religion. The new capital city Constantinople (modern Istanbul, Turkey) was created as if it were the New Rome. This was in the eastern part of the empire, which was much wealthier and more stable.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Things went downhill for the next 140 years, especially over in the west. Power was often in the hands of child emperors, who were guided by generals. The economy was in shambles as international trade dramatically declined. The Vandals under their king Gaiseric (389–477 CE) took over North Africa and cut off the Western Roman Empire from its main source of grain. Within the empire, markets became more localized. This made it a lot harder for the government to collect the taxes it needed for its vast armies.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Throughout Europe, Germanic tribes began to push into the empire, often driven there by the hope for safety and security against forces such as Attila the Hun. In the West, these forces became too strong to resist. Then in 476 CE the last emperor, Romulus Augustulus, was deposed at the age of 16.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><strong>Romanitas—Being and becoming Roman</strong></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In 212 CE, the emperor Caracalla published the Antonine Constitution. It gave citizenship to all free men within the borders of the Roman Empire, no matter how far from Rome they lived. The idea of Roman identity, or romanitas was pushed hard through education and government. Everyone who lived on the other side of the borders were non-Romans, looked down on as barbarians. This sense of social superiority was most evident in how the Romans dealt with the Germanic tribes. In 350 CE, German groups were trying to migrate into the Roman Empire, but while the Romans would use them as troops, these Germans had little chance of being accepted as “Roman.” But Germans would soon prove you didn’t have to be Roman to learn the romanitas way.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In 375 CE, the emperor Valentinian I met with German tribal leaders from the Quadi. The Quadi had previously attacked Roman forces that had crossed the Danube River. They explained to the emperor that this was because he had set up military camps along the river in their territory, creating a barrier against them. He was so insulted by the blame that they placed on him for their actions that he “burst into a mighty fit of wrath,” suffered an aneurysm and died. Three years later, in 378 CE, a confederation (group) of German tribes defeated the Romans at the Battle of Adrianople in the Balkan Peninsula and killed the emperor Valens. This battle was the result of a series of abuses suffered by Germans at the hands of Roman officials. The confederation was then united as the Visigoths under its first king, Alaric. Alaric and his subjects were repeatedly denied safe refuge or recognition as citizens, simply because they were Germans. Alaric and the Visigoths fought back by sacking Rome in 410 CE. When the Western Roman Empire fell in 476 CE, it was replaced by a series of kingdoms ruled over by the very Germans that the Romans so despised. Yet, even as Rome fell, it spread its romanitas to the Germanic tribes. There is no small irony in how the Germanic kingdoms that arose in Western Europe after 476 CE, as well as the increasingly powerful Catholic Church, were modelled after the Roman Empire. In that sense, Roman traditions continued long after Rome’s fall.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><strong>Understanding the Fall of Rome</strong></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In 1984, Alexander Demandt published a list of reasons historians have given for the fall of the Roman Empire. He found over 210 explanations for the fall of Rome. The list points to everything from taxes to hypothermia to public baths, but most likely there were many causes. Internally the empire was failing economically. It had lost its tax base and long distance-trade was cut off. The people of the Western Roman Empire became disconnected from the emperor, living in small, localized, self-sufficient communities that could no longer rely upon their emperor to care for and protect them. Externally, outsiders like those Germanic tribes were crossing into the empire in ever larger numbers. Many probably just wanted to join Rome, not invade or destroy it, but the Romans continued to despise them.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Beyond asking why it fell, it’s important to ask what the fall of Rome meant to historians. Some see it as catastrophic. Looking at the ruins of Rome these historians see the fall of Rome as the violent and bloody end of a civilization, pushing Europe into a Dark Age that was primitive and barbaric compared to earlier life under the Roman Empire.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Others look at the fall of Rome as a period of transition. While the central authority of the Western Roman Emperor disappeared in 476 CE, Roman institutions, from the Catholic Church to Roman law, continued in the Germanic kingdoms that came afterwards. The Eastern Roman Empire survived this difficult period and continued on as the Byzantine Empire until its fall in 1453 to the Ottomans. It survived where the West did not for a variety of reasons, most notably its society was more cohesive, its tax base was stronger, and its location provided it with somewhat better protection against Germanic incursions.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">1 The Roman emperor Valerian did attempt to get Mesopotamia back in 260. Bad idea. He was captured by the Persian Sassanid ruler Shapur and spent the rest of his life as Shapur’s footstool! After his death, his skin was flayed off his corpse and hung behind the throne of the Persian emperor.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome">https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome</a> (accessed October 25, 2026)</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Campbell, Dennis RM. “Fall of Rome.” OER Project, accessed October 25, 2026. <a href="https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome">https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dennis RM Campbell, “Fall of Rome,” OER Project, accessed October 25, 2026, <a href="https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome">https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit5/The-Fall-of-Rome</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Campbell, “Fall of Rome.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

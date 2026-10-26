@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Roman custom. Web Article W3.32 for Unit 2: Second Wave Civilizations.">
+  <meta name="theme-color" content="#7A3B23">
+  <title>Web Article W3.32 | The Roman custom</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/W3.32_Roman_Custom.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A3B23;
+      --forest-mid: #B0562F;
+      --coral: #7C9473;
+      --coral-light: #B7C7AE;
+      --cream: #F5F1E9;
+      --paper: #FCFBF8;
+      --mint: #F1F4EF;
+      --sage: #EBD5CB;
+      --ink: #432013;
+      --muted: #7D5A4D;
+      --shadow: 0 22px 55px rgba(73, 35, 21, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A5512C;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(124, 148, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 59, 35, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(73, 35, 21, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(176, 86, 47, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 3 · W3.32</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W3.32">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W3.32</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Roman custom</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">James Hankins</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #7C9473; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#B7C7AE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">James Hankins, Professor of History at Harvard University</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">The New Criterion (The Foundation for Cultural Review)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">September 2023</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.4</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A3B23; font-size:13.5px; line-height:1.55;">3.4.1 Supports; 3.4.2 Qualifies</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,464 words</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">On ancient violence &amp; modern judgment.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Editors’ note: This essay is adapted from The Golden Thread by Allen C. Guelzo and James Hankins, to be published by Encounter Books in 2024.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A classic debate among historians of Rome attempts to answer the question of how this city-state on the Tiber River succeeded in building an enormous empire, first in Italy and later across the entire Mediterranean world. Rome’s most significant early war was with the city of Veii, now a ruin you can visit by travelling an hour by bus from central Rome. By the first century A.D., Rome’s emperors were commanding armies from Spain to Persia. The debate goes back to the very first Roman history that survives, written in Greek in the late second century B.C. by Polybius. His preface reveals the astonishment of the Greeks, who had dominated the eastern Mediterranean since the time of Alexander the Great, at the sudden rise of Rome:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">For the very element of unexpectedness in the events I have chosen as my theme will be sufficient to challenge and inspire everyone, young and old alike, to peruse my systematic history. For who is so indifferent or indolent as not to wish to know by what means and under what system of polity the Romans in less than fifty-three years [220–167 B.C.] succeeded in subjecting nearly the whole inhabited world to their sole government—a thing unique in history? Or who again is there so passionately devoted to other spectacles or studies as to regard anything as of greater moment than the acquisition of this knowledge?</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Polybius himself gives us some of the more sophisticated answers to the question of how the Romans managed to defeat all their rivals for empire. He draws attention to the Roman regime, which he saw in Aristotelian terms as a mixed constitution, beautifully balanced to prevent factionalism. He also draws attention to the extraordinary discipline of the Roman army and to the Romans’ religion, which gave them a martial spirit lacking in other nations.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Subsequent historians added further explanations. Livy, writing in the time of Augustus after a long period of civil war and moral collapse, emphasizes the practical wisdom of the Romans’ ancestors, who had built an empire upon trust, virtue, and devotion to the gods: fides, virtus, pietas. Later Greek students of Roman history such as Dionysius of Halicarnassus, Aelius Aristides, and Cassius Dio credit Rome’s success to its extraordinary willingness to open its ruling class to men of obscure social origin and to foreigners. For them, Rome exhibited a praiseworthy kind of meritocratic pluralism unexampled in the old Greek city-states, with their fierce nativism. Modern historians since Machiavelli have noted the extraordinary social solidarity of Roman society in its great era of empire-building—a solidarity born, paradoxically, of the conflict between patricians and plebeians that long predated Rome’s conquests. It was the plebeians’ insistence on sharing political power and the material rewards and glory of empire that gave Rome its extraordinary competitive dynamism.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In our own time, when admiration for the ancient Romans has faded and obsession with the crimes of the West has intensified, a further reason for the Romans’ success in warfare has come to the fore: their calculated use of mass violence and terror to subdue enemies. This explanation, along with the Roman practice of slavery, counts also as an indictment of Roman civilization, and so requires careful analysis. We cannot dismiss the charge as mere politicized history, above all because it happens to be true. The “Roman custom,” as Polybius called it, of using terror as a tool of war cannot be ignored in forming our overall judgment of the Romans as a people. It inevitably raises questions about their other achievements as well as the suitability of using their great heroes as examples and their political system as a model for our own times.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Our most reliable source for Roman violence is Polybius, who bases his history primarily on eyewitness sources. He himself was a well-placed observer, being a close associate of Scipio Aemilianus and other Roman statesmen and military leaders. The impression that we are getting the “real story” about the Romans from the Greek historian is hard to resist. Polybius admired the Romans in many respects but is committed to telling the truth about them. The kind of prudential history he wrote—history designed as a casebook for statesmen, showing the motives and consequences of past decisions—is perfectly useless, he tells us, unless the facts are correct. And the facts of the Romans’ conduct in war, as he remorselessly reveals them, are horrifying.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The most shocking things Polybius tells us are usually related in a dry, unemotional tone, such as the following story about Scipio Africanus’s assault on New Carthage (modern Cartagena in Spain) in 209 B.C.:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Finally, when the walls had been taken in this manner, those who entered through the gate occupied the hill on the east after dislodging its defenders. When Scipio thought that a sufficient number of troops had entered, he sent most of them, as is the Roman custom, against the inhabitants of the city with orders to kill all they encountered, sparing no one, and not to start pillaging until the signal was given. The Romans do this, I think, to inspire terror, so that when they take towns one may often see not only the corpses of human beings, but dogs cut in half and the dismembered limbs of other animals, and on this occasion such scenes were very many owing to the numbers of those in the place [emphasis added].</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This type of incident is by no means rare in Polybius’s pages; indeed he records dozens of such cases of mass violence in his narrative of just one century of Roman history. A reckoning by the historian Gabriel Baker of all known atrocities in war between 400 and 100 B.C. catalogues 124 incidents of mass violence committed by the Roman army. These include mass killings and disfigurement of prisoners, mass enslavements, looting, and punitive destruction of cities. Such acts varied in intensity depending on the situation. Sometimes only political leaders and their families were killed and enslaved; at other times, entire populations. Sometimes the Romans only tore down a city’s defensive walls; at other times, as in the cases of Carthage and Corinth, whole cities were razed to the ground.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">These incidents were as a rule not spontaneous outbursts of furious savagery against hated enemies or the work of frenzied soldiers run amok. They were deliberate tactics that were a regular part of Roman warfare, ordered by commanding officers, sometimes even by the senate. Like modern genocides, they required planning, organization, resources, and labor. They were a tool of empire calibrated to fit particular circumstances and to achieve particular objectives.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Perhaps the most infamous Roman atrocity was committed in the Epirus in the year 167 B.C. The Epirotes were a people who had broken their earlier agreements with Rome and sided with King Perseus during the Third Macedonian War. They had offered the king material assistance, sending him men and using their fortresses to block Roman access to the best invasion route. After the battle of Pydna the Roman general, Aemilius Paullus, marched his army back through the Epirus and, on specific orders from the senate, organized a massive operation to punish the Epirotes, even though they had already surrendered to Rome. He announced to their leaders that his troops would collect their gold, silver, and valuables from seventy fortified places in the region, implying that they would be spared further reprisals. The Roman forces timed their march to arrive at all seventy towns on the same day, early in the morning, and were allowed in by the inhabitants to collect the treasure. Once inside, the troops proceeded to sack the towns in a coordinated “orgy of violence.” In due course the Epirotes were herded into their town squares, put under guard, and marched to the coast for deportation to Italy. Our sources tell us that the Romans enslaved 150,000 Epirotes that day.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Why did the Romans engage in such horrific acts? The short answer is that they helped Rome achieve its war aims. These aims were of different kinds. Terror was most effective when Rome was close to victory or the tide of war had turned in their favor. Thus when the Romans took Agrigento in the Second Punic War, beheading all the civic notables and enslaving the rest of the population, forty Sicilian towns decided it was time to change sides and declare loyalty to Rome. Sometimes, as in the case of the atrocity in Epirus, the motivation was not only to make an example of what could happen to unfaithful allies, but also to pay off their own discontented soldiers with booty.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://newcriterion.com/article/the-roman-custom/">https://newcriterion.com/article/the-roman-custom/</a> (accessed October 25, 2026)</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:17px; font-weight:700; border-bottom:2px solid #7C9473; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Hankins, James. “The Roman Custom.” The New Criterion. The Foundation for Cultural Review, September 2023. <a href="https://newcriterion.com/article/the-roman-custom/">https://newcriterion.com/article/the-roman-custom/</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">James Hankins, “The Roman Custom,” The New Criterion, The Foundation for Cultural Review, September 2023, <a href="https://newcriterion.com/article/the-roman-custom/">https://newcriterion.com/article/the-roman-custom/</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A3B23; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Hankins, “Roman Custom.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #7C9473; font-family:Arial, Helvetica, sans-serif; color:#A5512C; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · SECOND WAVE CIVILIZATIONS | HISTORY B1 | DANIEL GARZA</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/AP-World-History/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
